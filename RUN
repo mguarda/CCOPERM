@@ -1,0 +1,16 @@
+#!/bin/bash    
+
+# problemas a ejecutar
+PR[1]=Tsp
+PR[2]=Qap
+
+COUNTER=1
+
+# TODOS LOS ARCHIVOS EJECUTABLES
+
+for i in $(ls EJECU*)
+do
+	echo "Ejecutando: "${i} ${PR[COUNTER]}
+	./${i} ${PR[COUNTER]} > CONSOLA${PR[COUNTER]}
+	let COUNTER=COUNTER+1 
+done
