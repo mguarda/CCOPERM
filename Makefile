@@ -1,5 +1,6 @@
-#  Makefile recursivo
-#  Autor : Fernando Vergara Díaz
+#	Makefile recursivo
+#	Autor : Fernando Vergara Díaz
+#	Modificación: Mauricio Guarda
 
 
 SIN_PARAMETROS:
