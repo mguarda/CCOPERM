@@ -56,7 +56,7 @@ double Tsp::CalcularFitness( Solution *sol ){
 	/*cout << "values_[i]-1 = " << values_[size-1]-1 << endl;
 	cout << "values_[i+1]-1 = " << values_[0]-1 << endl;
 	cout << "distance_matrix[values_[i]-1][values_[i + 1]-1] = " << distance_matrix[values_[size-1]-1][values_[0]-1] << endl;*/
-	cost = cost + distance_matrix[values_[size-1]-1][values_[0]-1];
+//	cost = cost + distance_matrix[values_[size-1]-1][values_[0]-1];
 //	cout << "costo total es: " << (1/cost)*100 << endl;
 
 	return (1/cost)*100000;
