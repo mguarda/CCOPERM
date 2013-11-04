@@ -37,13 +37,21 @@ double Tsp::CalcularFitness( Solution *sol ){
 	int size = values_.size();
 	double cost;
 	cost = 0.0;
+	double x1,x2,y1,y2;
+	double dist = 0;
 //	cout << "calculando costo..." << endl;
 	for (int i = 0; i < (size - 1); i++) {
 		/*cout << "values_[i]-1 = " << values_[i]-1 << endl;
 		cout << "values_[i+1]-1 = " << values_[i+1]-1 << endl;
-		cout << "distance_matrix[values_[i]-1][values_[i + 1]-1] = " << distance_matrix[values_[i]-1][values_[i + 1]-1] << endl;*/
-		cost = cost + distance_matrix[values_[i]-1][values_[i + 1]-1];
-//
+		cout << "distance_matrix[values_[i]-1][values_[i + 1]-1] = " << distance_matrix[values_[i]-1][values_[i + 1]-1] << endl;*/		
+//		cost = cost + distance_matrix[values_[i]-1][values_[i + 1]-1];
+		x1 = (double) distance_matrix[values_[i]-1][0];
+		x2 = (double) distance_matrix[values_[i+1]-1][0];
+		y1 = (double) distance_matrix[values_[i]-1][1];
+		y2 = (double) distance_matrix[values_[i+1]-1][1];
+		dist = sqrt(pow((y2-y1),2)+pow((x2-x1),2));
+
+		cost = cost + dist;
 	}
 	/*cout << "values_[i]-1 = " << values_[size-1]-1 << endl;
 	cout << "values_[i+1]-1 = " << values_[0]-1 << endl;
@@ -105,7 +113,7 @@ Solution* Tsp::NewSolution(){
 vector<vector<double> > Tsp::readTSPProblemFile(string filename){
 //	toolbox *tb = toolbox::instance();
 
-	typedef vector<int> Fila;
+	typedef vector<double> Fila;
 	typedef vector<Fila> Matriz;
 	typedef vector<double> Fila_d;
 	typedef vector<Fila_d> Matriz_d;
@@ -138,11 +146,11 @@ vector<vector<double> > Tsp::readTSPProblemFile(string filename){
 				if (k != 1 && line.compare("EOF") != 0){// && line.compare(" ") != 0) {
 					num = aux;
 					if(j==0 && k == 2){
-						fila[0] = (int) num;
+						fila[0] = (double) num;
 						j++;
 						k++;
 					}else if(k == 3){
-						fila[1] = (int) num;
+						fila[1] = (double) num;
 						matriz.push_back(fila);
 						cout << "VECTOR AGREGADO a matriz "<< matriz[i-1][0] << " " << matriz[i-1][1]  << endl;
 						j = 0;
@@ -165,7 +173,7 @@ vector<vector<double> > Tsp::readTSPProblemFile(string filename){
 	}
 
 	open.close();
-
+/*
 	cout << "Creando matriz de distancias" << endl;
 //===========Creacion de la matriz de distancias===============
 	Matriz_d distancias;
@@ -186,7 +194,7 @@ vector<vector<double> > Tsp::readTSPProblemFile(string filename){
 		distancias.push_back(filas);
 		filas.clear();
 	}
-
+*/
 	/*cout << "Matriz distancias: " << endl;
 	for(int i=0; i < (int)distancias.size(); i++){
 		for(int j=0; j < (int)distancias[i].size();j++){
@@ -195,5 +203,6 @@ vector<vector<double> > Tsp::readTSPProblemFile(string filename){
 		cout << endl;
 	}*/
 
-	return distancias;
+//	return distancias;
+	return matriz;
 }
