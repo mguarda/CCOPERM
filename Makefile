@@ -7,9 +7,10 @@ SIN_PARAMETROS:
 
 # Permite compilar a todos los problemas del presente directorio
 # TSP - QAP
-# ejecutar: $make makeall
+# ejecutar: $make all
 
 all:
+
 	cd TSP_PERM; make
 	cd QAP_PERM; make
 

@@ -142,12 +142,12 @@ Solution* SolutionPerm::ExtendSolution( double delta ){
 
 	int moves = (int) tb->triangular((double)(delta*(double)(dimension - 1)/3), 1.0,delta*(double)(dimension - 1));
 	if(moves == 0) moves = 1; //return new SolutionPerm(this->values);
-/*
+
 	cout << "delta = " << delta << endl;
 	cout << "dimension = " << dimension << endl;
 	cout << (double)(delta*((double)dimension-1)/3) << endl;
 	cout << "movimientos a extender: " << moves << endl;
-*/
+
 	int swap1, swap2, e_swap1, e_swap2;
 	e_swap1 = -2;
 	e_swap2 = -2;

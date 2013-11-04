@@ -144,7 +144,7 @@ vector<vector<double> > Tsp::readTSPProblemFile(string filename){
 					}else if(k == 3){
 						fila[1] = (int) num;
 						matriz.push_back(fila);
-//						cout << "VECTOR AGREGADO a matriz "<< matriz[i-1][0] << " " << matriz[i-1][1]  << endl;
+						cout << "VECTOR AGREGADO a matriz "<< matriz[i-1][0] << " " << matriz[i-1][1]  << endl;
 						j = 0;
 						i++;
 						k=1;
@@ -165,6 +165,8 @@ vector<vector<double> > Tsp::readTSPProblemFile(string filename){
 	}
 
 	open.close();
+
+	cout << "Creando matriz de distancias" << endl;
 //===========Creacion de la matriz de distancias===============
 	Matriz_d distancias;
 	Fila_d filas ;
@@ -178,7 +180,9 @@ vector<vector<double> > Tsp::readTSPProblemFile(string filename){
 			y2 = (double) matriz[j][1];
 			dist = sqrt(pow((y2-y1),2)+pow((x2-x1),2));
 			filas.push_back(dist);
+//			cout << "Dato agregado: " << dist << " i= " << i+1 << "| j= " << j+1 << endl;
 		}
+		cout << "Se ha agregado la fila n°" << i+1 << endl;
 		distancias.push_back(filas);
 		filas.clear();
 	}
