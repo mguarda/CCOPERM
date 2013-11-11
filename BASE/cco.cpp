@@ -287,7 +287,7 @@ void CCO::Purge( Colony *colonia, int const iter){
  * \param iter Número de la iteración actual
  */
 void CCO::Extend( Colony *colonia, int const iter){
-	cout << "-------------------------------------- Extend INICIO" << endl;
+//	cout << "-------------------------------------- Extend INICIO" << endl;
 	//obtengo nodos hojas y ruleta
 	Plant *G = colonia->roulette();
 //	cout<<"próximo padre: "<<G<<endl;
@@ -342,7 +342,7 @@ void CCO::Extend( Colony *colonia, int const iter){
  */
 //list<Colony*> CCO::Split( Colony *colonia , int const iter){
 void CCO::Split( Colony *colonia , int const iter){
-	cout << "-------------------------------------- Split INICIO" << endl;;
+//	cout << "-------------------------------------- Split INICIO" << endl;;
 	
 	if( colonia->getSize() >= 6 ){
 		Plant *aux = NULL;
@@ -444,7 +444,7 @@ void CCO::Split( Colony *colonia , int const iter){
  */
 
 void CCO::Competition( int iter ){
-	cout << "-----------------Competition:inicio -----------------" << endl;
+//	cout << "-----------------Competition:inicio -----------------" << endl;
 	// REALLOCATE
 	list<Colony*>::iterator it;
 	for (it = yard.begin(); it!=yard.end(); it++){
@@ -655,7 +655,7 @@ void CCO::Competition( int iter ){
 
 void CCO::Distill(){
 	///// \todo REVISAR
-	cout << "------------------------------------------- DISTILL INICIO." << endl;
+//	cout << "------------------------------------------- DISTILL INICIO." << endl;
 	toolbox* tb = toolbox::instance();
 	list<Plant*> plantas;
 	vector<Plant*> final;
