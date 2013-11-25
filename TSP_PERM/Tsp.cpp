@@ -53,6 +53,13 @@ double Tsp::CalcularFitness( Solution *sol ){
 
 		cost = cost + dist;
 	}
+	x1 = (double) distance_matrix[values_[size-1] - 1][0];
+	x2 = (double) distance_matrix[values_[0] - 1][0];
+	y1 = (double) distance_matrix[values_[size-1] - 1][1];
+	y2 = (double) distance_matrix[values_[0] - 1][1];
+	dist = sqrt(pow((y2 - y1), 2) + pow((x2 - x1), 2));
+
+	cost = cost + dist;
 	/*cout << "values_[i]-1 = " << values_[size-1]-1 << endl;
 	cout << "values_[i+1]-1 = " << values_[0]-1 << endl;
 	cout << "distance_matrix[values_[i]-1][values_[i + 1]-1] = " << distance_matrix[values_[size-1]-1][values_[0]-1] << endl;*/
