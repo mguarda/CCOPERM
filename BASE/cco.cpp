@@ -240,7 +240,7 @@ void CCO::run(){
  * \param iter Número de la iteración actual
  */ 
 void CCO::Purge( Colony *colonia, int const iter){
-	cout << "---------------------------------Inicio Purge ..."<<endl;
+//	cout << "---------------------------------Inicio Purge ..."<<endl;
 	
 	// obtengo el candidato a eliminar
 	Plant *peor = colonia->Purge();
