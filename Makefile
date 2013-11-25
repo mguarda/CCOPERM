@@ -5,6 +5,7 @@
 
 SIN_PARAMETROS:
 	echo "problemas de ejecucion"
+	make all
 
 # Permite compilar a todos los problemas del presente directorio
 # TSP - QAP
