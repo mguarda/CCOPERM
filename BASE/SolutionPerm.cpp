@@ -143,10 +143,10 @@ Solution* SolutionPerm::ExtendSolution( double delta ){
 	int moves = (int) tb->triangular((double)(delta*(double)(dimension - 1)/3), 1.0,delta*(double)(dimension - 1));
 	if(moves == 0) moves = 1; //return new SolutionPerm(this->values);
 
-	cout << "delta = " << delta << endl;
+	/*cout << "delta = " << delta << endl;
 	cout << "dimension = " << dimension << endl;
 	cout << (double)(delta*((double)dimension-1)/3) << endl;
-	cout << "movimientos a extender: " << moves << endl;
+	cout << "movimientos a extender: " << moves << endl;*/
 
 	int swap1, swap2, e_swap1, e_swap2;
 	e_swap1 = -2;
@@ -182,7 +182,7 @@ Solution* SolutionPerm::ExtendSolution( double delta ){
 
 /// @param out_distill Nombre del archivo que se agregarán los datos más relevantes del objeto de tipo Solution, tales como: las coordenadas de éste y su fitness
 void SolutionPerm::show_solution( ofstream& out_distill ){
-	out_distill << fitness << " " << 100000/(fitness) << " ";
+	out_distill << fitness << " | " << 100000/(fitness) << " | ";
 	for ( int j = 0; j < (int)dimension ; j++ ){
 		out_distill << values[ j ] <<" ";
 	}
