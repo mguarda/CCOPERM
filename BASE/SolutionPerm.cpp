@@ -198,7 +198,6 @@ vector<int> SolutionPerm::generatePermutation(int size){
 	toolbox *tb = toolbox::instance();
 	double time = (double)tb->clockstop();
 	srand ( unsigned (time) );
-//	cout << "time: " << time << endl;
 	vector<int> myvector;
 	vector<int>::iterator it;
 
@@ -212,12 +211,12 @@ vector<int> SolutionPerm::generatePermutation(int size){
 //	random_shuffle ( myvector.begin(), myvector.end(), p_myrandom);
 
 	// print out content:
-	cout << "Generated Permutation:";
+/*	cout << "Generated Permutation:";
 	for (it=myvector.begin(); it!=myvector.end(); ++it)
 	cout << " " << *it;
 
 	cout << endl;
-
+*/
 
 	return myvector;
 }
