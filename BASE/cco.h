@@ -85,7 +85,7 @@ public:
  * </UL>
  * <b>Alumno tesista:</b>
  * <UL>
- * <LI>Fernando Javier Vergara Díaz</LI>
+ * <LI>Mauricio Alexis Guarda Oñate</LI>
  * </UL>
 */
 
