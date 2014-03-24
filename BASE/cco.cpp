@@ -126,7 +126,7 @@ void CCO::run(){
 	//Tracker Tr( *( DynamicYurt *) problem->pointer() );
 	
 	for(int j = 0;j<MAXGEN;j++){
-		cout << "============================= Generación Nº" << j+1 << "=============================" << endl;
+	//	cout << "============================= Generación Nº" << j+1 << "=============================" << endl;
 		//cout << "Generacion " << j << endl;
 		list<Colony*>::iterator it = yard.begin();	
 		//for (it = yard.begin(); it!=yard.end(); it++){		
