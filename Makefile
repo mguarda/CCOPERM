@@ -19,7 +19,7 @@ all:
 # Permite limpiar ejecutables y todo soble el proceso de compilacion
 # ejecutar: $make cleanall
 
-cleanall:
+distclean:
 	cd TSP_PERM; make clean
 	cd QAP_PERM; make clean
 	rm EJECUTABLE*

@@ -159,7 +159,7 @@ vector<vector<double> > Tsp::readTSPProblemFile(string filename){
 					}else if(k == 3){
 						fila[1] = (double) num;
 						matriz.push_back(fila);
-						cout << "VECTOR AGREGADO a matriz "<< matriz[i-1][0] << " " << matriz[i-1][1]  << endl;
+	//					cout << "VECTOR AGREGADO a matriz "<< matriz[i-1][0] << " " << matriz[i-1][1]  << endl;
 						j = 0;
 						i++;
 						k=1;
