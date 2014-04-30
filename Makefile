@@ -17,7 +17,7 @@ all:
 	cd QAP_PERM; make
 
 # Permite limpiar ejecutables y todo soble el proceso de compilacion
-# ejecutar: $make cleanall
+# ejecutar: $make distclean
 
 distclean:
 	cd TSP_PERM; make clean

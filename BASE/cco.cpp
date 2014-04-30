@@ -39,7 +39,6 @@ CCO::CCO(){
 		ctmp->setName( "Colony_" + tb->int2string( i+1 ) );
 		srand(unsigned(time(NULL)+k));
 		Plant *cplant= new Plant(ctmp);
-	//	usleep(790*1000);
 		cplant->setAnno( 0 );
 		k++;
 		yard.push_back(ctmp);
@@ -111,7 +110,7 @@ void CCO::run(){
     }
     locale mylocale("");
     resultado.imbue(mylocale);
-    resultado << "Generacion | Fitness | Costo | Solucion" << endl;
+    resultado << "Generacion | Fitness | Costo | Solucion | Suma Distancias | Fitness Prom " << endl;
 //================================================================================
 	if( tb->pval_int("op_distill") != 1 ){
 //		 if( remove( ("./Results/"+ IDExp + "_numcolonias.dat").c_str() ) != 0 )
@@ -196,7 +195,7 @@ void CCO::run(){
 		
 		if( problem->EsDinamico() )
 			problem->step( AllPlantsYard() , j );
-//================================================================================
+//=====================================Se obtiene la mejor de las soluciones ===========================================
 		list<Colony*>::iterator it2 = yard.begin();
 		list<Colony*>::iterator paux_col;
 		double b_fitness = 0;
@@ -208,8 +207,34 @@ void CCO::run(){
 		}
 		resultado << (j+1) << " | ";
 		(*paux_col)->getBestPlant()->getSolution()->show_solution(resultado);
-		resultado << endl;
+		//resultado << endl;
 //================================================================================
+//---------------Obtencion de plantas del platio------------------------------
+		it2 = yard.begin();
+		list<Plant*> plantas_aux;
+		list<Plant*> plantas;
+		list<Plant*>::iterator it_plantas;
+		list<Plant*>::iterator it_plantas2;
+		double fit = 0;
+		int distancias = 0;
+		for(it2=yard.begin(); it2 != yard.end(); it2++){
+			plantas_aux = (*it2)->getPlants();
+			for(it_plantas = plantas_aux.begin(); it_plantas != plantas_aux.end();it_plantas++){
+				plantas.push_back(*it_plantas);
+			}
+		}
+//---------------Calculo de suma de distancias y suma de fitness del patio-----------------------------------------
+		for(it_plantas=plantas.begin(); it_plantas!= plantas.end(); it_plantas++){
+			fit += (*it_plantas)->getFitness();
+			for(it_plantas2 = plantas.begin(); it_plantas2!= plantas.end(); it_plantas2++){
+				distancias += (*it_plantas)->getSolution()->Distance((*it_plantas2)->getSolution());
+			}
+		}
+		double fitness_prom = fit / tb->pval_int("MPY");
+
+//===================Se agregan al archivo de salida======================================
+		resultado << " | " << distancias << " | " << fitness_prom << endl;
+
 	}
 	
 	//if( problem->EsDinamico() )
