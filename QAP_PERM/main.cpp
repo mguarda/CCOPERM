@@ -38,7 +38,7 @@ int main(int argc , char **argv){
 
 		time_t seconds(sec);
 		tm *p = localtime(&seconds);
-		cout << "el tiempo de ejecucion ha sido de " << p->tm_min << " min " << p->tm_sec << "seg " << endl;
+		cout << "el tiempo de ejecucion ha sido de " << p->tm_hour << "hrs" << p->tm_min << " min " << p->tm_sec << "seg " << endl;
 	}
  	else{
  		cout << "Se necesita referencia a archivo de problema QAP" << endl;

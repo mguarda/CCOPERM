@@ -13,6 +13,7 @@
 using namespace std;
 #include <cstdio>
 #include <cmath>
+#include <math.h>
 #include <cstdlib>
 #include <unistd.h>
 #include "toolbox.h"
@@ -78,7 +79,7 @@ void CCO::run(){
     
     toolbox* tb;
     tb = toolbox::instance();
-    
+    // ---------------------- Obtencion de fecha y momento de ejecución -------------------------------------
 	time_t rawtime;
 	struct tm * timeinfo;
 	char buffer[80];
@@ -88,13 +89,14 @@ void CCO::run(){
 	strftime(buffer,80,"%c",timeinfo);
 	string date_experiment(buffer);
 	tb->storeVariable("date",date_experiment);
-
+	//-------------------------------------------------------------------------------------------------------
 	string ruta_resultado = "./Results/";
 	string formato = ".csv";
 	string nombre = "fitness";
 //  ofstream salida_main ( ("./Results/"+ IDExp + "_numcolonias.dat").c_str() );
     ofstream salida_main ( ("./Results/"+tb->pval_string("problemType")+"/"+ IDExp + "_numcolonias"+"("+buffer+")"+".dat").c_str() );
     ofstream resultado((ruta_resultado+tb->pval_string("problemType")+"/"+IDExp+"_"+nombre+"("+buffer+")"+formato).c_str());
+    ofstream alertas((ruta_resultado+tb->pval_string("problemType")+"/"+IDExp+"_alertas_("+buffer+")"+formato).c_str());
     if(salida_main){
     	cout << "se ha creado el archivo " << IDExp + "_numcolonias"+"("+buffer+")"+".dat" << endl;
     }else{
@@ -108,9 +110,19 @@ void CCO::run(){
       	cout << "Error al crear el archivo " << ruta_resultado+IDExp+"_"+nombre+"("+buffer+")"+formato << endl;
        	exit(0);
     }
+
+    if(alertas){
+    	cout << "se ha creado el archivo " << IDExp + "_alertas"+"("+buffer+")"+formato << endl;
+    }else{
+    	cout << "Error al crear el archivo " << IDExp+"_"+nombre+"("+buffer+")"+formato << endl;
+    	exit(0);
+    }
     locale mylocale("");
     resultado.imbue(mylocale);
     resultado << "Generacion | Fitness | Costo | Solucion | Suma Distancias | Fitness Prom " << endl;
+
+    alertas.imbue(mylocale);
+    alertas << "Eventos de eliminación de plantas de mejores Fitness por generación." << endl;
 //================================================================================
 	if( tb->pval_int("op_distill") != 1 ){
 //		 if( remove( ("./Results/"+ IDExp + "_numcolonias.dat").c_str() ) != 0 )
@@ -121,7 +133,7 @@ void CCO::run(){
 	}
 
 	problem = Problem::instance();
-	
+	double past_fitness = 0;
 	//Tracker Tr( *( DynamicYurt *) problem->pointer() );
 	
 	for(int j = 0;j<MAXGEN;j++){
@@ -207,9 +219,14 @@ void CCO::run(){
 		}
 		resultado << (j+1) << " | ";
 		(*paux_col)->getBestPlant()->getSolution()->show_solution(resultado);
+		if(j == 0) past_fitness = (*paux_col)->getBestPlant()->getSolution()->getFitness();
+		if(past_fitness > (*paux_col)->getBestPlant()->getSolution()->getFitness()){
+			alertas << "Nuevo Mejor Fitness gen Nº"<<(j+1)<<": Se ha eliminado la mejor planta de la generacion " << (j+1)-1 << " de fitness "<<past_fitness<<", a cambio de otra de fitness "<<(*paux_col)->getBestPlant()->getSolution()->getFitness()<< " en la generación "<<(j+1) << endl;
+			past_fitness = (*paux_col)->getBestPlant()->getSolution()->getFitness();
+		}
 		//resultado << endl;
 //================================================================================
-//---------------Obtencion de plantas del platio------------------------------
+//-------------------Obtencion de plantas del platio------------------------------
 		it2 = yard.begin();
 		list<Plant*> plantas_aux;
 		list<Plant*> plantas;
@@ -230,11 +247,16 @@ void CCO::run(){
 				distancias += (*it_plantas)->getSolution()->Distance((*it_plantas2)->getSolution());
 			}
 		}
-		double fitness_prom = fit / tb->pval_int("MPY");
+		double fitness_prom = fit / (int)plantas.size();
 
 //===================Se agregan al archivo de salida======================================
 		resultado << " | " << distancias << " | " << fitness_prom << endl;
 
+
+		double perc_complete = (((double)(j+1)*100)/MAXGEN);
+		if(fmod(perc_complete,5) == 0){
+			cout << "El experimento lleva " << perc_complete << "% listo" << endl;
+		}
 	}
 	
 	//if( problem->EsDinamico() )
@@ -248,8 +270,11 @@ void CCO::run(){
 	if( tb->pval_int("op_distill") == 1 ){
 		salida_main.close();
 	}
+	alertas.close();
 	resultado.close();
 	cout<<" --- CCO done ---"<<endl;
+
+
 }
 
 /**

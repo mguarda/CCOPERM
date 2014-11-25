@@ -1,6 +1,6 @@
 #!/bin/bash
 
 echo "Compilando..."
-make cleanall
+make distclean
 make all
 echo "Compilacion lista!!!"
