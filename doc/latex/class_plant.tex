@@ -1,4 +1,4 @@
-\hypertarget{class_plant}{\section{Plant Class Reference}
+\hypertarget{class_plant}{\section{Referencia de la Clase Plant}
 \label{class_plant}\index{Plant@{Plant}}
 }
 
@@ -6,7 +6,7 @@
 Define los objetos \hyperlink{class_plant}{Plant}.  
 
 
-\subsection*{Public Member Functions}
+\subsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
 \hypertarget{class_plant_aeebba67fbf33e3087e9035f41289a83a}{\hyperlink{class_plant_aeebba67fbf33e3087e9035f41289a83a}{Plant} ()}\label{class_plant_aeebba67fbf33e3087e9035f41289a83a}
@@ -96,10 +96,10 @@ void \hyperlink{class_plant_a71a465c3487f93129829b87550e83fcf}{update\+\_\+\+T\+
 \begin{DoxyCompactList}\small\item\em Re-\/evalua el fitness de todas las plantas de la rama. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsection{Detailed Description}
+\subsection{Descripción detallada}
 Define los objetos \hyperlink{class_plant}{Plant}. 
 
-\subsection{Constructor \& Destructor Documentation}
+\subsection{Documentación del constructor y destructor}
 \hypertarget{class_plant_ae4e71ef08f69aa77ed93eba7e8398ff4}{\index{Plant@{Plant}!Plant@{Plant}}
 \index{Plant@{Plant}!Plant@{Plant}}
 \subsubsection[{Plant}]{\setlength{\rightskip}{0pt plus 5cm}Plant\+::\+Plant (
@@ -120,7 +120,7 @@ El constructor crea una planta con los siguientes valores\+:
 \end{DoxyItemize}
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em col} & Colonia a la cual pertenece la planta \\
 \hline
 \end{DoxyParams}
@@ -144,7 +144,7 @@ El constructor crea una planta con los siguientes valores\+:
 \end{DoxyItemize}
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em col} & Colonia a la cual pertenece la planta \\
 \hline
 {\em solution} & Solución que se asignará a la planta \\
@@ -152,7 +152,7 @@ El constructor crea una planta con los siguientes valores\+:
 \end{DoxyParams}
 
 
-\subsection{Member Function Documentation}
+\subsection{Documentación de las funciones miembro}
 \hypertarget{class_plant_a839a1a741148c611fabde01cfd69bb6a}{\index{Plant@{Plant}!add\+\_\+child@{add\+\_\+child}}
 \index{add\+\_\+child@{add\+\_\+child}!Plant@{Plant}}
 \subsubsection[{add\+\_\+child}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Plant} $\ast$ Plant\+::add\+\_\+child (
@@ -166,13 +166,13 @@ El constructor crea una planta con los siguientes valores\+:
 Añade un nuevo hijo a la planta. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em solu} & Solución que será asignada a la nueva planta \char`\"{}hija\char`\"{} \\
 \hline
 {\em anno} & Iteración en la cual se ha creado la planta \char`\"{}hija\char`\"{}\\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Devuelve}
 Puntero del tipo \hyperlink{class_plant}{Plant}, perteneciente a la nueva planta \char`\"{}hija\char`\"{}, agregada a la actual planta \char`\"{}padre\char`\"{} 
 \end{DoxyReturn}
 \hypertarget{class_plant_ac53b418a18dc6e37e94c3505b04a0a08}{\index{Plant@{Plant}!best\+\_\+branch@{best\+\_\+branch}}
@@ -187,11 +187,11 @@ Puntero del tipo \hyperlink{class_plant}{Plant}, perteneciente a la nueva planta
 Retorna el puntero a la planta con mayor fitness de la rama. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em aux} & Puntero temporal, con la planta de mayor fitness\\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Devuelve}
 Retorna un puntero del tipo \hyperlink{class_plant}{Plant}, con la planta del mayor fitness de la rama 
 \end{DoxyReturn}
 \hypertarget{class_plant_a3da8873875164b9924111020fb3a374e}{\index{Plant@{Plant}!change\+\_\+colony\+\_\+branch@{change\+\_\+colony\+\_\+branch}}
@@ -206,7 +206,7 @@ Retorna un puntero del tipo \hyperlink{class_plant}{Plant}, con la planta del ma
 Cambio de colonia a la rama. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em new\+\_\+col} & Puntero a la colonia que pertenecerán los miembros de esa rama \\
 \hline
 \end{DoxyParams}
@@ -224,11 +224,11 @@ Retorna un puntero a la planta segun el frente pareto Purge.
 Se determina que la planta con el menor T\+Fitness de la rama, es aquella que se satisface del frente de pareto
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em peor} & Puntero temporal, con la planta de menor T\+Fitness\\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Devuelve}
 Retorna un puntero del tipo \hyperlink{class_plant}{Plant}, con la planta del menor T\+Fitness de la rama 
 \end{DoxyReturn}
 \hypertarget{class_plant_ab827c5ca9da0923a949232e0c81bb0fe}{\index{Plant@{Plant}!get\+\_\+max\+\_\+branch\+\_\+coord@{get\+\_\+max\+\_\+branch\+\_\+coord}}
@@ -244,13 +244,13 @@ Retorna un puntero del tipo \hyperlink{class_plant}{Plant}, con la planta del me
 Retorna la mayor de las coordenadas existente en la rama. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em coord} & Posición de la coordenada \\
 \hline
 {\em val} & Valor de la máxima coordenada\\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Devuelve}
 Valor double, con el máximo de los valores para esa coordenada 
 \end{DoxyReturn}
 \hypertarget{class_plant_a19634cf97e315f3245130ef23ce1a670}{\index{Plant@{Plant}!get\+\_\+min\+\_\+branch\+\_\+coord@{get\+\_\+min\+\_\+branch\+\_\+coord}}
@@ -266,13 +266,13 @@ Valor double, con el máximo de los valores para esa coordenada
 Retorna la menor de las coordenadas existente en la rama. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em coord} & Posición de la coordenada \\
 \hline
 {\em val} & Valor de la mínima coordenada\\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Devuelve}
 Valor double, con la mínimo de los valores para esa coordenada 
 \end{DoxyReturn}
 \hypertarget{class_plant_a3540c994a995d890f1d41f1646e5bfa8}{\index{Plant@{Plant}!get\+\_\+old\+\_\+plant\+\_\+branch@{get\+\_\+old\+\_\+plant\+\_\+branch}}
@@ -287,11 +287,11 @@ Valor double, con la mínimo de los valores para esa coordenada
 Retorna la planta mas antigua de la rama. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em old} & Puntero a la planta más antigua de la rama\\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Devuelve}
 Puntero del tipo \hyperlink{class_plant}{Plant}, con la planta con mayor antiguedad de la rama 
 \end{DoxyReturn}
 \hypertarget{class_plant_a46456807d2ad5b9f141af448f216b5d7}{\index{Plant@{Plant}!get\+\_\+varianza\+\_\+branch@{get\+\_\+varianza\+\_\+branch}}
@@ -307,13 +307,13 @@ Puntero del tipo \hyperlink{class_plant}{Plant}, con la planta con mayor antigue
 Retorna la varianza de la rama. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em var} & Valor acumulado de la varianza \\
 \hline
 {\em prom} & Valor promedio de los fitness de la rama\\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Devuelve}
 Valor de tipo double, con el valor de la varianza para la rama 
 \end{DoxyReturn}
 \hypertarget{class_plant_a7e59304c381b9e930ec70207ce888310}{\index{Plant@{Plant}!get\+Anno@{get\+Anno}}
@@ -327,7 +327,7 @@ Valor de tipo double, con el valor de la varianza para la rama
 
 Retorna el año de la planta. 
 
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Devuelve}
 Retorna un entero sin signo, con el número de la iteración en la cuál se creó la actual planta 
 \end{DoxyReturn}
 \hypertarget{class_plant_a79fc3e80a225263ba150952e49b4533c}{\index{Plant@{Plant}!get\+C@{get\+C}}
@@ -341,7 +341,7 @@ Retorna un entero sin signo, con el número de la iteración en la cuál se cre�
 
 Retorna el numero de conexiones que posee. 
 
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Devuelve}
 Retorna un entero, con el numero de conexiones de la actual planta 
 \end{DoxyReturn}
 \hypertarget{class_plant_a8c2f0050ea6d88863bd1703d2252606e}{\index{Plant@{Plant}!get\+Colony@{get\+Colony}}
@@ -355,7 +355,7 @@ Retorna un entero, con el numero de conexiones de la actual planta
 
 Retorna la actual colonia a la que pertenece la planta. 
 
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Devuelve}
 Retorna un puntero del tipo \hyperlink{class_colony}{Colony}, a la colonia que pertenece la planta 
 \end{DoxyReturn}
 \hypertarget{class_plant_aff425cc6c39ef2696c41a545b37f6770}{\index{Plant@{Plant}!get\+Fitness@{get\+Fitness}}
@@ -369,7 +369,7 @@ Retorna un puntero del tipo \hyperlink{class_colony}{Colony}, a la colonia que p
 
 Retorna el actual fitness de la clase. 
 
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Devuelve}
 Retorna un valor double, con el valor del fitness de la planta 
 \end{DoxyReturn}
 \hypertarget{class_plant_a26cfa0b80711a8888c42f1ed95640566}{\index{Plant@{Plant}!get\+Parent@{get\+Parent}}
@@ -383,7 +383,7 @@ Retorna un valor double, con el valor del fitness de la planta
 
 Retorna el actual padre de la planta. 
 
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Devuelve}
 Retorna un puntero del tipo \hyperlink{class_plant}{Plant}, con el valor de planta \char`\"{}padre\char`\"{} 
 \end{DoxyReturn}
 \hypertarget{class_plant_abc664a5111f99ef2dc172b10b8451f84}{\index{Plant@{Plant}!get\+Solution@{get\+Solution}}
@@ -397,7 +397,7 @@ Retorna un puntero del tipo \hyperlink{class_plant}{Plant}, con el valor de plan
 
 Retorna la actual solucion que tiene la planta. 
 
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Devuelve}
 Retorna un puntero del tipo \hyperlink{class_solution}{Solution}, con la solución de la actual planta 
 \end{DoxyReturn}
 \hypertarget{class_plant_afdbf74edabdfe044d64a3a7c374d6119}{\index{Plant@{Plant}!get\+T\+Fitness@{get\+T\+Fitness}}
@@ -411,7 +411,7 @@ Retorna un puntero del tipo \hyperlink{class_solution}{Solution}, con la soluci�
 
 Permite obtener el tfitness. 
 
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Devuelve}
 Retorna un double, con el T\+Fitness de la actual planta 
 \end{DoxyReturn}
 \hypertarget{class_plant_a225c7c67a5679b250bf3d5ea7eebced6}{\index{Plant@{Plant}!plants\+\_\+branch@{plants\+\_\+branch}}
@@ -426,11 +426,11 @@ Retorna un double, con el T\+Fitness de la actual planta
 Retorna todas las plantas de la rama en un arreglo de punteros del tipo planta. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em plantas} & Lista temporal de punteros, con las plantas de la rama\\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Devuelve}
 Retorna una lista de punteros del tipo \hyperlink{class_plant}{Plant}, con las plantas de la rama 
 \end{DoxyReturn}
 \hypertarget{class_plant_a785afe98cddf364c286b38aa705f3910}{\index{Plant@{Plant}!remove\+\_\+plant@{remove\+\_\+plant}}
@@ -482,7 +482,7 @@ Opción 2\+: La raíz no tiene descendencia\+: \hypertarget{class_plant_a3a6c02e
 Establece el año de creacion planta. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em \+\_\+anno} & Número de la actual iteración del experimento \\
 \hline
 \end{DoxyParams}
@@ -498,7 +498,7 @@ Establece el año de creacion planta.
 Establece la colonia a la que pertenece la planta. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em col} & Puntero a la colonia que pertenecerá la actual planta \\
 \hline
 \end{DoxyParams}
@@ -514,7 +514,7 @@ Establece la colonia a la que pertenece la planta.
 Establece el fitness de la clase. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em fit} & Valor del fitness que se asignará a la actual planta \\
 \hline
 \end{DoxyParams}
@@ -530,7 +530,7 @@ Establece el fitness de la clase.
 Establece el padre de la planta. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em par} & Puntero al \char`\"{}padre\char`\"{} de la actual planta \char`\"{}hija\char`\"{} \\
 \hline
 \end{DoxyParams}
@@ -546,7 +546,7 @@ Establece el padre de la planta.
 Establece la solucion de la planta. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em sol} & Puntero a la solución que se le asignará a la actual planta \\
 \hline
 \end{DoxyParams}
@@ -562,7 +562,7 @@ Establece la solucion de la planta.
 Permite establecer el tfitness. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em \+\_\+tfitness} & Valor con el nuevo T\+Fitness a asignar \\
 \hline
 \end{DoxyParams}
@@ -578,7 +578,7 @@ Permite establecer el tfitness.
 grafica para una rama 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em tab} & Valor que nos permite desplazar la salida estandar por consola, en tab espacios. \\
 \hline
 \end{DoxyParams}
@@ -606,13 +606,13 @@ Los criterios usados en éste método, son los siguientes\+:
 \end{DoxyItemize}
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em total} & Número de planta en la rama \\
 \hline
 {\em max\+\_\+dist} & Valor de la distancia máxima permitida entre 2 plantas unidas\\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Devuelve}
 Retorna un puntero del tipo \hyperlink{class_plant}{Plant}, con la planta a ser root de una nueva colonia a agregar en el patio 
 \end{DoxyReturn}
 \hypertarget{class_plant_a71a465c3487f93129829b87550e83fcf}{\index{Plant@{Plant}!update\+\_\+\+T\+Fitness@{update\+\_\+\+T\+Fitness}}
@@ -628,7 +628,7 @@ Retorna un puntero del tipo \hyperlink{class_plant}{Plant}, con la planta a ser 
 Actualizar el T\+Fitness, desde la raiz a la hoja. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em fprom} & Valor del fitness promedio de la colonia \\
 \hline
 {\em s} & Valor de la constante de T\+Fitness a compartir \\
@@ -646,16 +646,16 @@ Actualizar el T\+Fitness, desde la raiz a la hoja.
 Retorna el puntero a la planta con menor fitness de la rama. 
 
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em aux} & Puntero temporal, con la planta de menor fitness\\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Devuelve}
 Retorna un puntero del tipo \hyperlink{class_plant}{Plant}, con la planta del menor fitness de la rama 
 \end{DoxyReturn}
 
 
-The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
 \item 
 B\+A\+S\+E/plant.\+h\item 
 B\+A\+S\+E/plant.\+cpp\end{DoxyCompactItemize}

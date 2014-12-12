@@ -1,4 +1,4 @@
-\hypertarget{classtoolbox}{\section{toolbox Class Reference}
+\hypertarget{classtoolbox}{\section{Referencia de la Clase toolbox}
 \label{classtoolbox}\index{toolbox@{toolbox}}
 }
 
@@ -10,7 +10,7 @@ singleton class (only one object is instantiated) that provides general-\/use me
 
 {\ttfamily \#include $<$toolbox.\+h$>$}
 
-\subsection*{Public Member Functions}
+\subsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
 \hypertarget{classtoolbox_aeccc47e3554b49d0077cd6a1967bf8e8}{void {\bfseries read\+\_\+min\+\_\+values} (string filename)}\label{classtoolbox_aeccc47e3554b49d0077cd6a1967bf8e8}
@@ -80,13 +80,13 @@ string \hyperlink{classtoolbox_ad3c9eb0127e47a8ce04922646ade51fc}{pval\+\_\+stri
 \item 
 string \hyperlink{classtoolbox_a67d5356e65a3e93b179f0e48f98cf41c}{filename\+From\+Path} (string path)
 \end{DoxyCompactItemize}
-\subsection*{Static Public Member Functions}
+\subsection*{Métodos públicos estáticos}
 \begin{DoxyCompactItemize}
 \item 
 \hypertarget{classtoolbox_a3058e36ea4c84178eaa21321a5733cc8}{static \hyperlink{classtoolbox}{toolbox} $\ast$ \hyperlink{classtoolbox_a3058e36ea4c84178eaa21321a5733cc8}{instance} ()}\label{classtoolbox_a3058e36ea4c84178eaa21321a5733cc8}
 
 \begin{DoxyCompactList}\small\item\em return the pointer to the singleton instance \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Protected Member Functions}
+\subsection*{Métodos protegidos}
 \begin{DoxyCompactItemize}
 \item 
 \hypertarget{classtoolbox_ae52c33dc9f80c6ce0208a70abde2418e}{\hyperlink{classtoolbox_ae52c33dc9f80c6ce0208a70abde2418e}{toolbox} ()}\label{classtoolbox_ae52c33dc9f80c6ce0208a70abde2418e}
@@ -100,10 +100,10 @@ string \hyperlink{classtoolbox_a67d5356e65a3e93b179f0e48f98cf41c}{filename\+From
 \end{DoxyCompactItemize}
 
 
-\subsection{Detailed Description}
+\subsection{Descripción detallada}
 singleton class (only one object is instantiated) that provides general-\/use methods 
 
-\subsection{Member Function Documentation}
+\subsection{Documentación de las funciones miembro}
 \hypertarget{classtoolbox_a7b24111985e7dcac53f092e954e0cc07}{\index{toolbox@{toolbox}!azar@{azar}}
 \index{azar@{azar}!toolbox@{toolbox}}
 \subsubsection[{azar}]{\setlength{\rightskip}{0pt plus 5cm}double toolbox\+::azar (
@@ -111,7 +111,7 @@ singleton class (only one object is instantiated) that provides general-\/use me
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classtoolbox_a7b24111985e7dcac53f092e954e0cc07}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Devuelve}
 a random number in \mbox{[}0,1) 
 \end{DoxyReturn}
 \hypertarget{classtoolbox_ada9e591755dfbbf32979bc1d3f2f81c6}{\index{toolbox@{toolbox}!azar\+Int@{azar\+Int}}
@@ -121,7 +121,7 @@ a random number in \mbox{[}0,1)
 \item[{int}]{n}
 \end{DoxyParamCaption}
 )}}\label{classtoolbox_ada9e591755dfbbf32979bc1d3f2f81c6}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Devuelve}
 a random integer between \mbox{[}0,n-\/1) 
 \end{DoxyReturn}
 \hypertarget{classtoolbox_a8fe27f13cb254a568c8ec0295e5a734f}{\index{toolbox@{toolbox}!clockstop@{clockstop}}
@@ -135,7 +135,7 @@ a random integer between \mbox{[}0,n-\/1)
 
 stop chronometer 
 
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Devuelve}
 elapsed time in microseconds since \hyperlink{classtoolbox_a0ee32c4d293b8952a4767e2565a0dc38}{clockstart()} was called 
 \end{DoxyReturn}
 \hypertarget{classtoolbox_afb97b8bab923a8c293ff5aa944ed64f7}{\index{toolbox@{toolbox}!double2string@{double2string}}
@@ -146,11 +146,11 @@ elapsed time in microseconds since \hyperlink{classtoolbox_a0ee32c4d293b8952a476
 \item[{int}]{prec}
 \end{DoxyParamCaption}
 )}}\label{classtoolbox_afb97b8bab923a8c293ff5aa944ed64f7}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Devuelve}
 string from double (warning\+: doesn't check that the input can be 'translated') 
 \end{DoxyReturn}
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em d} & input double \\
 \hline
 {\em prec} & number of decimal places \\
@@ -163,11 +163,11 @@ string from double (warning\+: doesn't check that the input can be 'translated')
 \item[{string}]{path}
 \end{DoxyParamCaption}
 )}}\label{classtoolbox_a67d5356e65a3e93b179f0e48f98cf41c}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Devuelve}
 name of the file without the extension (works only in Unix systems) 
 \end{DoxyReturn}
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em path} & name of the path \\
 \hline
 \end{DoxyParams}
@@ -178,11 +178,11 @@ name of the file without the extension (works only in Unix systems)
 \item[{int}]{i}
 \end{DoxyParamCaption}
 )}}\label{classtoolbox_a4b2268cb178f0ae934f46efffda0450b}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Devuelve}
 string from int $\ast$$\ast$$\ast$$\ast$ not yet implemented 
 \end{DoxyReturn}
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em i} & intput int \\
 \hline
 \end{DoxyParams}
@@ -193,7 +193,7 @@ string from int $\ast$$\ast$$\ast$$\ast$ not yet implemented
 \item[{double}]{a}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classtoolbox_a0daf970243cd9158552300762de3f801}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Devuelve}
 the module of a\+: $\vert$a$\vert$ 
 \end{DoxyReturn}
 \hypertarget{classtoolbox_a67450c1434f5b2f278c37b6f78f6c91d}{\index{toolbox@{toolbox}!normal@{normal}}
@@ -207,7 +207,7 @@ the module of a\+: $\vert$a$\vert$
 
 as seen in \href{http://www.bearcave.com/misl/misl_tech/wavelets/hurst/random.html}{\tt http\+://www.\+bearcave.\+com/misl/misl\+\_\+tech/wavelets/hurst/random.\+html} 
 
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Devuelve}
 a number from distribution Normal(0,1) 
 \end{DoxyReturn}
 \hypertarget{classtoolbox_a30631661b56eb3e11b40c118241ba6f6}{\index{toolbox@{toolbox}!normal@{normal}}
@@ -218,7 +218,7 @@ a number from distribution Normal(0,1)
 \item[{double}]{sigma}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classtoolbox_a30631661b56eb3e11b40c118241ba6f6}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Devuelve}
 a number from distribution Normal(mu,sigma). Uses\+: X\+: N(0,1), N(mu,sigma)\+: Z=(X-\/mu)/sigma 
 \end{DoxyReturn}
 \hypertarget{classtoolbox_aa6cb1dff126daa9c34d6e2435143b372}{\index{toolbox@{toolbox}!pval\+\_\+double@{pval\+\_\+double}}
@@ -228,11 +228,11 @@ a number from distribution Normal(mu,sigma). Uses\+: X\+: N(0,1), N(mu,sigma)\+:
 \item[{string}]{pname}
 \end{DoxyParamCaption}
 )}}\label{classtoolbox_aa6cb1dff126daa9c34d6e2435143b372}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Devuelve}
 value of a parameter as a double 
 \end{DoxyReturn}
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em pname} & name of the parameter \\
 \hline
 \end{DoxyParams}
@@ -243,11 +243,11 @@ value of a parameter as a double
 \item[{string}]{pname}
 \end{DoxyParamCaption}
 )}}\label{classtoolbox_a30135dd53233f8ed0cd68532f51cb002}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Devuelve}
 value of a parameter as an integer 
 \end{DoxyReturn}
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em pname} & name of the parameter \\
 \hline
 \end{DoxyParams}
@@ -258,11 +258,11 @@ value of a parameter as an integer
 \item[{string}]{pname}
 \end{DoxyParamCaption}
 )}}\label{classtoolbox_ad3c9eb0127e47a8ce04922646ade51fc}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Devuelve}
 value of a parameter as a string 
 \end{DoxyReturn}
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em pname} & name of the parameter \\
 \hline
 \end{DoxyParams}
@@ -274,7 +274,7 @@ value of a parameter as a string
 \end{DoxyParamCaption}
 )}}\label{classtoolbox_a2b7ddff386b9bc1f790627f632fae50c}
 read the parameter file and store values in the map param 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em filename} & name of the file with parameters \\
 \hline
 \end{DoxyParams}
@@ -286,7 +286,7 @@ read the parameter file and store values in the map param
 \end{DoxyParamCaption}
 )}}\label{classtoolbox_a4ea98edf9956998c061850754a37281d}
 seed pseudo-\/random number generation 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em semilla} & seed for pseudo-\/random generator \\
 \hline
 \end{DoxyParams}
@@ -300,7 +300,7 @@ seed pseudo-\/random number generation
 \end{DoxyParamCaption}
 )}}\label{classtoolbox_a05d6f98094e98e263806b9c7b51fac51}
 store or rewrite the value of a double (floating point) variable ($\sim$ works like global variables) 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em name} & name or parameter \\
 \hline
 {\em val} & value \\
@@ -317,7 +317,7 @@ store or rewrite the value of a double (floating point) variable ($\sim$ works l
 \end{DoxyParamCaption}
 )}}\label{classtoolbox_a8f04e33d10ffe547856ded0caf3d5640}
 store or rewrite the value of an string variable 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em name} & name or parameter \\
 \hline
 {\em val} & value \\
@@ -332,7 +332,7 @@ store or rewrite the value of an string variable
 \end{DoxyParamCaption}
 )}}\label{classtoolbox_a53685118cae82122f3a0d083185804b3}
 store or rewrite the value of an integer variable ($\sim$ works like global variables) 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em name} & name or parameter \\
 \hline
 {\em val} & value \\
@@ -345,11 +345,11 @@ store or rewrite the value of an integer variable ($\sim$ works like global vari
 \item[{string}]{s}
 \end{DoxyParamCaption}
 )}}\label{classtoolbox_a1347524ce4a6b1db516421f1c2905e44}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Devuelve}
 double from string (warning\+: doesn't check that the input can be 'translated') 
 \end{DoxyReturn}
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em s} & input string \\
 \hline
 \end{DoxyParams}
@@ -360,11 +360,11 @@ double from string (warning\+: doesn't check that the input can be 'translated')
 \item[{string}]{s}
 \end{DoxyParamCaption}
 )}}\label{classtoolbox_a86769fb57c8a0b58b14a9946a0c90043}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Devuelve}
 int from string (warning\+: doesn't check that the input can be 'translated') 
 \end{DoxyReturn}
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em s} & input string \\
 \hline
 \end{DoxyParams}
@@ -381,12 +381,12 @@ int from string (warning\+: doesn't check that the input can be 'translated')
 
 as seen in \href{http://www.brighton-webs.co.uk/distributions/triangular.asp}{\tt http\+://www.\+brighton-\/webs.\+co.\+uk/distributions/triangular.\+asp} 
 
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Devuelve}
 a numbref from distribution triangular(mode,min,max) 
 \end{DoxyReturn}
 
 
-The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
 \item 
 B\+A\+S\+E/toolbox.\+h\item 
 B\+A\+S\+E/toolbox.\+cpp\end{DoxyCompactItemize}

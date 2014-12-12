@@ -3,19 +3,19 @@ var NAVTREE =
   [ "Documentacion CCO", "index.html", [
     [ "Documentación de C.C.O. - Clonal Colony Optimization", "index.html", null ],
     [ "CCOPERM", "md__r_e_a_d_m_e.html", null ],
-    [ "Todo List", "todo.html", null ],
-    [ "Classes", null, [
-      [ "Class List", "annotated.html", "annotated" ],
-      [ "Class Index", "classes.html", null ],
-      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
-      [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
-        [ "Functions", "functions_func.html", null ],
+    [ "Lista de tareas pendientes", "todo.html", null ],
+    [ "Clases", null, [
+      [ "Lista de clases", "annotated.html", "annotated" ],
+      [ "Índice de clases", "classes.html", null ],
+      [ "Jerarquía de la clase", "hierarchy.html", "hierarchy" ],
+      [ "Miembros de las clases", "functions.html", [
+        [ "Todo", "functions.html", null ],
+        [ "Funciones", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ]
       ] ]
     ] ],
-    [ "Files", null, [
-      [ "File List", "files.html", "files" ]
+    [ "Archivos", null, [
+      [ "Lista de archivos", "files.html", "files" ]
     ] ]
   ] ]
 ];
@@ -25,8 +25,8 @@ var NAVTREEINDEX =
 "_q_a_p___p_e_r_m_2problem_8h_source.html"
 ];
 
-var SYNCONMSG = 'click to disable panel synchronisation';
-var SYNCOFFMSG = 'click to enable panel synchronisation';
+var SYNCONMSG = 'click en deshabilitar sincronización';
+var SYNCOFFMSG = 'click en habilitar sincronización';
 var navTreeSubIndices = new Array();
 
 function getData(varName)
