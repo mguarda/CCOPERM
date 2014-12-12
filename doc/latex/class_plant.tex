@@ -1,0 +1,661 @@
+\hypertarget{class_plant}{\section{Plant Class Reference}
+\label{class_plant}\index{Plant@{Plant}}
+}
+
+
+Define los objetos \hyperlink{class_plant}{Plant}.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_plant_aeebba67fbf33e3087e9035f41289a83a}{\hyperlink{class_plant_aeebba67fbf33e3087e9035f41289a83a}{Plant} ()}\label{class_plant_aeebba67fbf33e3087e9035f41289a83a}
+
+\begin{DoxyCompactList}\small\item\em Constructor por defecto de la clase \hyperlink{class_plant}{Plant}. \end{DoxyCompactList}\item 
+\hyperlink{class_plant_ae4e71ef08f69aa77ed93eba7e8398ff4}{Plant} (\hyperlink{class_colony}{Colony} $\ast$col)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase \hyperlink{class_plant}{Plant}. \end{DoxyCompactList}\item 
+\hyperlink{class_plant_adf981553a347cc9f2769c94e3fdf5165}{Plant} (\hyperlink{class_colony}{Colony} $\ast$col, \hyperlink{class_solution}{Solution} $\ast$)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase \hyperlink{class_plant}{Plant}. \end{DoxyCompactList}\item 
+\hypertarget{class_plant_ab0effb2b143e6da7b65ebd13a3b1fc29}{\hyperlink{class_plant_ab0effb2b143e6da7b65ebd13a3b1fc29}{$\sim$\+Plant} ()}\label{class_plant_ab0effb2b143e6da7b65ebd13a3b1fc29}
+
+\begin{DoxyCompactList}\small\item\em Destructor de la clase \hyperlink{class_plant}{Plant}. \end{DoxyCompactList}\item 
+void \hyperlink{class_plant_af60cb9b017dca652f24292707e77eb5b}{set\+Fitness} (double fit)
+\begin{DoxyCompactList}\small\item\em Establece el fitness de la clase. \end{DoxyCompactList}\item 
+double \hyperlink{class_plant_aff425cc6c39ef2696c41a545b37f6770}{get\+Fitness} () const 
+\begin{DoxyCompactList}\small\item\em Retorna el actual fitness de la clase. \end{DoxyCompactList}\item 
+\hypertarget{class_plant_a94c7b24824af3a312ee1a5a2ae2e686a}{void \hyperlink{class_plant_a94c7b24824af3a312ee1a5a2ae2e686a}{set\+B\+Fitness} (double)}\label{class_plant_a94c7b24824af3a312ee1a5a2ae2e686a}
+
+\begin{DoxyCompactList}\small\item\em Establece el fitness de la rama. \end{DoxyCompactList}\item 
+\hypertarget{class_plant_ab3f3b60326720e4f48a24433ea6be7cf}{double \hyperlink{class_plant_ab3f3b60326720e4f48a24433ea6be7cf}{get\+B\+Fitness} () const }\label{class_plant_ab3f3b60326720e4f48a24433ea6be7cf}
+
+\begin{DoxyCompactList}\small\item\em Retorna el fitness de la rama. \end{DoxyCompactList}\item 
+void \hyperlink{class_plant_a9d5f53601636a8fa8fd72ea9a69ad277}{set\+T\+Fitness} (double)
+\begin{DoxyCompactList}\small\item\em Permite establecer el tfitness. \end{DoxyCompactList}\item 
+double \hyperlink{class_plant_afdbf74edabdfe044d64a3a7c374d6119}{get\+T\+Fitness} ()
+\begin{DoxyCompactList}\small\item\em Permite obtener el tfitness. \end{DoxyCompactList}\item 
+\hypertarget{class_plant_a06623c3b45a35c2f9a7cb126c1636f0b}{void \hyperlink{class_plant_a06623c3b45a35c2f9a7cb126c1636f0b}{set\+B\+Size} (unsigned int)}\label{class_plant_a06623c3b45a35c2f9a7cb126c1636f0b}
+
+\begin{DoxyCompactList}\small\item\em Establece el tamaño de la rama. \end{DoxyCompactList}\item 
+\hypertarget{class_plant_a1c8053d6bd28043089ca3106bb1403e8}{unsigned int \hyperlink{class_plant_a1c8053d6bd28043089ca3106bb1403e8}{get\+B\+Size} () const }\label{class_plant_a1c8053d6bd28043089ca3106bb1403e8}
+
+\begin{DoxyCompactList}\small\item\em Retorna el tamaño de la rama. \end{DoxyCompactList}\item 
+\hyperlink{class_plant}{Plant} $\ast$ \hyperlink{class_plant_a839a1a741148c611fabde01cfd69bb6a}{add\+\_\+child} (\hyperlink{class_solution}{Solution} $\ast$solu, int anno)
+\begin{DoxyCompactList}\small\item\em Añade un nuevo hijo a la planta. \end{DoxyCompactList}\item 
+void \hyperlink{class_plant_a167c12394b7edb68155769a375ca8b89}{set\+Parent} (\hyperlink{class_plant}{Plant} $\ast$const)
+\begin{DoxyCompactList}\small\item\em Establece el padre de la planta. \end{DoxyCompactList}\item 
+\hyperlink{class_plant}{Plant} $\ast$ \hyperlink{class_plant_a26cfa0b80711a8888c42f1ed95640566}{get\+Parent} () const 
+\begin{DoxyCompactList}\small\item\em Retorna el actual padre de la planta. \end{DoxyCompactList}\item 
+void \hyperlink{class_plant_a785afe98cddf364c286b38aa705f3910}{remove\+\_\+plant} ()
+\begin{DoxyCompactList}\small\item\em Permite eliminar la planta. \end{DoxyCompactList}\item 
+void \hyperlink{class_plant_a2fd09b66b33406683355d5eeddbbdfaa}{set\+Colony} (\hyperlink{class_colony}{Colony} $\ast$const)
+\begin{DoxyCompactList}\small\item\em Establece la colonia a la que pertenece la planta. \end{DoxyCompactList}\item 
+\hyperlink{class_colony}{Colony} $\ast$ \hyperlink{class_plant_a8c2f0050ea6d88863bd1703d2252606e}{get\+Colony} () const 
+\begin{DoxyCompactList}\small\item\em Retorna la actual colonia a la que pertenece la planta. \end{DoxyCompactList}\item 
+void \hyperlink{class_plant_ada85019a597aa6d6e3655cc727e8f675}{set\+Solution} (\hyperlink{class_solution}{Solution} $\ast$solu)
+\begin{DoxyCompactList}\small\item\em Establece la solucion de la planta. \end{DoxyCompactList}\item 
+\hyperlink{class_solution}{Solution} $\ast$ \hyperlink{class_plant_abc664a5111f99ef2dc172b10b8451f84}{get\+Solution} ()
+\begin{DoxyCompactList}\small\item\em Retorna la actual solucion que tiene la planta. \end{DoxyCompactList}\item 
+void \hyperlink{class_plant_a3a6c02eec89ad04003c7cb6d5769bd6e}{set\+Anno} (unsigned int)
+\begin{DoxyCompactList}\small\item\em Establece el año de creacion planta. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_plant_a7e59304c381b9e930ec70207ce888310}{get\+Anno} () const 
+\begin{DoxyCompactList}\small\item\em Retorna el año de la planta. \end{DoxyCompactList}\item 
+int \hyperlink{class_plant_a79fc3e80a225263ba150952e49b4533c}{get\+C} () const 
+\begin{DoxyCompactList}\small\item\em Retorna el numero de conexiones que posee. \end{DoxyCompactList}\item 
+\hyperlink{class_plant}{Plant} $\ast$ \hyperlink{class_plant_ac53b418a18dc6e37e94c3505b04a0a08}{best\+\_\+branch} (\hyperlink{class_plant}{Plant} $\ast$best)
+\begin{DoxyCompactList}\small\item\em Retorna el puntero a la planta con mayor fitness de la rama. \end{DoxyCompactList}\item 
+\hyperlink{class_plant}{Plant} $\ast$ \hyperlink{class_plant_a0a576837260539510e8728af06d6d2cc}{worst\+\_\+branch} (\hyperlink{class_plant}{Plant} $\ast$worst)
+\begin{DoxyCompactList}\small\item\em Retorna el puntero a la planta con menor fitness de la rama. \end{DoxyCompactList}\item 
+\hyperlink{class_plant}{Plant} $\ast$ \hyperlink{class_plant_afbc29c83a69faf9bef5373b0be9e6771}{fpareto\+\_\+purge} (\hyperlink{class_plant}{Plant} $\ast$peor)
+\begin{DoxyCompactList}\small\item\em Retorna un puntero a la planta segun el frente pareto Purge. \end{DoxyCompactList}\item 
+void \hyperlink{class_plant_a20ec095b492846c876e1b56ee024530e}{show\+\_\+branch} (int)
+\begin{DoxyCompactList}\small\item\em grafica para una rama \end{DoxyCompactList}\item 
+\hypertarget{class_plant_a3a00ef0f158a88530dd4d18f75300aa7}{void \hyperlink{class_plant_a3a00ef0f158a88530dd4d18f75300aa7}{show\+\_\+plant} ()}\label{class_plant_a3a00ef0f158a88530dd4d18f75300aa7}
+
+\begin{DoxyCompactList}\small\item\em grafica para una planta \end{DoxyCompactList}\item 
+std\+::list$<$ \hyperlink{class_plant}{Plant} $\ast$ $>$ \hyperlink{class_plant_a225c7c67a5679b250bf3d5ea7eebced6}{plants\+\_\+branch} (std\+::list$<$ \hyperlink{class_plant}{Plant} $\ast$ $>$)
+\begin{DoxyCompactList}\small\item\em Retorna todas las plantas de la rama en un arreglo de punteros del tipo planta. \end{DoxyCompactList}\item 
+\hypertarget{class_plant_a788b3f0d092e593fbafb3bd7eb9e18a6}{void {\bfseries plot\+\_\+branch} (ofstream \&)}\label{class_plant_a788b3f0d092e593fbafb3bd7eb9e18a6}
+
+\item 
+\hyperlink{class_plant}{Plant} $\ast$ \hyperlink{class_plant_ab7c3c50790efd2843219e439cdf7e687}{split\+\_\+branch} (int, double)
+\begin{DoxyCompactList}\small\item\em Split para la rama. \end{DoxyCompactList}\item 
+void \hyperlink{class_plant_a3da8873875164b9924111020fb3a374e}{change\+\_\+colony\+\_\+branch} (\hyperlink{class_colony}{Colony} $\ast$new\+\_\+col)
+\begin{DoxyCompactList}\small\item\em Cambio de colonia a la rama. \end{DoxyCompactList}\item 
+double \hyperlink{class_plant_a19634cf97e315f3245130ef23ce1a670}{get\+\_\+min\+\_\+branch\+\_\+coord} (int coord, double val)
+\begin{DoxyCompactList}\small\item\em Retorna la menor de las coordenadas existente en la rama. \end{DoxyCompactList}\item 
+double \hyperlink{class_plant_ab827c5ca9da0923a949232e0c81bb0fe}{get\+\_\+max\+\_\+branch\+\_\+coord} (int coord, double val)
+\begin{DoxyCompactList}\small\item\em Retorna la mayor de las coordenadas existente en la rama. \end{DoxyCompactList}\item 
+double \hyperlink{class_plant_a46456807d2ad5b9f141af448f216b5d7}{get\+\_\+varianza\+\_\+branch} (double var, double prom)
+\begin{DoxyCompactList}\small\item\em Retorna la varianza de la rama. \end{DoxyCompactList}\item 
+\hyperlink{class_plant}{Plant} $\ast$ \hyperlink{class_plant_a3540c994a995d890f1d41f1646e5bfa8}{get\+\_\+old\+\_\+plant\+\_\+branch} (\hyperlink{class_plant}{Plant} $\ast$old)
+\begin{DoxyCompactList}\small\item\em Retorna la planta mas antigua de la rama. \end{DoxyCompactList}\item 
+void \hyperlink{class_plant_a71a465c3487f93129829b87550e83fcf}{update\+\_\+\+T\+Fitness} (double const , double const )
+\begin{DoxyCompactList}\small\item\em Actualizar el T\+Fitness, desde la raiz a la hoja. \end{DoxyCompactList}\item 
+\hypertarget{class_plant_a334ffc92dcb5081cf17db59c3acb58d0}{void \hyperlink{class_plant_a334ffc92dcb5081cf17db59c3acb58d0}{re\+\_\+eval\+\_\+func\+\_\+branch} ()}\label{class_plant_a334ffc92dcb5081cf17db59c3acb58d0}
+
+\begin{DoxyCompactList}\small\item\em Re-\/evalua el fitness de todas las plantas de la rama. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Define los objetos \hyperlink{class_plant}{Plant}. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_plant_ae4e71ef08f69aa77ed93eba7e8398ff4}{\index{Plant@{Plant}!Plant@{Plant}}
+\index{Plant@{Plant}!Plant@{Plant}}
+\subsubsection[{Plant}]{\setlength{\rightskip}{0pt plus 5cm}Plant\+::\+Plant (
+\begin{DoxyParamCaption}
+\item[{{\bf Colony} $\ast$}]{col}
+\end{DoxyParamCaption}
+)}}\label{class_plant_ae4e71ef08f69aa77ed93eba7e8398ff4}
+
+
+Constructor de la clase \hyperlink{class_plant}{Plant}. 
+
+El constructor crea una planta con los siguientes valores\+:
+\begin{DoxyItemize}
+\item Fitness = B\+Fittnes \+: obtenidos de la clase \hyperlink{class_solution}{Solution}
+\item B\+Size = 1 \+: B\+Size incrementara o decrementara dependiendo de la funcion report\+\_\+change()
+\item La variable offspring is inicializada vacia
+\item parent se inicializa N\+U\+L\+L
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em col} & Colonia a la cual pertenece la planta \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_plant_adf981553a347cc9f2769c94e3fdf5165}{\index{Plant@{Plant}!Plant@{Plant}}
+\index{Plant@{Plant}!Plant@{Plant}}
+\subsubsection[{Plant}]{\setlength{\rightskip}{0pt plus 5cm}Plant\+::\+Plant (
+\begin{DoxyParamCaption}
+\item[{{\bf Colony} $\ast$}]{col, }
+\item[{{\bf Solution} $\ast$}]{solution}
+\end{DoxyParamCaption}
+)}}\label{class_plant_adf981553a347cc9f2769c94e3fdf5165}
+
+
+Constructor de la clase \hyperlink{class_plant}{Plant}. 
+
+El constructor crea una planta con los siguientes valores\+:
+\begin{DoxyItemize}
+\item Fitness = B\+Fittnes \+: obtenidos de la clase \hyperlink{class_solution}{Solution}
+\item B\+Size = 1 \+: posteriormente B\+Size incrementará o decrementará dependiendo de la función report\+\_\+change()
+\item parent se inicializa N\+U\+L\+L
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em col} & Colonia a la cual pertenece la planta \\
+\hline
+{\em solution} & Solución que se asignará a la planta \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_plant_a839a1a741148c611fabde01cfd69bb6a}{\index{Plant@{Plant}!add\+\_\+child@{add\+\_\+child}}
+\index{add\+\_\+child@{add\+\_\+child}!Plant@{Plant}}
+\subsubsection[{add\+\_\+child}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Plant} $\ast$ Plant\+::add\+\_\+child (
+\begin{DoxyParamCaption}
+\item[{{\bf Solution} $\ast$}]{solu, }
+\item[{int}]{anno}
+\end{DoxyParamCaption}
+)}}\label{class_plant_a839a1a741148c611fabde01cfd69bb6a}
+
+
+Añade un nuevo hijo a la planta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em solu} & Solución que será asignada a la nueva planta \char`\"{}hija\char`\"{} \\
+\hline
+{\em anno} & Iteración en la cual se ha creado la planta \char`\"{}hija\char`\"{}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Puntero del tipo \hyperlink{class_plant}{Plant}, perteneciente a la nueva planta \char`\"{}hija\char`\"{}, agregada a la actual planta \char`\"{}padre\char`\"{} 
+\end{DoxyReturn}
+\hypertarget{class_plant_ac53b418a18dc6e37e94c3505b04a0a08}{\index{Plant@{Plant}!best\+\_\+branch@{best\+\_\+branch}}
+\index{best\+\_\+branch@{best\+\_\+branch}!Plant@{Plant}}
+\subsubsection[{best\+\_\+branch}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Plant} $\ast$ Plant\+::best\+\_\+branch (
+\begin{DoxyParamCaption}
+\item[{{\bf Plant} $\ast$}]{aux}
+\end{DoxyParamCaption}
+)}}\label{class_plant_ac53b418a18dc6e37e94c3505b04a0a08}
+
+
+Retorna el puntero a la planta con mayor fitness de la rama. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em aux} & Puntero temporal, con la planta de mayor fitness\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna un puntero del tipo \hyperlink{class_plant}{Plant}, con la planta del mayor fitness de la rama 
+\end{DoxyReturn}
+\hypertarget{class_plant_a3da8873875164b9924111020fb3a374e}{\index{Plant@{Plant}!change\+\_\+colony\+\_\+branch@{change\+\_\+colony\+\_\+branch}}
+\index{change\+\_\+colony\+\_\+branch@{change\+\_\+colony\+\_\+branch}!Plant@{Plant}}
+\subsubsection[{change\+\_\+colony\+\_\+branch}]{\setlength{\rightskip}{0pt plus 5cm}void Plant\+::change\+\_\+colony\+\_\+branch (
+\begin{DoxyParamCaption}
+\item[{{\bf Colony} $\ast$}]{new\+\_\+col}
+\end{DoxyParamCaption}
+)}}\label{class_plant_a3da8873875164b9924111020fb3a374e}
+
+
+Cambio de colonia a la rama. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+col} & Puntero a la colonia que pertenecerán los miembros de esa rama \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_plant_afbc29c83a69faf9bef5373b0be9e6771}{\index{Plant@{Plant}!fpareto\+\_\+purge@{fpareto\+\_\+purge}}
+\index{fpareto\+\_\+purge@{fpareto\+\_\+purge}!Plant@{Plant}}
+\subsubsection[{fpareto\+\_\+purge}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Plant} $\ast$ Plant\+::fpareto\+\_\+purge (
+\begin{DoxyParamCaption}
+\item[{{\bf Plant} $\ast$}]{peor}
+\end{DoxyParamCaption}
+)}}\label{class_plant_afbc29c83a69faf9bef5373b0be9e6771}
+
+
+Retorna un puntero a la planta segun el frente pareto Purge. 
+
+Se determina que la planta con el menor T\+Fitness de la rama, es aquella que se satisface del frente de pareto
+
+
+\begin{DoxyParams}{Parameters}
+{\em peor} & Puntero temporal, con la planta de menor T\+Fitness\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna un puntero del tipo \hyperlink{class_plant}{Plant}, con la planta del menor T\+Fitness de la rama 
+\end{DoxyReturn}
+\hypertarget{class_plant_ab827c5ca9da0923a949232e0c81bb0fe}{\index{Plant@{Plant}!get\+\_\+max\+\_\+branch\+\_\+coord@{get\+\_\+max\+\_\+branch\+\_\+coord}}
+\index{get\+\_\+max\+\_\+branch\+\_\+coord@{get\+\_\+max\+\_\+branch\+\_\+coord}!Plant@{Plant}}
+\subsubsection[{get\+\_\+max\+\_\+branch\+\_\+coord}]{\setlength{\rightskip}{0pt plus 5cm}double Plant\+::get\+\_\+max\+\_\+branch\+\_\+coord (
+\begin{DoxyParamCaption}
+\item[{int}]{coord, }
+\item[{double}]{val}
+\end{DoxyParamCaption}
+)}}\label{class_plant_ab827c5ca9da0923a949232e0c81bb0fe}
+
+
+Retorna la mayor de las coordenadas existente en la rama. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord} & Posición de la coordenada \\
+\hline
+{\em val} & Valor de la máxima coordenada\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Valor double, con el máximo de los valores para esa coordenada 
+\end{DoxyReturn}
+\hypertarget{class_plant_a19634cf97e315f3245130ef23ce1a670}{\index{Plant@{Plant}!get\+\_\+min\+\_\+branch\+\_\+coord@{get\+\_\+min\+\_\+branch\+\_\+coord}}
+\index{get\+\_\+min\+\_\+branch\+\_\+coord@{get\+\_\+min\+\_\+branch\+\_\+coord}!Plant@{Plant}}
+\subsubsection[{get\+\_\+min\+\_\+branch\+\_\+coord}]{\setlength{\rightskip}{0pt plus 5cm}double Plant\+::get\+\_\+min\+\_\+branch\+\_\+coord (
+\begin{DoxyParamCaption}
+\item[{int}]{coord, }
+\item[{double}]{val}
+\end{DoxyParamCaption}
+)}}\label{class_plant_a19634cf97e315f3245130ef23ce1a670}
+
+
+Retorna la menor de las coordenadas existente en la rama. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord} & Posición de la coordenada \\
+\hline
+{\em val} & Valor de la mínima coordenada\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Valor double, con la mínimo de los valores para esa coordenada 
+\end{DoxyReturn}
+\hypertarget{class_plant_a3540c994a995d890f1d41f1646e5bfa8}{\index{Plant@{Plant}!get\+\_\+old\+\_\+plant\+\_\+branch@{get\+\_\+old\+\_\+plant\+\_\+branch}}
+\index{get\+\_\+old\+\_\+plant\+\_\+branch@{get\+\_\+old\+\_\+plant\+\_\+branch}!Plant@{Plant}}
+\subsubsection[{get\+\_\+old\+\_\+plant\+\_\+branch}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Plant} $\ast$ Plant\+::get\+\_\+old\+\_\+plant\+\_\+branch (
+\begin{DoxyParamCaption}
+\item[{{\bf Plant} $\ast$}]{old}
+\end{DoxyParamCaption}
+)}}\label{class_plant_a3540c994a995d890f1d41f1646e5bfa8}
+
+
+Retorna la planta mas antigua de la rama. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em old} & Puntero a la planta más antigua de la rama\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Puntero del tipo \hyperlink{class_plant}{Plant}, con la planta con mayor antiguedad de la rama 
+\end{DoxyReturn}
+\hypertarget{class_plant_a46456807d2ad5b9f141af448f216b5d7}{\index{Plant@{Plant}!get\+\_\+varianza\+\_\+branch@{get\+\_\+varianza\+\_\+branch}}
+\index{get\+\_\+varianza\+\_\+branch@{get\+\_\+varianza\+\_\+branch}!Plant@{Plant}}
+\subsubsection[{get\+\_\+varianza\+\_\+branch}]{\setlength{\rightskip}{0pt plus 5cm}double Plant\+::get\+\_\+varianza\+\_\+branch (
+\begin{DoxyParamCaption}
+\item[{double}]{var, }
+\item[{double}]{prom}
+\end{DoxyParamCaption}
+)}}\label{class_plant_a46456807d2ad5b9f141af448f216b5d7}
+
+
+Retorna la varianza de la rama. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em var} & Valor acumulado de la varianza \\
+\hline
+{\em prom} & Valor promedio de los fitness de la rama\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Valor de tipo double, con el valor de la varianza para la rama 
+\end{DoxyReturn}
+\hypertarget{class_plant_a7e59304c381b9e930ec70207ce888310}{\index{Plant@{Plant}!get\+Anno@{get\+Anno}}
+\index{get\+Anno@{get\+Anno}!Plant@{Plant}}
+\subsubsection[{get\+Anno}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Plant\+::get\+Anno (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_plant_a7e59304c381b9e930ec70207ce888310}
+
+
+Retorna el año de la planta. 
+
+\begin{DoxyReturn}{Returns}
+Retorna un entero sin signo, con el número de la iteración en la cuál se creó la actual planta 
+\end{DoxyReturn}
+\hypertarget{class_plant_a79fc3e80a225263ba150952e49b4533c}{\index{Plant@{Plant}!get\+C@{get\+C}}
+\index{get\+C@{get\+C}!Plant@{Plant}}
+\subsubsection[{get\+C}]{\setlength{\rightskip}{0pt plus 5cm}int Plant\+::get\+C (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_plant_a79fc3e80a225263ba150952e49b4533c}
+
+
+Retorna el numero de conexiones que posee. 
+
+\begin{DoxyReturn}{Returns}
+Retorna un entero, con el numero de conexiones de la actual planta 
+\end{DoxyReturn}
+\hypertarget{class_plant_a8c2f0050ea6d88863bd1703d2252606e}{\index{Plant@{Plant}!get\+Colony@{get\+Colony}}
+\index{get\+Colony@{get\+Colony}!Plant@{Plant}}
+\subsubsection[{get\+Colony}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Colony} $\ast$ Plant\+::get\+Colony (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_plant_a8c2f0050ea6d88863bd1703d2252606e}
+
+
+Retorna la actual colonia a la que pertenece la planta. 
+
+\begin{DoxyReturn}{Returns}
+Retorna un puntero del tipo \hyperlink{class_colony}{Colony}, a la colonia que pertenece la planta 
+\end{DoxyReturn}
+\hypertarget{class_plant_aff425cc6c39ef2696c41a545b37f6770}{\index{Plant@{Plant}!get\+Fitness@{get\+Fitness}}
+\index{get\+Fitness@{get\+Fitness}!Plant@{Plant}}
+\subsubsection[{get\+Fitness}]{\setlength{\rightskip}{0pt plus 5cm}double Plant\+::get\+Fitness (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_plant_aff425cc6c39ef2696c41a545b37f6770}
+
+
+Retorna el actual fitness de la clase. 
+
+\begin{DoxyReturn}{Returns}
+Retorna un valor double, con el valor del fitness de la planta 
+\end{DoxyReturn}
+\hypertarget{class_plant_a26cfa0b80711a8888c42f1ed95640566}{\index{Plant@{Plant}!get\+Parent@{get\+Parent}}
+\index{get\+Parent@{get\+Parent}!Plant@{Plant}}
+\subsubsection[{get\+Parent}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Plant} $\ast$ Plant\+::get\+Parent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_plant_a26cfa0b80711a8888c42f1ed95640566}
+
+
+Retorna el actual padre de la planta. 
+
+\begin{DoxyReturn}{Returns}
+Retorna un puntero del tipo \hyperlink{class_plant}{Plant}, con el valor de planta \char`\"{}padre\char`\"{} 
+\end{DoxyReturn}
+\hypertarget{class_plant_abc664a5111f99ef2dc172b10b8451f84}{\index{Plant@{Plant}!get\+Solution@{get\+Solution}}
+\index{get\+Solution@{get\+Solution}!Plant@{Plant}}
+\subsubsection[{get\+Solution}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Solution} $\ast$ Plant\+::get\+Solution (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_plant_abc664a5111f99ef2dc172b10b8451f84}
+
+
+Retorna la actual solucion que tiene la planta. 
+
+\begin{DoxyReturn}{Returns}
+Retorna un puntero del tipo \hyperlink{class_solution}{Solution}, con la solución de la actual planta 
+\end{DoxyReturn}
+\hypertarget{class_plant_afdbf74edabdfe044d64a3a7c374d6119}{\index{Plant@{Plant}!get\+T\+Fitness@{get\+T\+Fitness}}
+\index{get\+T\+Fitness@{get\+T\+Fitness}!Plant@{Plant}}
+\subsubsection[{get\+T\+Fitness}]{\setlength{\rightskip}{0pt plus 5cm}double Plant\+::get\+T\+Fitness (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_plant_afdbf74edabdfe044d64a3a7c374d6119}
+
+
+Permite obtener el tfitness. 
+
+\begin{DoxyReturn}{Returns}
+Retorna un double, con el T\+Fitness de la actual planta 
+\end{DoxyReturn}
+\hypertarget{class_plant_a225c7c67a5679b250bf3d5ea7eebced6}{\index{Plant@{Plant}!plants\+\_\+branch@{plants\+\_\+branch}}
+\index{plants\+\_\+branch@{plants\+\_\+branch}!Plant@{Plant}}
+\subsubsection[{plants\+\_\+branch}]{\setlength{\rightskip}{0pt plus 5cm}list$<$ {\bf Plant} $\ast$ $>$ Plant\+::plants\+\_\+branch (
+\begin{DoxyParamCaption}
+\item[{std\+::list$<$ {\bf Plant} $\ast$ $>$}]{}
+\end{DoxyParamCaption}
+)}}\label{class_plant_a225c7c67a5679b250bf3d5ea7eebced6}
+
+
+Retorna todas las plantas de la rama en un arreglo de punteros del tipo planta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em plantas} & Lista temporal de punteros, con las plantas de la rama\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna una lista de punteros del tipo \hyperlink{class_plant}{Plant}, con las plantas de la rama 
+\end{DoxyReturn}
+\hypertarget{class_plant_a785afe98cddf364c286b38aa705f3910}{\index{Plant@{Plant}!remove\+\_\+plant@{remove\+\_\+plant}}
+\index{remove\+\_\+plant@{remove\+\_\+plant}!Plant@{Plant}}
+\subsubsection[{remove\+\_\+plant}]{\setlength{\rightskip}{0pt plus 5cm}void Plant\+::remove\+\_\+plant (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_plant_a785afe98cddf364c286b38aa705f3910}
+
+
+Permite eliminar la planta. 
+
+Existen 3 posibles casos\+:
+\begin{DoxyItemize}
+\item Caso 1\+: La planta no posee descendencia y no es el nodo raíz\+:
+\item El cambio es reportado
+\item Se obtiene la dirección del padre
+\item En la descendencia del padre se elimina a la actual planta
+\item Caso 2\+: La planta tiene descendencia y no es la raíz
+\item Se almacenan los datos a reportar
+\item Se obtiene la dirección del padre
+\item La descendencia de la planta, es agregada a la del padre
+\item Se notifica el cambio en la colonia
+\item La planta es eliminada de la descendencia del padre
+\item Caso 3\+: La planta es la raíz
+\item Opción 1\+: La raíz tiene descendencia\+:
+\begin{DoxyItemize}
+\item De las plantas \char`\"{}hijas\char`\"{}, se escoge a la de mayor fitness
+\item Los datos de la mejor planta \char`\"{}hija\char`\"{}, se actualizan ahora en el root
+\item La descendencia de la mejor planta, se traspasa a la raíz
+\end{DoxyItemize}
+\end{DoxyItemize}
+
+Se actualizan los datos en la colonia
+\begin{DoxyItemize}
+\item Se elimina a la mejor de las plantas
+\end{DoxyItemize}
+
+Opción 2\+: La raíz no tiene descendencia\+: \hypertarget{class_plant_a3a6c02eec89ad04003c7cb6d5769bd6e}{\index{Plant@{Plant}!set\+Anno@{set\+Anno}}
+\index{set\+Anno@{set\+Anno}!Plant@{Plant}}
+\subsubsection[{set\+Anno}]{\setlength{\rightskip}{0pt plus 5cm}void Plant\+::set\+Anno (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{\+\_\+anno}
+\end{DoxyParamCaption}
+)}}\label{class_plant_a3a6c02eec89ad04003c7cb6d5769bd6e}
+
+
+Establece el año de creacion planta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+anno} & Número de la actual iteración del experimento \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_plant_a2fd09b66b33406683355d5eeddbbdfaa}{\index{Plant@{Plant}!set\+Colony@{set\+Colony}}
+\index{set\+Colony@{set\+Colony}!Plant@{Plant}}
+\subsubsection[{set\+Colony}]{\setlength{\rightskip}{0pt plus 5cm}void Plant\+::set\+Colony (
+\begin{DoxyParamCaption}
+\item[{{\bf Colony} $\ast$ const}]{col}
+\end{DoxyParamCaption}
+)}}\label{class_plant_a2fd09b66b33406683355d5eeddbbdfaa}
+
+
+Establece la colonia a la que pertenece la planta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em col} & Puntero a la colonia que pertenecerá la actual planta \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_plant_af60cb9b017dca652f24292707e77eb5b}{\index{Plant@{Plant}!set\+Fitness@{set\+Fitness}}
+\index{set\+Fitness@{set\+Fitness}!Plant@{Plant}}
+\subsubsection[{set\+Fitness}]{\setlength{\rightskip}{0pt plus 5cm}void Plant\+::set\+Fitness (
+\begin{DoxyParamCaption}
+\item[{double}]{fit}
+\end{DoxyParamCaption}
+)}}\label{class_plant_af60cb9b017dca652f24292707e77eb5b}
+
+
+Establece el fitness de la clase. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fit} & Valor del fitness que se asignará a la actual planta \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_plant_a167c12394b7edb68155769a375ca8b89}{\index{Plant@{Plant}!set\+Parent@{set\+Parent}}
+\index{set\+Parent@{set\+Parent}!Plant@{Plant}}
+\subsubsection[{set\+Parent}]{\setlength{\rightskip}{0pt plus 5cm}void Plant\+::set\+Parent (
+\begin{DoxyParamCaption}
+\item[{{\bf Plant} $\ast$ const}]{par}
+\end{DoxyParamCaption}
+)}}\label{class_plant_a167c12394b7edb68155769a375ca8b89}
+
+
+Establece el padre de la planta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em par} & Puntero al \char`\"{}padre\char`\"{} de la actual planta \char`\"{}hija\char`\"{} \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_plant_ada85019a597aa6d6e3655cc727e8f675}{\index{Plant@{Plant}!set\+Solution@{set\+Solution}}
+\index{set\+Solution@{set\+Solution}!Plant@{Plant}}
+\subsubsection[{set\+Solution}]{\setlength{\rightskip}{0pt plus 5cm}void Plant\+::set\+Solution (
+\begin{DoxyParamCaption}
+\item[{{\bf Solution} $\ast$}]{nueva}
+\end{DoxyParamCaption}
+)}}\label{class_plant_ada85019a597aa6d6e3655cc727e8f675}
+
+
+Establece la solucion de la planta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sol} & Puntero a la solución que se le asignará a la actual planta \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_plant_a9d5f53601636a8fa8fd72ea9a69ad277}{\index{Plant@{Plant}!set\+T\+Fitness@{set\+T\+Fitness}}
+\index{set\+T\+Fitness@{set\+T\+Fitness}!Plant@{Plant}}
+\subsubsection[{set\+T\+Fitness}]{\setlength{\rightskip}{0pt plus 5cm}void Plant\+::set\+T\+Fitness (
+\begin{DoxyParamCaption}
+\item[{double}]{\+\_\+tfitness}
+\end{DoxyParamCaption}
+)}}\label{class_plant_a9d5f53601636a8fa8fd72ea9a69ad277}
+
+
+Permite establecer el tfitness. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+tfitness} & Valor con el nuevo T\+Fitness a asignar \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_plant_a20ec095b492846c876e1b56ee024530e}{\index{Plant@{Plant}!show\+\_\+branch@{show\+\_\+branch}}
+\index{show\+\_\+branch@{show\+\_\+branch}!Plant@{Plant}}
+\subsubsection[{show\+\_\+branch}]{\setlength{\rightskip}{0pt plus 5cm}void Plant\+::show\+\_\+branch (
+\begin{DoxyParamCaption}
+\item[{int}]{tab}
+\end{DoxyParamCaption}
+)}}\label{class_plant_a20ec095b492846c876e1b56ee024530e}
+
+
+grafica para una rama 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tab} & Valor que nos permite desplazar la salida estandar por consola, en tab espacios. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_plant_ab7c3c50790efd2843219e439cdf7e687}{\index{Plant@{Plant}!split\+\_\+branch@{split\+\_\+branch}}
+\index{split\+\_\+branch@{split\+\_\+branch}!Plant@{Plant}}
+\subsubsection[{split\+\_\+branch}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Plant} $\ast$ Plant\+::split\+\_\+branch (
+\begin{DoxyParamCaption}
+\item[{int}]{total, }
+\item[{double}]{max\+\_\+dist}
+\end{DoxyParamCaption}
+)}}\label{class_plant_ab7c3c50790efd2843219e439cdf7e687}
+
+
+Split para la rama. 
+
+Los criterios usados en éste método, son los siguientes\+:
+\begin{DoxyItemize}
+\item Se obtienen todas las plantas de la rama en una lista enlazada
+\item Se comprueba que en los extremos, a lo menos existan 3 plantas por lado
+\item Se calcula la distancia entre las plantas y se compara con la mayor distancia
+\item De ser mayor a la permitida, se debe cortar allí, de tal modo que se obtiene el puntero a esa planta
+\item Se notifica a la rama que se cortará, a partir del puntero anteriormente mencionado
+\item Se realiza el corte de la rama
+\item Se retorna el puntero
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em total} & Número de planta en la rama \\
+\hline
+{\em max\+\_\+dist} & Valor de la distancia máxima permitida entre 2 plantas unidas\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna un puntero del tipo \hyperlink{class_plant}{Plant}, con la planta a ser root de una nueva colonia a agregar en el patio 
+\end{DoxyReturn}
+\hypertarget{class_plant_a71a465c3487f93129829b87550e83fcf}{\index{Plant@{Plant}!update\+\_\+\+T\+Fitness@{update\+\_\+\+T\+Fitness}}
+\index{update\+\_\+\+T\+Fitness@{update\+\_\+\+T\+Fitness}!Plant@{Plant}}
+\subsubsection[{update\+\_\+\+T\+Fitness}]{\setlength{\rightskip}{0pt plus 5cm}void Plant\+::update\+\_\+\+T\+Fitness (
+\begin{DoxyParamCaption}
+\item[{double const}]{fprom, }
+\item[{double const}]{s}
+\end{DoxyParamCaption}
+)}}\label{class_plant_a71a465c3487f93129829b87550e83fcf}
+
+
+Actualizar el T\+Fitness, desde la raiz a la hoja. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fprom} & Valor del fitness promedio de la colonia \\
+\hline
+{\em s} & Valor de la constante de T\+Fitness a compartir \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_plant_a0a576837260539510e8728af06d6d2cc}{\index{Plant@{Plant}!worst\+\_\+branch@{worst\+\_\+branch}}
+\index{worst\+\_\+branch@{worst\+\_\+branch}!Plant@{Plant}}
+\subsubsection[{worst\+\_\+branch}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Plant} $\ast$ Plant\+::worst\+\_\+branch (
+\begin{DoxyParamCaption}
+\item[{{\bf Plant} $\ast$}]{aux}
+\end{DoxyParamCaption}
+)}}\label{class_plant_a0a576837260539510e8728af06d6d2cc}
+
+
+Retorna el puntero a la planta con menor fitness de la rama. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em aux} & Puntero temporal, con la planta de menor fitness\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna un puntero del tipo \hyperlink{class_plant}{Plant}, con la planta del menor fitness de la rama 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+B\+A\+S\+E/plant.\+h\item 
+B\+A\+S\+E/plant.\+cpp\end{DoxyCompactItemize}

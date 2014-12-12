@@ -1,0 +1,212 @@
+\hypertarget{class_c_c_o}{\section{C\+C\+O Class Reference}
+\label{class_c_c_o}\index{C\+C\+O@{C\+C\+O}}
+}
+
+
+\hyperlink{class_c_c_o}{C\+C\+O} (Clonal \hyperlink{class_colony}{Colony} Optimization)  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_c_o_a48251cd1f851d236c4aec73c82b39682}{\hyperlink{class_c_c_o_a48251cd1f851d236c4aec73c82b39682}{C\+C\+O} ()}\label{class_c_c_o_a48251cd1f851d236c4aec73c82b39682}
+
+\begin{DoxyCompactList}\small\item\em Contructor de la clase \hyperlink{class_c_c_o}{C\+C\+O}. \end{DoxyCompactList}\item 
+\hypertarget{class_c_c_o_adaa4d2a9fefa24dfcd6eb8f367f60cf6}{\hyperlink{class_c_c_o_adaa4d2a9fefa24dfcd6eb8f367f60cf6}{$\sim$\+C\+C\+O} ()}\label{class_c_c_o_adaa4d2a9fefa24dfcd6eb8f367f60cf6}
+
+\begin{DoxyCompactList}\small\item\em Destructor de la clase \hyperlink{class_c_c_o}{C\+C\+O}. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_c_o_abe96cee0e1a470ea4210ecafe0a4c13e}{run} ()
+\begin{DoxyCompactList}\small\item\em Permite ejecutar la clase \hyperlink{class_c_c_o}{C\+C\+O}. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_c_o_a611537d0f46ae4573b08a0d8c343da5c}{Purge} (\hyperlink{class_colony}{Colony} $\ast$col, int const iter)
+\begin{DoxyCompactList}\small\item\em Metodo que permite eliminar plantas a la colonia. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_c_o_a81583df8113bfdd76f5d5d541bdab892}{Extend} (\hyperlink{class_colony}{Colony} $\ast$col, int const iter)
+\begin{DoxyCompactList}\small\item\em Metodo que permite agregar plantas a la colonia. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_c_o_a5804afdd4b0361d7507fab4b3ab71703}{Split} (\hyperlink{class_colony}{Colony} $\ast$col, int const iter)
+\begin{DoxyCompactList}\small\item\em Provoca eventualmente la división de la colonia. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_c_o_a8b93a09d017497a2a636bd092883f06a}{Competition} (int const iter)
+\begin{DoxyCompactList}\small\item\em Metodo que estimula la competicion de las colonias. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_c_o_ae92e0bf5ad45ce36f7e078634e1f42f1}{Distill} ()
+\begin{DoxyCompactList}\small\item\em Metodo que determina del patio la(s) solucion(es) mas robusta(s) y de buena calidad (fitness alto) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_c_c_o}{C\+C\+O} (Clonal \hyperlink{class_colony}{Colony} Optimization) 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_c_o_a8b93a09d017497a2a636bd092883f06a}{\index{C\+C\+O@{C\+C\+O}!Competition@{Competition}}
+\index{Competition@{Competition}!C\+C\+O@{C\+C\+O}}
+\subsubsection[{Competition}]{\setlength{\rightskip}{0pt plus 5cm}void C\+C\+O\+::\+Competition (
+\begin{DoxyParamCaption}
+\item[{int const}]{iter}
+\end{DoxyParamCaption}
+)}}\label{class_c_c_o_a8b93a09d017497a2a636bd092883f06a}
+
+
+Metodo que estimula la competicion de las colonias. 
+
+En este método, se desea poner a prueba la versatilidad de las colonias, ajustándolas a mayores cambios.
+
+Los criterios simplificados en su funcionamiento, son los siguientes\+:
+
+
+\begin{DoxyItemize}
+\item {\bfseries 1.-\/ Reasignación\+:} Para un número total de plantas que se puedan generar en todo el patio (M\+P\+Y), se debe distribuir proporcionalmente para todas sus colonias(\+C\+O\+L)
+
+
+\item {\bfseries 2.-\/ Superposición y frente de pareto\+:} En la superposición de una colonia, para aquellas que sobrepasan el 50\% de su área y además si su fitness proporcional es menor, está se debe eliminar. Para aquellas que se dominan mutuamente, osea más del 50\% entre ellas, se escoge al azar cuál de éstas se elimina. Para el caso del frente de pareto, se debe eliminar aquella que sea dominada por las demás colonias, con el criterio del fitness promedio de cada colonia 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em iter} & Número de la iteración actual \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Todo}
+\item[\hyperlink{todo__todo000001}{Todo}]revisar caso de moneda \end{DoxyRefDesc}
+\hypertarget{class_c_c_o_ae92e0bf5ad45ce36f7e078634e1f42f1}{\index{C\+C\+O@{C\+C\+O}!Distill@{Distill}}
+\index{Distill@{Distill}!C\+C\+O@{C\+C\+O}}
+\subsubsection[{Distill}]{\setlength{\rightskip}{0pt plus 5cm}void C\+C\+O\+::\+Distill (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_c_o_ae92e0bf5ad45ce36f7e078634e1f42f1}
+
+
+Metodo que determina del patio la(s) solucion(es) mas robusta(s) y de buena calidad (fitness alto) 
+
+Este método determina el o los individuos que posean soluciones robustas y de buena calidad. Ofreciéndole al usuario resultados concretos a su problema.
+
+La o las soluciones que se determinen, son aquellas que pertenecen al {\bfseries frente de Pareto}.
+
+Los criterios que se analizan en el frente de Pareto, son 2, y a continuación se mencionan\+:
+
+
+\begin{DoxyItemize}
+\item {\bfseries 1.-\/} Por cada colonia, se escoge la planta que esté más al centro de ésta. La candidata es aquella planta que tenga la menor suma de distancias a otras plantas de la misma colonia
+
+
+\item {\bfseries 2.-\/} La robustez, se determina a partir de la división entre el área de la colonia y la varianza de los fitness de todas las plantas de la colonia 
+\end{DoxyItemize}
+
+En resumen, la identificación de las soluciones se realiza al finalizar el proceso de la búsqueda y son aquellas que maximizan los criterios anteriormente mencionados, robustez y muy buena calidad. \hypertarget{class_c_c_o_a81583df8113bfdd76f5d5d541bdab892}{\index{C\+C\+O@{C\+C\+O}!Extend@{Extend}}
+\index{Extend@{Extend}!C\+C\+O@{C\+C\+O}}
+\subsubsection[{Extend}]{\setlength{\rightskip}{0pt plus 5cm}void C\+C\+O\+::\+Extend (
+\begin{DoxyParamCaption}
+\item[{{\bf Colony} $\ast$}]{colonia, }
+\item[{int const}]{iter}
+\end{DoxyParamCaption}
+)}}\label{class_c_c_o_a81583df8113bfdd76f5d5d541bdab892}
+
+
+Metodo que permite agregar plantas a la colonia. 
+
+El criterio que determina la planta a extender, se le añade un hijo en su vecindad, de tal modo que quede a una distancia prudente, es decir, ni tan lejos, ni tan cerca de la planta padre.
+
+Los pasos simplificados son los siguientes\+: 
+\begin{DoxyItemize}
+\item Se escoge una planta (que se llamará aquí \char`\"{}padre\char`\"{}) con el método roullete, sobre la colonia 
+\item Se crea una nueva solución, a partir de la planta padre 
+\item La nueva solución se extiende 
+\item La nueva solución se le agrega a una nueva planta hija 
+\item La nueva planta hija se agrega a la planta padre 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em colonia$\ast$} & Puntero a la colonia que se añadirá una planta. \\
+\hline
+{\em iter} & Número de la iteración actual \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_c_o_a611537d0f46ae4573b08a0d8c343da5c}{\index{C\+C\+O@{C\+C\+O}!Purge@{Purge}}
+\index{Purge@{Purge}!C\+C\+O@{C\+C\+O}}
+\subsubsection[{Purge}]{\setlength{\rightskip}{0pt plus 5cm}void C\+C\+O\+::\+Purge (
+\begin{DoxyParamCaption}
+\item[{{\bf Colony} $\ast$}]{colonia, }
+\item[{int const}]{iter}
+\end{DoxyParamCaption}
+)}}\label{class_c_c_o_a611537d0f46ae4573b08a0d8c343da5c}
+
+
+Metodo que permite eliminar plantas a la colonia. 
+
+El criterio que determina la planta a eliminar, es para aquella que posea el peor fitness de la colonia.
+
+Los pasos simplificados son los siguientes\+: 
+\begin{DoxyItemize}
+\item Se escoge la planta que tenga el peor fitness de la colonia 
+\item Se elimina la planta, modificando así a la colonia 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em colonia$\ast$} & Puntero a la colonia que se le eliminará una planta. \\
+\hline
+{\em iter} & Número de la iteración actual \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_c_c_o_abe96cee0e1a470ea4210ecafe0a4c13e}{\index{C\+C\+O@{C\+C\+O}!run@{run}}
+\index{run@{run}!C\+C\+O@{C\+C\+O}}
+\subsubsection[{run}]{\setlength{\rightskip}{0pt plus 5cm}void C\+C\+O\+::run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_c_o_abe96cee0e1a470ea4210ecafe0a4c13e}
+
+
+Permite ejecutar la clase \hyperlink{class_c_c_o}{C\+C\+O}. 
+
+En este método se implementa toda la {\bfseries lógica de la metaheurística}, que coordina las interacciones entre las clases \hyperlink{class_plant}{Plant} y \hyperlink{class_colony}{Colony}.
+
+Los pasos simplificados son los siguientes\+: 
+\begin{DoxyCode}
+While\{ejecutar las MAXGEN iteraciones\}\{
+
+    ForEach\{colonia en el patio\}\{
+        \hyperlink{class_c_c_o_a611537d0f46ae4573b08a0d8c343da5c}{Purge}(colonia)
+        \hyperlink{class_c_c_o_a81583df8113bfdd76f5d5d541bdab892}{Extend}(colonia)
+        \hyperlink{class_c_c_o_a5804afdd4b0361d7507fab4b3ab71703}{Split}(colonia)
+ \}
+
+    \hyperlink{class_c_c_o_a8b93a09d017497a2a636bd092883f06a}{Competition}()
+\}
+
+\hyperlink{class_c_c_o_ae92e0bf5ad45ce36f7e078634e1f42f1}{Distill}()
+\end{DoxyCode}
+ \hypertarget{class_c_c_o_a5804afdd4b0361d7507fab4b3ab71703}{\index{C\+C\+O@{C\+C\+O}!Split@{Split}}
+\index{Split@{Split}!C\+C\+O@{C\+C\+O}}
+\subsubsection[{Split}]{\setlength{\rightskip}{0pt plus 5cm}void C\+C\+O\+::\+Split (
+\begin{DoxyParamCaption}
+\item[{{\bf Colony} $\ast$}]{colonia, }
+\item[{int const}]{iter}
+\end{DoxyParamCaption}
+)}}\label{class_c_c_o_a5804afdd4b0361d7507fab4b3ab71703}
+
+
+Provoca eventualmente la división de la colonia. 
+
+El criterio que determina las plantas a cortar, es para una distancia lo suficientemente larga y que a lo menos exista en sus extremos 3 plantas por lado, se procede a cortarlas y/o liberarlas.
+
+Las plantas cortadas de la colonia inicial, son tratadas como una nueva colonia en el patio, con la primera planta ubicada en el extremo de la mayor distancia, como la planta raíz (root) de la nueva colonia.
+
+Los pasos simplificados son los siguientes\+: 
+\begin{DoxyItemize}
+\item Encontrar la distancia que satisface el criterio de corte entre las plantas de la colonia 
+\item Se crea una nueva colonia 
+\item Se establece la primera planta del extremo, como la raíz (root) de la nueva colonia 
+\item La nueva colonia se agrega al patio 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em colonia$\ast$} & Puntero a la colonia que se le aplicará o no un corte. \\
+\hline
+{\em iter} & Número de la iteración actual \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+B\+A\+S\+E/cco.\+h\item 
+B\+A\+S\+E/cco.\+cpp\end{DoxyCompactItemize}

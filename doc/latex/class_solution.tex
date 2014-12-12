@@ -1,0 +1,120 @@
+\hypertarget{class_solution}{\section{Solution Class Reference}
+\label{class_solution}\index{Solution@{Solution}}
+}
+
+
+Clase Abstracta \hyperlink{class_solution}{Solution}.  
+
+
+Inheritance diagram for Solution\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_solution}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_solution_ab55bd4b023d596ce11aaf737b9a6123b}{\hyperlink{class_solution_ab55bd4b023d596ce11aaf737b9a6123b}{Solution} ()}\label{class_solution_ab55bd4b023d596ce11aaf737b9a6123b}
+
+\begin{DoxyCompactList}\small\item\em Constructor por defecto de la clase. \end{DoxyCompactList}\item 
+\hypertarget{class_solution_a5d245f7409aacf6ace5e965b7879a580}{\hyperlink{class_solution_a5d245f7409aacf6ace5e965b7879a580}{$\sim$\+Solution} ()}\label{class_solution_a5d245f7409aacf6ace5e965b7879a580}
+
+\begin{DoxyCompactList}\small\item\em Destructor de la clase. \end{DoxyCompactList}\item 
+void \hyperlink{class_solution_a14efa947803fd35d6af01aaf83eed17b}{set\+Fitness} (double \+\_\+fitness)
+\begin{DoxyCompactList}\small\item\em Establece el fitness de la solucion. \end{DoxyCompactList}\item 
+double \hyperlink{class_solution_a794776f952a06bb4a4a7e0f198efcfa2}{get\+Fitness} ()
+\begin{DoxyCompactList}\small\item\em Retorna el fitness de la solucion. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_solution_aeb1c4eb1bd5aca251f43c92720c36d25}{get\+Dimension} ()
+\begin{DoxyCompactList}\small\item\em Retorna la dimension de la Solucion. \end{DoxyCompactList}\item 
+\hypertarget{class_solution_a856741c28b047bae68aa7cb3721d30bb}{virtual void $\ast$ \hyperlink{class_solution_a856741c28b047bae68aa7cb3721d30bb}{get\+Values} ()=0}\label{class_solution_a856741c28b047bae68aa7cb3721d30bb}
+
+\begin{DoxyCompactList}\small\item\em Retorna el valores particulares de las soluciones. \end{DoxyCompactList}\item 
+\hypertarget{class_solution_aa66480352ac71f9366df6b409f99dedf}{virtual double \hyperlink{class_solution_aa66480352ac71f9366df6b409f99dedf}{Distance} (\hyperlink{class_solution}{Solution} $\ast$other\+\_\+sol)=0}\label{class_solution_aa66480352ac71f9366df6b409f99dedf}
+
+\begin{DoxyCompactList}\small\item\em Retorna la distancia entre las soluciones. \end{DoxyCompactList}\item 
+\hypertarget{class_solution_a232b4bd1064e9bae8ff4c0cbe82f6be6}{virtual \hyperlink{class_solution}{Solution} $\ast$ \hyperlink{class_solution_a232b4bd1064e9bae8ff4c0cbe82f6be6}{Extend\+Solution} (double X\+\_\+i)=0}\label{class_solution_a232b4bd1064e9bae8ff4c0cbe82f6be6}
+
+\begin{DoxyCompactList}\small\item\em Para los valores de la solucion actual, se modifican (extienden) retornando otra nueva solucion. \end{DoxyCompactList}\item 
+\hypertarget{class_solution_a57453daeb5427edff95ae110a5f6ae9b}{virtual void \hyperlink{class_solution_a57453daeb5427edff95ae110a5f6ae9b}{show\+\_\+solution} (ofstream \&out\+\_\+distill)=0}\label{class_solution_a57453daeb5427edff95ae110a5f6ae9b}
+
+\begin{DoxyCompactList}\small\item\em Registra las componentes de la solucion y su fitness en un archivo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_solution_a215acc6c80b2c16071246b9ded8f32ab}{double \hyperlink{class_solution_a215acc6c80b2c16071246b9ded8f32ab}{fitness}}\label{class_solution_a215acc6c80b2c16071246b9ded8f32ab}
+
+\begin{DoxyCompactList}\small\item\em Fitness de la solucion. \end{DoxyCompactList}\item 
+\hypertarget{class_solution_a7111f2ad10bd9e1696d3e19c1b5bff09}{unsigned int \hyperlink{class_solution_a7111f2ad10bd9e1696d3e19c1b5bff09}{dimension}}\label{class_solution_a7111f2ad10bd9e1696d3e19c1b5bff09}
+
+\begin{DoxyCompactList}\small\item\em Dimension de la solucion. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Clase Abstracta \hyperlink{class_solution}{Solution}. 
+
+En esta clase, se define la estructura general de las distintas soluciones a ser codificadas.
+
+Al ser una clase general, los métodos más particulares y específicos que se requieran para cada una de las distintas codificaciones, se definen como {\bfseries virtuales}. En todas las subclases de \hyperlink{class_solution}{Solution}, obligatoriamente se deben redefinir esos métodos. Los cuales son\+:
+
+
+\begin{DoxyItemize}
+\item get\+Values 
+\item Distance 
+\item Extend\+Solution 
+\item show\+\_\+solution 
+\end{DoxyItemize}
+
+De los cuales se comenta más abajo. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_solution_aeb1c4eb1bd5aca251f43c92720c36d25}{\index{Solution@{Solution}!get\+Dimension@{get\+Dimension}}
+\index{get\+Dimension@{get\+Dimension}!Solution@{Solution}}
+\subsubsection[{get\+Dimension}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Solution\+::get\+Dimension (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_solution_aeb1c4eb1bd5aca251f43c92720c36d25}
+
+
+Retorna la dimension de la Solucion. 
+
+\begin{DoxyReturn}{Returns}
+Retorna la dimension de la solucion 
+\end{DoxyReturn}
+\hypertarget{class_solution_a794776f952a06bb4a4a7e0f198efcfa2}{\index{Solution@{Solution}!get\+Fitness@{get\+Fitness}}
+\index{get\+Fitness@{get\+Fitness}!Solution@{Solution}}
+\subsubsection[{get\+Fitness}]{\setlength{\rightskip}{0pt plus 5cm}double Solution\+::get\+Fitness (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_solution_a794776f952a06bb4a4a7e0f198efcfa2}
+
+
+Retorna el fitness de la solucion. 
+
+\begin{DoxyReturn}{Returns}
+Retorna el fitness de la solucion 
+\end{DoxyReturn}
+\hypertarget{class_solution_a14efa947803fd35d6af01aaf83eed17b}{\index{Solution@{Solution}!set\+Fitness@{set\+Fitness}}
+\index{set\+Fitness@{set\+Fitness}!Solution@{Solution}}
+\subsubsection[{set\+Fitness}]{\setlength{\rightskip}{0pt plus 5cm}void Solution\+::set\+Fitness (
+\begin{DoxyParamCaption}
+\item[{double}]{\+\_\+fitness}
+\end{DoxyParamCaption}
+)}}\label{class_solution_a14efa947803fd35d6af01aaf83eed17b}
+
+
+Establece el fitness de la solucion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+fitness} & valor a establecer como fitness de la solucion \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+B\+A\+S\+E/solution.\+h\item 
+B\+A\+S\+E/solution.\+cpp\end{DoxyCompactItemize}

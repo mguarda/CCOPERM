@@ -1,0 +1,392 @@
+\hypertarget{classtoolbox}{\section{toolbox Class Reference}
+\label{classtoolbox}\index{toolbox@{toolbox}}
+}
+
+
+singleton class (only one object is instantiated) that provides general-\/use methods  
+
+
+
+
+{\ttfamily \#include $<$toolbox.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classtoolbox_aeccc47e3554b49d0077cd6a1967bf8e8}{void {\bfseries read\+\_\+min\+\_\+values} (string filename)}\label{classtoolbox_aeccc47e3554b49d0077cd6a1967bf8e8}
+
+\item 
+\hypertarget{classtoolbox_a70936376f353e24a4a9c98d77d8618b5}{void {\bfseries read\+\_\+max\+\_\+values} (string filename)}\label{classtoolbox_a70936376f353e24a4a9c98d77d8618b5}
+
+\item 
+\hypertarget{classtoolbox_ae211afebb8cbf64ad2782cfed4cf80dc}{vector$<$ double $>$ {\bfseries get\+\_\+min\+\_\+values} ()}\label{classtoolbox_ae211afebb8cbf64ad2782cfed4cf80dc}
+
+\item 
+\hypertarget{classtoolbox_a00d9224a5611a483523740ff63c88775}{vector$<$ double $>$ {\bfseries get\+\_\+max\+\_\+values} ()}\label{classtoolbox_a00d9224a5611a483523740ff63c88775}
+
+\item 
+\hypertarget{classtoolbox_ab447abb1ad0631aa7f9165e447d4b1db}{void \hyperlink{classtoolbox_ab447abb1ad0631aa7f9165e447d4b1db}{sandhill\+\_\+create} (string filename)}\label{classtoolbox_ab447abb1ad0631aa7f9165e447d4b1db}
+
+\begin{DoxyCompactList}\small\item\em create from file \end{DoxyCompactList}\item 
+\hypertarget{classtoolbox_a153ecab8241cbbb42d32931d580191c4}{double {\bfseries sandhill\+\_\+fitness} (double x, double y)}\label{classtoolbox_a153ecab8241cbbb42d32931d580191c4}
+
+\item 
+\hypertarget{classtoolbox_a29b20e4b3351d1c98a4131cac99778f9}{void {\bfseries sandhill\+\_\+show} ()}\label{classtoolbox_a29b20e4b3351d1c98a4131cac99778f9}
+
+\item 
+\hypertarget{classtoolbox_ab63881e5e61501fa7f84414f6612ee05}{void \hyperlink{classtoolbox_ab63881e5e61501fa7f84414f6612ee05}{hold} ()}\label{classtoolbox_ab63881e5e61501fa7f84414f6612ee05}
+
+\begin{DoxyCompactList}\small\item\em stops the execution waiting for an E\+N\+T\+E\+R \end{DoxyCompactList}\item 
+\hypertarget{classtoolbox_a0ee32c4d293b8952a4767e2565a0dc38}{void \hyperlink{classtoolbox_a0ee32c4d293b8952a4767e2565a0dc38}{clockstart} ()}\label{classtoolbox_a0ee32c4d293b8952a4767e2565a0dc38}
+
+\begin{DoxyCompactList}\small\item\em start chronometer (counts microseconds until \hyperlink{classtoolbox_a8fe27f13cb254a568c8ec0295e5a734f}{clockstop()} is called) \end{DoxyCompactList}\item 
+double \hyperlink{classtoolbox_a8fe27f13cb254a568c8ec0295e5a734f}{clockstop} ()
+\begin{DoxyCompactList}\small\item\em stop chronometer \end{DoxyCompactList}\item 
+void \hyperlink{classtoolbox_a4ea98edf9956998c061850754a37281d}{seed} (long unsigned int semilla)
+\item 
+double \hyperlink{classtoolbox_a7b24111985e7dcac53f092e954e0cc07}{azar} ()
+\item 
+int \hyperlink{classtoolbox_ada9e591755dfbbf32979bc1d3f2f81c6}{azar\+Int} (int n)
+\item 
+double \hyperlink{classtoolbox_a67450c1434f5b2f278c37b6f78f6c91d}{normal} ()
+\begin{DoxyCompactList}\small\item\em as seen in \href{http://www.bearcave.com/misl/misl_tech/wavelets/hurst/random.html}{\tt http\+://www.\+bearcave.\+com/misl/misl\+\_\+tech/wavelets/hurst/random.\+html} \end{DoxyCompactList}\item 
+double \hyperlink{classtoolbox_a30631661b56eb3e11b40c118241ba6f6}{normal} (double mu, double sigma)
+\item 
+double \hyperlink{classtoolbox_a76420d97756e45135baa61e037e03d20}{triangular} (double mode, double min, double max)
+\begin{DoxyCompactList}\small\item\em as seen in \href{http://www.brighton-webs.co.uk/distributions/triangular.asp}{\tt http\+://www.\+brighton-\/webs.\+co.\+uk/distributions/triangular.\+asp} \end{DoxyCompactList}\item 
+double \hyperlink{classtoolbox_a0daf970243cd9158552300762de3f801}{mod} (double a)
+\item 
+double \hyperlink{classtoolbox_a1347524ce4a6b1db516421f1c2905e44}{string2double} (string s)
+\item 
+int \hyperlink{classtoolbox_a86769fb57c8a0b58b14a9946a0c90043}{string2int} (string s)
+\item 
+string \hyperlink{classtoolbox_afb97b8bab923a8c293ff5aa944ed64f7}{double2string} (double d, int prec)
+\item 
+string \hyperlink{classtoolbox_a4b2268cb178f0ae934f46efffda0450b}{int2string} (int i)
+\item 
+void \hyperlink{classtoolbox_a2b7ddff386b9bc1f790627f632fae50c}{readparamfile} (string filename)
+\item 
+void \hyperlink{classtoolbox_a05d6f98094e98e263806b9c7b51fac51}{store\+Variable} (string name, double val, int prec)
+\item 
+void \hyperlink{classtoolbox_a8f04e33d10ffe547856ded0caf3d5640}{store\+Variable} (string name, string val)
+\item 
+void \hyperlink{classtoolbox_a53685118cae82122f3a0d083185804b3}{store\+Variable} (string name, int val)
+\item 
+double \hyperlink{classtoolbox_aa6cb1dff126daa9c34d6e2435143b372}{pval\+\_\+double} (string pname)
+\item 
+int \hyperlink{classtoolbox_a30135dd53233f8ed0cd68532f51cb002}{pval\+\_\+int} (string pname)
+\item 
+string \hyperlink{classtoolbox_ad3c9eb0127e47a8ce04922646ade51fc}{pval\+\_\+string} (string pname)
+\item 
+string \hyperlink{classtoolbox_a67d5356e65a3e93b179f0e48f98cf41c}{filename\+From\+Path} (string path)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classtoolbox_a3058e36ea4c84178eaa21321a5733cc8}{static \hyperlink{classtoolbox}{toolbox} $\ast$ \hyperlink{classtoolbox_a3058e36ea4c84178eaa21321a5733cc8}{instance} ()}\label{classtoolbox_a3058e36ea4c84178eaa21321a5733cc8}
+
+\begin{DoxyCompactList}\small\item\em return the pointer to the singleton instance \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classtoolbox_ae52c33dc9f80c6ce0208a70abde2418e}{\hyperlink{classtoolbox_ae52c33dc9f80c6ce0208a70abde2418e}{toolbox} ()}\label{classtoolbox_ae52c33dc9f80c6ce0208a70abde2418e}
+
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\hypertarget{classtoolbox_a384cba887600d141b5c19ada2448522e}{{\bfseries toolbox} (const \hyperlink{classtoolbox}{toolbox} \&)}\label{classtoolbox_a384cba887600d141b5c19ada2448522e}
+
+\item 
+\hypertarget{classtoolbox_a22f47dcb9fdf470e56c16c3851a58f7a}{\hyperlink{classtoolbox}{toolbox} \& {\bfseries operator=} (const \hyperlink{classtoolbox}{toolbox} \&)}\label{classtoolbox_a22f47dcb9fdf470e56c16c3851a58f7a}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+singleton class (only one object is instantiated) that provides general-\/use methods 
+
+\subsection{Member Function Documentation}
+\hypertarget{classtoolbox_a7b24111985e7dcac53f092e954e0cc07}{\index{toolbox@{toolbox}!azar@{azar}}
+\index{azar@{azar}!toolbox@{toolbox}}
+\subsubsection[{azar}]{\setlength{\rightskip}{0pt plus 5cm}double toolbox\+::azar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classtoolbox_a7b24111985e7dcac53f092e954e0cc07}
+\begin{DoxyReturn}{Returns}
+a random number in \mbox{[}0,1) 
+\end{DoxyReturn}
+\hypertarget{classtoolbox_ada9e591755dfbbf32979bc1d3f2f81c6}{\index{toolbox@{toolbox}!azar\+Int@{azar\+Int}}
+\index{azar\+Int@{azar\+Int}!toolbox@{toolbox}}
+\subsubsection[{azar\+Int}]{\setlength{\rightskip}{0pt plus 5cm}int toolbox\+::azar\+Int (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}\label{classtoolbox_ada9e591755dfbbf32979bc1d3f2f81c6}
+\begin{DoxyReturn}{Returns}
+a random integer between \mbox{[}0,n-\/1) 
+\end{DoxyReturn}
+\hypertarget{classtoolbox_a8fe27f13cb254a568c8ec0295e5a734f}{\index{toolbox@{toolbox}!clockstop@{clockstop}}
+\index{clockstop@{clockstop}!toolbox@{toolbox}}
+\subsubsection[{clockstop}]{\setlength{\rightskip}{0pt plus 5cm}double toolbox\+::clockstop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtoolbox_a8fe27f13cb254a568c8ec0295e5a734f}
+
+
+stop chronometer 
+
+\begin{DoxyReturn}{Returns}
+elapsed time in microseconds since \hyperlink{classtoolbox_a0ee32c4d293b8952a4767e2565a0dc38}{clockstart()} was called 
+\end{DoxyReturn}
+\hypertarget{classtoolbox_afb97b8bab923a8c293ff5aa944ed64f7}{\index{toolbox@{toolbox}!double2string@{double2string}}
+\index{double2string@{double2string}!toolbox@{toolbox}}
+\subsubsection[{double2string}]{\setlength{\rightskip}{0pt plus 5cm}string toolbox\+::double2string (
+\begin{DoxyParamCaption}
+\item[{double}]{d, }
+\item[{int}]{prec}
+\end{DoxyParamCaption}
+)}}\label{classtoolbox_afb97b8bab923a8c293ff5aa944ed64f7}
+\begin{DoxyReturn}{Returns}
+string from double (warning\+: doesn't check that the input can be 'translated') 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em d} & input double \\
+\hline
+{\em prec} & number of decimal places \\
+\hline
+\end{DoxyParams}
+\hypertarget{classtoolbox_a67d5356e65a3e93b179f0e48f98cf41c}{\index{toolbox@{toolbox}!filename\+From\+Path@{filename\+From\+Path}}
+\index{filename\+From\+Path@{filename\+From\+Path}!toolbox@{toolbox}}
+\subsubsection[{filename\+From\+Path}]{\setlength{\rightskip}{0pt plus 5cm}string toolbox\+::filename\+From\+Path (
+\begin{DoxyParamCaption}
+\item[{string}]{path}
+\end{DoxyParamCaption}
+)}}\label{classtoolbox_a67d5356e65a3e93b179f0e48f98cf41c}
+\begin{DoxyReturn}{Returns}
+name of the file without the extension (works only in Unix systems) 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em path} & name of the path \\
+\hline
+\end{DoxyParams}
+\hypertarget{classtoolbox_a4b2268cb178f0ae934f46efffda0450b}{\index{toolbox@{toolbox}!int2string@{int2string}}
+\index{int2string@{int2string}!toolbox@{toolbox}}
+\subsubsection[{int2string}]{\setlength{\rightskip}{0pt plus 5cm}string toolbox\+::int2string (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{classtoolbox_a4b2268cb178f0ae934f46efffda0450b}
+\begin{DoxyReturn}{Returns}
+string from int $\ast$$\ast$$\ast$$\ast$ not yet implemented 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em i} & intput int \\
+\hline
+\end{DoxyParams}
+\hypertarget{classtoolbox_a0daf970243cd9158552300762de3f801}{\index{toolbox@{toolbox}!mod@{mod}}
+\index{mod@{mod}!toolbox@{toolbox}}
+\subsubsection[{mod}]{\setlength{\rightskip}{0pt plus 5cm}double toolbox\+::mod (
+\begin{DoxyParamCaption}
+\item[{double}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classtoolbox_a0daf970243cd9158552300762de3f801}
+\begin{DoxyReturn}{Returns}
+the module of a\+: $\vert$a$\vert$ 
+\end{DoxyReturn}
+\hypertarget{classtoolbox_a67450c1434f5b2f278c37b6f78f6c91d}{\index{toolbox@{toolbox}!normal@{normal}}
+\index{normal@{normal}!toolbox@{toolbox}}
+\subsubsection[{normal}]{\setlength{\rightskip}{0pt plus 5cm}double toolbox\+::normal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classtoolbox_a67450c1434f5b2f278c37b6f78f6c91d}
+
+
+as seen in \href{http://www.bearcave.com/misl/misl_tech/wavelets/hurst/random.html}{\tt http\+://www.\+bearcave.\+com/misl/misl\+\_\+tech/wavelets/hurst/random.\+html} 
+
+\begin{DoxyReturn}{Returns}
+a number from distribution Normal(0,1) 
+\end{DoxyReturn}
+\hypertarget{classtoolbox_a30631661b56eb3e11b40c118241ba6f6}{\index{toolbox@{toolbox}!normal@{normal}}
+\index{normal@{normal}!toolbox@{toolbox}}
+\subsubsection[{normal}]{\setlength{\rightskip}{0pt plus 5cm}double toolbox\+::normal (
+\begin{DoxyParamCaption}
+\item[{double}]{mu, }
+\item[{double}]{sigma}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classtoolbox_a30631661b56eb3e11b40c118241ba6f6}
+\begin{DoxyReturn}{Returns}
+a number from distribution Normal(mu,sigma). Uses\+: X\+: N(0,1), N(mu,sigma)\+: Z=(X-\/mu)/sigma 
+\end{DoxyReturn}
+\hypertarget{classtoolbox_aa6cb1dff126daa9c34d6e2435143b372}{\index{toolbox@{toolbox}!pval\+\_\+double@{pval\+\_\+double}}
+\index{pval\+\_\+double@{pval\+\_\+double}!toolbox@{toolbox}}
+\subsubsection[{pval\+\_\+double}]{\setlength{\rightskip}{0pt plus 5cm}double toolbox\+::pval\+\_\+double (
+\begin{DoxyParamCaption}
+\item[{string}]{pname}
+\end{DoxyParamCaption}
+)}}\label{classtoolbox_aa6cb1dff126daa9c34d6e2435143b372}
+\begin{DoxyReturn}{Returns}
+value of a parameter as a double 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em pname} & name of the parameter \\
+\hline
+\end{DoxyParams}
+\hypertarget{classtoolbox_a30135dd53233f8ed0cd68532f51cb002}{\index{toolbox@{toolbox}!pval\+\_\+int@{pval\+\_\+int}}
+\index{pval\+\_\+int@{pval\+\_\+int}!toolbox@{toolbox}}
+\subsubsection[{pval\+\_\+int}]{\setlength{\rightskip}{0pt plus 5cm}int toolbox\+::pval\+\_\+int (
+\begin{DoxyParamCaption}
+\item[{string}]{pname}
+\end{DoxyParamCaption}
+)}}\label{classtoolbox_a30135dd53233f8ed0cd68532f51cb002}
+\begin{DoxyReturn}{Returns}
+value of a parameter as an integer 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em pname} & name of the parameter \\
+\hline
+\end{DoxyParams}
+\hypertarget{classtoolbox_ad3c9eb0127e47a8ce04922646ade51fc}{\index{toolbox@{toolbox}!pval\+\_\+string@{pval\+\_\+string}}
+\index{pval\+\_\+string@{pval\+\_\+string}!toolbox@{toolbox}}
+\subsubsection[{pval\+\_\+string}]{\setlength{\rightskip}{0pt plus 5cm}string toolbox\+::pval\+\_\+string (
+\begin{DoxyParamCaption}
+\item[{string}]{pname}
+\end{DoxyParamCaption}
+)}}\label{classtoolbox_ad3c9eb0127e47a8ce04922646ade51fc}
+\begin{DoxyReturn}{Returns}
+value of a parameter as a string 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em pname} & name of the parameter \\
+\hline
+\end{DoxyParams}
+\hypertarget{classtoolbox_a2b7ddff386b9bc1f790627f632fae50c}{\index{toolbox@{toolbox}!readparamfile@{readparamfile}}
+\index{readparamfile@{readparamfile}!toolbox@{toolbox}}
+\subsubsection[{readparamfile}]{\setlength{\rightskip}{0pt plus 5cm}void toolbox\+::readparamfile (
+\begin{DoxyParamCaption}
+\item[{string}]{filename}
+\end{DoxyParamCaption}
+)}}\label{classtoolbox_a2b7ddff386b9bc1f790627f632fae50c}
+read the parameter file and store values in the map param 
+\begin{DoxyParams}{Parameters}
+{\em filename} & name of the file with parameters \\
+\hline
+\end{DoxyParams}
+\hypertarget{classtoolbox_a4ea98edf9956998c061850754a37281d}{\index{toolbox@{toolbox}!seed@{seed}}
+\index{seed@{seed}!toolbox@{toolbox}}
+\subsubsection[{seed}]{\setlength{\rightskip}{0pt plus 5cm}void toolbox\+::seed (
+\begin{DoxyParamCaption}
+\item[{long unsigned int}]{semilla}
+\end{DoxyParamCaption}
+)}}\label{classtoolbox_a4ea98edf9956998c061850754a37281d}
+seed pseudo-\/random number generation 
+\begin{DoxyParams}{Parameters}
+{\em semilla} & seed for pseudo-\/random generator \\
+\hline
+\end{DoxyParams}
+\hypertarget{classtoolbox_a05d6f98094e98e263806b9c7b51fac51}{\index{toolbox@{toolbox}!store\+Variable@{store\+Variable}}
+\index{store\+Variable@{store\+Variable}!toolbox@{toolbox}}
+\subsubsection[{store\+Variable}]{\setlength{\rightskip}{0pt plus 5cm}void toolbox\+::store\+Variable (
+\begin{DoxyParamCaption}
+\item[{string}]{name, }
+\item[{double}]{val, }
+\item[{int}]{prec}
+\end{DoxyParamCaption}
+)}}\label{classtoolbox_a05d6f98094e98e263806b9c7b51fac51}
+store or rewrite the value of a double (floating point) variable ($\sim$ works like global variables) 
+\begin{DoxyParams}{Parameters}
+{\em name} & name or parameter \\
+\hline
+{\em val} & value \\
+\hline
+{\em prec} & precision \\
+\hline
+\end{DoxyParams}
+\hypertarget{classtoolbox_a8f04e33d10ffe547856ded0caf3d5640}{\index{toolbox@{toolbox}!store\+Variable@{store\+Variable}}
+\index{store\+Variable@{store\+Variable}!toolbox@{toolbox}}
+\subsubsection[{store\+Variable}]{\setlength{\rightskip}{0pt plus 5cm}void toolbox\+::store\+Variable (
+\begin{DoxyParamCaption}
+\item[{string}]{name, }
+\item[{string}]{val}
+\end{DoxyParamCaption}
+)}}\label{classtoolbox_a8f04e33d10ffe547856ded0caf3d5640}
+store or rewrite the value of an string variable 
+\begin{DoxyParams}{Parameters}
+{\em name} & name or parameter \\
+\hline
+{\em val} & value \\
+\hline
+\end{DoxyParams}
+\hypertarget{classtoolbox_a53685118cae82122f3a0d083185804b3}{\index{toolbox@{toolbox}!store\+Variable@{store\+Variable}}
+\index{store\+Variable@{store\+Variable}!toolbox@{toolbox}}
+\subsubsection[{store\+Variable}]{\setlength{\rightskip}{0pt plus 5cm}void toolbox\+::store\+Variable (
+\begin{DoxyParamCaption}
+\item[{string}]{name, }
+\item[{int}]{val}
+\end{DoxyParamCaption}
+)}}\label{classtoolbox_a53685118cae82122f3a0d083185804b3}
+store or rewrite the value of an integer variable ($\sim$ works like global variables) 
+\begin{DoxyParams}{Parameters}
+{\em name} & name or parameter \\
+\hline
+{\em val} & value \\
+\hline
+\end{DoxyParams}
+\hypertarget{classtoolbox_a1347524ce4a6b1db516421f1c2905e44}{\index{toolbox@{toolbox}!string2double@{string2double}}
+\index{string2double@{string2double}!toolbox@{toolbox}}
+\subsubsection[{string2double}]{\setlength{\rightskip}{0pt plus 5cm}double toolbox\+::string2double (
+\begin{DoxyParamCaption}
+\item[{string}]{s}
+\end{DoxyParamCaption}
+)}}\label{classtoolbox_a1347524ce4a6b1db516421f1c2905e44}
+\begin{DoxyReturn}{Returns}
+double from string (warning\+: doesn't check that the input can be 'translated') 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em s} & input string \\
+\hline
+\end{DoxyParams}
+\hypertarget{classtoolbox_a86769fb57c8a0b58b14a9946a0c90043}{\index{toolbox@{toolbox}!string2int@{string2int}}
+\index{string2int@{string2int}!toolbox@{toolbox}}
+\subsubsection[{string2int}]{\setlength{\rightskip}{0pt plus 5cm}int toolbox\+::string2int (
+\begin{DoxyParamCaption}
+\item[{string}]{s}
+\end{DoxyParamCaption}
+)}}\label{classtoolbox_a86769fb57c8a0b58b14a9946a0c90043}
+\begin{DoxyReturn}{Returns}
+int from string (warning\+: doesn't check that the input can be 'translated') 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em s} & input string \\
+\hline
+\end{DoxyParams}
+\hypertarget{classtoolbox_a76420d97756e45135baa61e037e03d20}{\index{toolbox@{toolbox}!triangular@{triangular}}
+\index{triangular@{triangular}!toolbox@{toolbox}}
+\subsubsection[{triangular}]{\setlength{\rightskip}{0pt plus 5cm}double toolbox\+::triangular (
+\begin{DoxyParamCaption}
+\item[{double}]{mode, }
+\item[{double}]{min, }
+\item[{double}]{max}
+\end{DoxyParamCaption}
+)}}\label{classtoolbox_a76420d97756e45135baa61e037e03d20}
+
+
+as seen in \href{http://www.brighton-webs.co.uk/distributions/triangular.asp}{\tt http\+://www.\+brighton-\/webs.\+co.\+uk/distributions/triangular.\+asp} 
+
+\begin{DoxyReturn}{Returns}
+a numbref from distribution triangular(mode,min,max) 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+B\+A\+S\+E/toolbox.\+h\item 
+B\+A\+S\+E/toolbox.\+cpp\end{DoxyCompactItemize}

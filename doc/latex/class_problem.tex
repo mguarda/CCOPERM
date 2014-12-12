@@ -1,0 +1,95 @@
+\hypertarget{class_problem}{\section{Problem Class Reference}
+\label{class_problem}\index{Problem@{Problem}}
+}
+
+
+Clase abstracta \hyperlink{class_problem}{Problem}.  
+
+
+Inheritance diagram for Problem\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_problem}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_problem_a4b9787b3945dbec08e402c0cfd0f646b}{virtual \hyperlink{class_solution}{Solution} $\ast$ \hyperlink{class_problem_a4b9787b3945dbec08e402c0cfd0f646b}{New\+Solution} ()=0}\label{class_problem_a4b9787b3945dbec08e402c0cfd0f646b}
+
+\begin{DoxyCompactList}\small\item\em Método virtual que retorna un puntero del tipo \hyperlink{class_solution}{Solution}, relacionado con la codificación del problema. \end{DoxyCompactList}\item 
+\hypertarget{class_problem_adc6176be667576d08cf3e89b65e905f4}{virtual double \hyperlink{class_problem_adc6176be667576d08cf3e89b65e905f4}{Calcular\+Fitness} (\hyperlink{class_solution}{Solution} $\ast$sol)=0}\label{class_problem_adc6176be667576d08cf3e89b65e905f4}
+
+\begin{DoxyCompactList}\small\item\em Método virtual que permite establecer el cálculo del fitness de las soluciones, para cada problema en particular. \end{DoxyCompactList}\item 
+\hypertarget{class_problem_ad6a122249b93487f91a64837a056fa75}{virtual double \hyperlink{class_problem_ad6a122249b93487f91a64837a056fa75}{get\+Min\+Values\+Pos} (unsigned int pos)=0}\label{class_problem_ad6a122249b93487f91a64837a056fa75}
+
+\begin{DoxyCompactList}\small\item\em Método virtual que permite retornar el valor para una determinada coordenada, entre los mínimos valores posibles para cada problema en particular. \end{DoxyCompactList}\item 
+\hypertarget{class_problem_a2ffe7de8658a25398d6a21dd1b2edfcb}{virtual double \hyperlink{class_problem_a2ffe7de8658a25398d6a21dd1b2edfcb}{get\+Max\+Values\+Pos} (unsigned int pos)=0}\label{class_problem_a2ffe7de8658a25398d6a21dd1b2edfcb}
+
+\begin{DoxyCompactList}\small\item\em Método virtual que permite retornar el valor para una determinada coordenada, entre los maximos valores posibles para cada problema en particular. \end{DoxyCompactList}\item 
+\hypertarget{class_problem_a6f72067600654aef0767bce95c4eacdd}{virtual unsigned int \hyperlink{class_problem_a6f72067600654aef0767bce95c4eacdd}{get\+Dimension} ()=0}\label{class_problem_a6f72067600654aef0767bce95c4eacdd}
+
+\begin{DoxyCompactList}\small\item\em Método virtual que permite retornar la dimension en cada problema en particular. \end{DoxyCompactList}\item 
+\hypertarget{class_problem_a481dc3e5869cf95b3c539d552e8eeb50}{virtual bool \hyperlink{class_problem_a481dc3e5869cf95b3c539d552e8eeb50}{Es\+Dinamico} ()=0}\label{class_problem_a481dc3e5869cf95b3c539d552e8eeb50}
+
+\begin{DoxyCompactList}\small\item\em Método virtual que permite saber si es dinámico o no un problema en particular. \end{DoxyCompactList}\item 
+\hypertarget{class_problem_a0c7025eb5127b1eda7988cceadc00da6}{virtual void \hyperlink{class_problem_a0c7025eb5127b1eda7988cceadc00da6}{step} (std\+::vector$<$ std\+::vector$<$ double $>$ $>$, int)=0}\label{class_problem_a0c7025eb5127b1eda7988cceadc00da6}
+
+\begin{DoxyCompactList}\small\item\em Método virtual que permite realizar cambio en el espacio de búsqueda en un problema en particular que sea dinámico. \end{DoxyCompactList}\item 
+\hypertarget{class_problem_a4b9787b3945dbec08e402c0cfd0f646b}{virtual \hyperlink{class_solution}{Solution} $\ast$ \hyperlink{class_problem_a4b9787b3945dbec08e402c0cfd0f646b}{New\+Solution} ()=0}\label{class_problem_a4b9787b3945dbec08e402c0cfd0f646b}
+
+\begin{DoxyCompactList}\small\item\em Método virtual que retorna un puntero del tipo \hyperlink{class_solution}{Solution}, relacionado con la codificación del problema. \end{DoxyCompactList}\item 
+\hypertarget{class_problem_adc6176be667576d08cf3e89b65e905f4}{virtual double \hyperlink{class_problem_adc6176be667576d08cf3e89b65e905f4}{Calcular\+Fitness} (\hyperlink{class_solution}{Solution} $\ast$sol)=0}\label{class_problem_adc6176be667576d08cf3e89b65e905f4}
+
+\begin{DoxyCompactList}\small\item\em Método virtual que permite establecer el cálculo del fitness de las soluciones, para cada problema en particular. \end{DoxyCompactList}\item 
+\hypertarget{class_problem_ad6a122249b93487f91a64837a056fa75}{virtual double \hyperlink{class_problem_ad6a122249b93487f91a64837a056fa75}{get\+Min\+Values\+Pos} (unsigned int pos)=0}\label{class_problem_ad6a122249b93487f91a64837a056fa75}
+
+\begin{DoxyCompactList}\small\item\em Método virtual que permite retornar el valor para una determinada coordenada, entre los mínimos valores posibles para cada problema en particular. \end{DoxyCompactList}\item 
+\hypertarget{class_problem_a2ffe7de8658a25398d6a21dd1b2edfcb}{virtual double \hyperlink{class_problem_a2ffe7de8658a25398d6a21dd1b2edfcb}{get\+Max\+Values\+Pos} (unsigned int pos)=0}\label{class_problem_a2ffe7de8658a25398d6a21dd1b2edfcb}
+
+\begin{DoxyCompactList}\small\item\em Método virtual que permite retornar el valor para una determinada coordenada, entre los maximos valores posibles para cada problema en particular. \end{DoxyCompactList}\item 
+\hypertarget{class_problem_a6f72067600654aef0767bce95c4eacdd}{virtual unsigned int \hyperlink{class_problem_a6f72067600654aef0767bce95c4eacdd}{get\+Dimension} ()=0}\label{class_problem_a6f72067600654aef0767bce95c4eacdd}
+
+\begin{DoxyCompactList}\small\item\em Método virtual que permite retornar la dimension en cada problema en particular. \end{DoxyCompactList}\item 
+\hypertarget{class_problem_a481dc3e5869cf95b3c539d552e8eeb50}{virtual bool \hyperlink{class_problem_a481dc3e5869cf95b3c539d552e8eeb50}{Es\+Dinamico} ()=0}\label{class_problem_a481dc3e5869cf95b3c539d552e8eeb50}
+
+\begin{DoxyCompactList}\small\item\em Método virtual que permite saber si es dinámico o no un problema en particular. \end{DoxyCompactList}\item 
+\hypertarget{class_problem_a0c7025eb5127b1eda7988cceadc00da6}{virtual void \hyperlink{class_problem_a0c7025eb5127b1eda7988cceadc00da6}{step} (std\+::vector$<$ std\+::vector$<$ double $>$ $>$, int)=0}\label{class_problem_a0c7025eb5127b1eda7988cceadc00da6}
+
+\begin{DoxyCompactList}\small\item\em Método virtual que permite realizar cambio en el espacio de búsqueda en un problema en particular que sea dinámico. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_problem}{Problem} $\ast$ \hyperlink{class_problem_a4455f10e5a7e568a4c4359c53e73c547}{instance} ()
+\begin{DoxyCompactList}\small\item\em return the pointer to the singleton instance \end{DoxyCompactList}\item 
+\hypertarget{class_problem_a8ef29b0090589205c8cd920082e2469b}{static \hyperlink{class_problem}{Problem} $\ast$ \hyperlink{class_problem_a8ef29b0090589205c8cd920082e2469b}{instance} ()}\label{class_problem_a8ef29b0090589205c8cd920082e2469b}
+
+\begin{DoxyCompactList}\small\item\em return the pointer to the singleton instance \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Clase abstracta \hyperlink{class_problem}{Problem}. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_problem_a4455f10e5a7e568a4c4359c53e73c547}{\index{Problem@{Problem}!instance@{instance}}
+\index{instance@{instance}!Problem@{Problem}}
+\subsubsection[{instance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Problem} $\ast$ Problem\+::instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_problem_a4455f10e5a7e568a4c4359c53e73c547}
+
+
+return the pointer to the singleton instance 
+
+\begin{DoxyReturn}{Returns}
+Retorna puntero del tipo \hyperlink{class_problem}{Problem}, con problema particular para Ackley
+
+Retorna puntero del tipo \hyperlink{class_problem}{Problem}, con problema particular para \hyperlink{class_tsp}{Tsp} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Q\+A\+P\+\_\+\+P\+E\+R\+M/problem.\+h\item 
+Q\+A\+P\+\_\+\+P\+E\+R\+M/problem.\+cpp\end{DoxyCompactItemize}

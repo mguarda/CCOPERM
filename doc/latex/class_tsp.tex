@@ -1,0 +1,182 @@
+\hypertarget{class_tsp}{\section{Tsp Class Reference}
+\label{class_tsp}\index{Tsp@{Tsp}}
+}
+Inheritance diagram for Tsp\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_tsp}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_solution}{Solution} $\ast$ \hyperlink{class_tsp_ab37f446ab806d6f42e036a815a8eb0fb}{New\+Solution} ()
+\begin{DoxyCompactList}\small\item\em Redefinicion del método para la clase \hyperlink{class_tsp}{Tsp}. \end{DoxyCompactList}\item 
+double \hyperlink{class_tsp_a84ed21c114ae235e2c0f56177c164a0a}{Calcular\+Fitness} (\hyperlink{class_solution}{Solution} $\ast$sol)
+\begin{DoxyCompactList}\small\item\em Redefinicion del método para la clase \hyperlink{class_tsp}{Tsp}. \end{DoxyCompactList}\item 
+double \hyperlink{class_tsp_aae80b10d5d2b846a5f7d03fc44263ab2}{get\+Min\+Values\+Pos} (unsigned int pos)
+\begin{DoxyCompactList}\small\item\em Redefinicion del método para la clase \hyperlink{class_tsp}{Tsp}. \end{DoxyCompactList}\item 
+double \hyperlink{class_tsp_a5bdc7d7f407f9bc2084d77c971cb99ef}{get\+Max\+Values\+Pos} (unsigned int pos)
+\begin{DoxyCompactList}\small\item\em Redefinicion del método para la clase \hyperlink{class_tsp}{Tsp}. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{class_tsp_a0f6463fc9e034a8c78bf4cac881df990}{get\+Dimension} ()
+\begin{DoxyCompactList}\small\item\em Redefinicion del método para la clase \hyperlink{class_tsp}{Tsp}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_tsp_a9a77be6018464e5380296fa8decc36ac}{Es\+Dinamico} ()
+\begin{DoxyCompactList}\small\item\em Redefinicion del método para la clase \hyperlink{class_tsp}{Tsp}. \end{DoxyCompactList}\item 
+void \hyperlink{class_tsp_a15c1d7f52f3d6ce233d86beda80eabf4}{step} (std\+::vector$<$ std\+::vector$<$ double $>$ $>$, int)
+\begin{DoxyCompactList}\small\item\em Redefinicion del método para la clase \hyperlink{class_tsp}{Tsp}. \end{DoxyCompactList}\item 
+\hypertarget{class_tsp_a499348dd3e9939f2cf04603382735285}{vector$<$ vector$<$ double $>$ $>$ {\bfseries read\+T\+S\+P\+Problem\+File} (string filename)}\label{class_tsp_a499348dd3e9939f2cf04603382735285}
+
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_tsp_a84ed21c114ae235e2c0f56177c164a0a}{\index{Tsp@{Tsp}!Calcular\+Fitness@{Calcular\+Fitness}}
+\index{Calcular\+Fitness@{Calcular\+Fitness}!Tsp@{Tsp}}
+\subsubsection[{Calcular\+Fitness}]{\setlength{\rightskip}{0pt plus 5cm}double Tsp\+::\+Calcular\+Fitness (
+\begin{DoxyParamCaption}
+\item[{{\bf Solution} $\ast$}]{sol}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_tsp_a84ed21c114ae235e2c0f56177c164a0a}
+
+
+Redefinicion del método para la clase \hyperlink{class_tsp}{Tsp}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sol} & Puntero a la solución, que se desea determinar su fitness en la subclase \hyperlink{class_tsp}{Tsp} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_problem_adc6176be667576d08cf3e89b65e905f4}{Problem}.
+
+\hypertarget{class_tsp_a9a77be6018464e5380296fa8decc36ac}{\index{Tsp@{Tsp}!Es\+Dinamico@{Es\+Dinamico}}
+\index{Es\+Dinamico@{Es\+Dinamico}!Tsp@{Tsp}}
+\subsubsection[{Es\+Dinamico}]{\setlength{\rightskip}{0pt plus 5cm}bool Tsp\+::\+Es\+Dinamico (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_tsp_a9a77be6018464e5380296fa8decc36ac}
+
+
+Redefinicion del método para la clase \hyperlink{class_tsp}{Tsp}. 
+
+\begin{DoxyReturn}{Returns}
+Retorna valor del tipo booleano, con la respuesta de si es o no, dinámico el problema 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_problem_a481dc3e5869cf95b3c539d552e8eeb50}{Problem}.
+
+\hypertarget{class_tsp_a0f6463fc9e034a8c78bf4cac881df990}{\index{Tsp@{Tsp}!get\+Dimension@{get\+Dimension}}
+\index{get\+Dimension@{get\+Dimension}!Tsp@{Tsp}}
+\subsubsection[{get\+Dimension}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Tsp\+::get\+Dimension (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_tsp_a0f6463fc9e034a8c78bf4cac881df990}
+
+
+Redefinicion del método para la clase \hyperlink{class_tsp}{Tsp}. 
+
+\begin{DoxyReturn}{Returns}
+Retorna valor del tipo entero sin signo, con el valor de la dimensión del problema 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_problem_a6f72067600654aef0767bce95c4eacdd}{Problem}.
+
+\hypertarget{class_tsp_a5bdc7d7f407f9bc2084d77c971cb99ef}{\index{Tsp@{Tsp}!get\+Max\+Values\+Pos@{get\+Max\+Values\+Pos}}
+\index{get\+Max\+Values\+Pos@{get\+Max\+Values\+Pos}!Tsp@{Tsp}}
+\subsubsection[{get\+Max\+Values\+Pos}]{\setlength{\rightskip}{0pt plus 5cm}double Tsp\+::get\+Max\+Values\+Pos (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_tsp_a5bdc7d7f407f9bc2084d77c971cb99ef}
+
+
+Redefinicion del método para la clase \hyperlink{class_tsp}{Tsp}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & Posición de la coordenada\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna valor del tipo double, con el valor de esa coordenada para los máximos valores 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_problem_a2ffe7de8658a25398d6a21dd1b2edfcb}{Problem}.
+
+\hypertarget{class_tsp_aae80b10d5d2b846a5f7d03fc44263ab2}{\index{Tsp@{Tsp}!get\+Min\+Values\+Pos@{get\+Min\+Values\+Pos}}
+\index{get\+Min\+Values\+Pos@{get\+Min\+Values\+Pos}!Tsp@{Tsp}}
+\subsubsection[{get\+Min\+Values\+Pos}]{\setlength{\rightskip}{0pt plus 5cm}double Tsp\+::get\+Min\+Values\+Pos (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{pos}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_tsp_aae80b10d5d2b846a5f7d03fc44263ab2}
+
+
+Redefinicion del método para la clase \hyperlink{class_tsp}{Tsp}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & Indica la posición de la coordenada\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna valor del tipo double, con el valor de esa coordenada para los mínimos valores 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_problem_ad6a122249b93487f91a64837a056fa75}{Problem}.
+
+\hypertarget{class_tsp_ab37f446ab806d6f42e036a815a8eb0fb}{\index{Tsp@{Tsp}!New\+Solution@{New\+Solution}}
+\index{New\+Solution@{New\+Solution}!Tsp@{Tsp}}
+\subsubsection[{New\+Solution}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Solution} $\ast$ Tsp\+::\+New\+Solution (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_tsp_ab37f446ab806d6f42e036a815a8eb0fb}
+
+
+Redefinicion del método para la clase \hyperlink{class_tsp}{Tsp}. 
+
+\begin{DoxyReturn}{Returns}
+Retorna puntero del tipo \hyperlink{class_solution}{Solution}, con una nueva solución relacionada con la codificación en particular para el problema, específicamente Solution\+R\+N 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{class_problem_a4b9787b3945dbec08e402c0cfd0f646b}{Problem}.
+
+\hypertarget{class_tsp_a15c1d7f52f3d6ce233d86beda80eabf4}{\index{Tsp@{Tsp}!step@{step}}
+\index{step@{step}!Tsp@{Tsp}}
+\subsubsection[{step}]{\setlength{\rightskip}{0pt plus 5cm}void Tsp\+::step (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ std\+::vector$<$ double $>$ $>$}]{, }
+\item[{int}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_tsp_a15c1d7f52f3d6ce233d86beda80eabf4}
+
+
+Redefinicion del método para la clase \hyperlink{class_tsp}{Tsp}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em datos} & Arreglo de arreglo con valores de todas las plantas presentes en el patio \\
+\hline
+{\em iter} & Numero de la iteracion actual \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{class_problem_a0c7025eb5127b1eda7988cceadc00da6}{Problem}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+T\+S\+P\+\_\+\+P\+E\+R\+M/Tsp.\+h\item 
+T\+S\+P\+\_\+\+P\+E\+R\+M/Tsp.\+cpp\end{DoxyCompactItemize}

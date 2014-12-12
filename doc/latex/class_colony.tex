@@ -1,0 +1,442 @@
+\hypertarget{class_colony}{\section{Colony Class Reference}
+\label{class_colony}\index{Colony@{Colony}}
+}
+
+
+Clase que gestiona a objetos del tipo \hyperlink{class_plant}{Plant}.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_colony_aaf760edad97dee7263b86913d3bb4f98}{\hyperlink{class_colony_aaf760edad97dee7263b86913d3bb4f98}{Colony} ()}\label{class_colony_aaf760edad97dee7263b86913d3bb4f98}
+
+\begin{DoxyCompactList}\small\item\em Constructor de la clase. \end{DoxyCompactList}\item 
+\hypertarget{class_colony_a9cebe4a25260c8da7c99d10b0dab5a4e}{\hyperlink{class_colony_a9cebe4a25260c8da7c99d10b0dab5a4e}{$\sim$\+Colony} ()}\label{class_colony_a9cebe4a25260c8da7c99d10b0dab5a4e}
+
+\begin{DoxyCompactList}\small\item\em Destructor de la clase. \end{DoxyCompactList}\item 
+void \hyperlink{class_colony_a23cb5efacc701479fb4cfdb3cfd5fdc5}{set\+\_\+root} (\hyperlink{class_plant}{Plant} $\ast$const)
+\begin{DoxyCompactList}\small\item\em Establece a la planta raíz de la colonia. \end{DoxyCompactList}\item 
+\hyperlink{class_plant}{Plant} $\ast$ \hyperlink{class_colony_afb7f538de55475561a46f8d4c2c65c8b}{get\+\_\+root} () const 
+\begin{DoxyCompactList}\small\item\em Retorna el puntero a la planta raíz. \end{DoxyCompactList}\item 
+void \hyperlink{class_colony_a29b64da9f582127b41616466c0b6232c}{set\+Name} (string nombre)
+\begin{DoxyCompactList}\small\item\em Establece el nombre de la actual colonia. \end{DoxyCompactList}\item 
+string \hyperlink{class_colony_aeb93331a87786184e3373f63ab643462}{get\+Name} ()
+\begin{DoxyCompactList}\small\item\em Retorna el nombre asignado a la colonia. \end{DoxyCompactList}\item 
+void \hyperlink{class_colony_ac31cfb633a10ab2e348d6a1a927c68d9}{set\+M\+P\+C} (int)
+\begin{DoxyCompactList}\small\item\em Establecer el número de plantas que puede poseer la colonia (M\+P\+C) \end{DoxyCompactList}\item 
+double \hyperlink{class_colony_a73d51b415918b9f0f123240a6f2101b5}{get\+M\+P\+C} () const 
+\begin{DoxyCompactList}\small\item\em Retorna el número de plantas que puede poseer la colonia (M\+P\+C) \end{DoxyCompactList}\item 
+\hyperlink{class_plant}{Plant} $\ast$ \hyperlink{class_colony_ac47cd3350e58715470ebadbf0a0e4eaf}{replace\+\_\+root} (\hyperlink{class_plant}{Plant} $\ast$const addr)
+\begin{DoxyCompactList}\small\item\em Establece el reemplazante de la raíz. \end{DoxyCompactList}\item 
+int \hyperlink{class_colony_a9f647ee71e990d77daeb95a72d2251ec}{get\+Size} () const 
+\begin{DoxyCompactList}\small\item\em Retorna el tamaño de la colonia. \end{DoxyCompactList}\item 
+\hyperlink{class_plant}{Plant} $\ast$ \hyperlink{class_colony_a686417d078d3544d7c07309822a8c45e}{get\+Best\+Plant} ()
+\begin{DoxyCompactList}\small\item\em Retorna la planta de mayor fitness. \end{DoxyCompactList}\item 
+\hyperlink{class_plant}{Plant} $\ast$ \hyperlink{class_colony_a858397bdf56c10bdc8035f907b0d227e}{get\+Worst\+Plant} ()
+\begin{DoxyCompactList}\small\item\em Retorna la planta de menor fitness. \end{DoxyCompactList}\item 
+std\+::list$<$ \hyperlink{class_plant}{Plant} $\ast$ $>$ \hyperlink{class_colony_a349e5b625a4f62dd55a3911319051df7}{get\+Plants} ()
+\begin{DoxyCompactList}\small\item\em Retorna las plantas de la colonia. \end{DoxyCompactList}\item 
+\hypertarget{class_colony_a768a1fa3225bce6b7c28031d0efac929}{void \hyperlink{class_colony_a768a1fa3225bce6b7c28031d0efac929}{update\+\_\+\+T\+Fitness} ()}\label{class_colony_a768a1fa3225bce6b7c28031d0efac929}
+
+\begin{DoxyCompactList}\small\item\em Actualizar el T\+Fitness para la colonia. \end{DoxyCompactList}\item 
+double \hyperlink{class_colony_a396ffff8734870bb149f6205eede5443}{get\+Mean\+Colony} () const 
+\begin{DoxyCompactList}\small\item\em Retorna el promedio de Fitness de la colonia. \end{DoxyCompactList}\item 
+\hyperlink{class_plant}{Plant} $\ast$ \hyperlink{class_colony_a095984a4b9d66dccd04512f77b70fbe9}{roulette} ()
+\begin{DoxyCompactList}\small\item\em Escoge al azar una Planta de la colonia. \end{DoxyCompactList}\item 
+double \hyperlink{class_colony_adaa8bc27180fe9b61656acb6185250b7}{get\+Area} ()
+\begin{DoxyCompactList}\small\item\em Retorna el area de la colonia. \end{DoxyCompactList}\item 
+double \hyperlink{class_colony_ac985894236686089847cc80eef0df3c0}{get\+Varianza} ()
+\begin{DoxyCompactList}\small\item\em Retorna la varianza de la colonia con respecto al Fitness de las plantas. \end{DoxyCompactList}\item 
+double \hyperlink{class_colony_ac59ef383ec4d254fef1326b33812fd66}{get\+Min\+Value} (int dimension)
+\begin{DoxyCompactList}\small\item\em Retorna la menor coordenada de la colonia. \end{DoxyCompactList}\item 
+double \hyperlink{class_colony_a177a36f388719982d16c2abcacef85a3}{get\+Max\+Value} (int dimension)
+\begin{DoxyCompactList}\small\item\em Retorna la mayor coordenada de la colonia. \end{DoxyCompactList}\item 
+double \hyperlink{class_colony_a7f27439201f57d52df38115c10f41bf2}{Superposicion} (\hyperlink{class_colony}{Colony} $\ast$col2)
+\begin{DoxyCompactList}\small\item\em Retorna el area de intersección con respecto a otra colonia. \end{DoxyCompactList}\item 
+\hyperlink{class_plant}{Plant} $\ast$ \hyperlink{class_colony_a911588b5aab6106b94e9a039ffd61060}{get\+Old\+Plant} ()
+\begin{DoxyCompactList}\small\item\em Retorna la planta mas antigua. \end{DoxyCompactList}\item 
+\hypertarget{class_colony_add10150a1003dbf88bd9e878509b5367}{void \hyperlink{class_colony_add10150a1003dbf88bd9e878509b5367}{change\+\_\+colony} ()}\label{class_colony_add10150a1003dbf88bd9e878509b5367}
+
+\begin{DoxyCompactList}\small\item\em Establece la colonia actual. \end{DoxyCompactList}\item 
+\hyperlink{class_plant}{Plant} $\ast$ \hyperlink{class_colony_a665b63676510d72cc12d4a658f795dff}{Split} (int tam, double max\+\_\+dist)
+\begin{DoxyCompactList}\small\item\em Split para la colonia. \end{DoxyCompactList}\item 
+\hyperlink{class_plant}{Plant} $\ast$ \hyperlink{class_colony_a8ce65c7c0abc9edee880ff6275b51e6f}{Purge} ()
+\begin{DoxyCompactList}\small\item\em Purge para la colonia. \end{DoxyCompactList}\item 
+\hypertarget{class_colony_a5a8aa21bceba4eb522333bbb964a7563}{void \hyperlink{class_colony_a5a8aa21bceba4eb522333bbb964a7563}{Re\+\_\+\+Eval\+\_\+\+Func} ()}\label{class_colony_a5a8aa21bceba4eb522333bbb964a7563}
+
+\begin{DoxyCompactList}\small\item\em Re-\/evaluacion de todos los fitness las plantas de la colonia. \end{DoxyCompactList}\item 
+\hypertarget{class_colony_a6a6528cacc995800e343298f3a10715f}{void \hyperlink{class_colony_a6a6528cacc995800e343298f3a10715f}{show\+\_\+colony} ()}\label{class_colony_a6a6528cacc995800e343298f3a10715f}
+
+\begin{DoxyCompactList}\small\item\em despliega el contenido de la colonia \end{DoxyCompactList}\item 
+void \hyperlink{class_colony_a9b1ac80bb274d2f8b90e592d11a4894b}{show\+\_\+plot} (int)
+\begin{DoxyCompactList}\small\item\em Metodo que permite desplegar grafica de la colonia. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Clase que gestiona a objetos del tipo \hyperlink{class_plant}{Plant}. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_colony_afb7f538de55475561a46f8d4c2c65c8b}{\index{Colony@{Colony}!get\+\_\+root@{get\+\_\+root}}
+\index{get\+\_\+root@{get\+\_\+root}!Colony@{Colony}}
+\subsubsection[{get\+\_\+root}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Plant} $\ast$ Colony\+::get\+\_\+root (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_colony_afb7f538de55475561a46f8d4c2c65c8b}
+
+
+Retorna el puntero a la planta raíz. 
+
+\begin{DoxyReturn}{Returns}
+Retorna puntero del tipo \hyperlink{class_plant}{Plant}, con la planta raíz de la colonia 
+\end{DoxyReturn}
+\hypertarget{class_colony_adaa8bc27180fe9b61656acb6185250b7}{\index{Colony@{Colony}!get\+Area@{get\+Area}}
+\index{get\+Area@{get\+Area}!Colony@{Colony}}
+\subsubsection[{get\+Area}]{\setlength{\rightskip}{0pt plus 5cm}double Colony\+::get\+Area (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_colony_adaa8bc27180fe9b61656acb6185250b7}
+
+
+Retorna el area de la colonia. 
+
+\begin{DoxyReturn}{Returns}
+Retorna un valor del tipo double, con el área de la colonia que utiliza en el espacio de búsqueda 
+\end{DoxyReturn}
+\hypertarget{class_colony_a686417d078d3544d7c07309822a8c45e}{\index{Colony@{Colony}!get\+Best\+Plant@{get\+Best\+Plant}}
+\index{get\+Best\+Plant@{get\+Best\+Plant}!Colony@{Colony}}
+\subsubsection[{get\+Best\+Plant}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Plant} $\ast$ Colony\+::get\+Best\+Plant (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_colony_a686417d078d3544d7c07309822a8c45e}
+
+
+Retorna la planta de mayor fitness. 
+
+\begin{DoxyReturn}{Returns}
+Retorna un puntero del tipo \hyperlink{class_plant}{Plant}, con la planta de mayor fitness de la colonia 
+\end{DoxyReturn}
+\hypertarget{class_colony_a177a36f388719982d16c2abcacef85a3}{\index{Colony@{Colony}!get\+Max\+Value@{get\+Max\+Value}}
+\index{get\+Max\+Value@{get\+Max\+Value}!Colony@{Colony}}
+\subsubsection[{get\+Max\+Value}]{\setlength{\rightskip}{0pt plus 5cm}double Colony\+::get\+Max\+Value (
+\begin{DoxyParamCaption}
+\item[{int}]{dimension}
+\end{DoxyParamCaption}
+)}}\label{class_colony_a177a36f388719982d16c2abcacef85a3}
+
+
+Retorna la mayor coordenada de la colonia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dimension} & Valor de la coordenada a analizar\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna valor del tipo double, con el máximo valor para esa coordenada 
+\end{DoxyReturn}
+\hypertarget{class_colony_a396ffff8734870bb149f6205eede5443}{\index{Colony@{Colony}!get\+Mean\+Colony@{get\+Mean\+Colony}}
+\index{get\+Mean\+Colony@{get\+Mean\+Colony}!Colony@{Colony}}
+\subsubsection[{get\+Mean\+Colony}]{\setlength{\rightskip}{0pt plus 5cm}double Colony\+::get\+Mean\+Colony (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_colony_a396ffff8734870bb149f6205eede5443}
+
+
+Retorna el promedio de Fitness de la colonia. 
+
+\begin{DoxyReturn}{Returns}
+Retorna una valor del tipo double, con el promedio de los fitness de la colonia 
+\end{DoxyReturn}
+\hypertarget{class_colony_ac59ef383ec4d254fef1326b33812fd66}{\index{Colony@{Colony}!get\+Min\+Value@{get\+Min\+Value}}
+\index{get\+Min\+Value@{get\+Min\+Value}!Colony@{Colony}}
+\subsubsection[{get\+Min\+Value}]{\setlength{\rightskip}{0pt plus 5cm}double Colony\+::get\+Min\+Value (
+\begin{DoxyParamCaption}
+\item[{int}]{dimension}
+\end{DoxyParamCaption}
+)}}\label{class_colony_ac59ef383ec4d254fef1326b33812fd66}
+
+
+Retorna la menor coordenada de la colonia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dimension} & Valor de la coordenada a analizar\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna valor del tipo double, con el mínimo valor para esa coordenada 
+\end{DoxyReturn}
+\hypertarget{class_colony_a73d51b415918b9f0f123240a6f2101b5}{\index{Colony@{Colony}!get\+M\+P\+C@{get\+M\+P\+C}}
+\index{get\+M\+P\+C@{get\+M\+P\+C}!Colony@{Colony}}
+\subsubsection[{get\+M\+P\+C}]{\setlength{\rightskip}{0pt plus 5cm}double Colony\+::get\+M\+P\+C (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_colony_a73d51b415918b9f0f123240a6f2101b5}
+
+
+Retorna el número de plantas que puede poseer la colonia (M\+P\+C) 
+
+\begin{DoxyReturn}{Returns}
+Retorna un double, con el número de plantas que puede contener la colonia 
+\end{DoxyReturn}
+\hypertarget{class_colony_aeb93331a87786184e3373f63ab643462}{\index{Colony@{Colony}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!Colony@{Colony}}
+\subsubsection[{get\+Name}]{\setlength{\rightskip}{0pt plus 5cm}string Colony\+::get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_colony_aeb93331a87786184e3373f63ab643462}
+
+
+Retorna el nombre asignado a la colonia. 
+
+\begin{DoxyReturn}{Returns}
+Retorna un string, con el nombre de la colonia 
+\end{DoxyReturn}
+\hypertarget{class_colony_a911588b5aab6106b94e9a039ffd61060}{\index{Colony@{Colony}!get\+Old\+Plant@{get\+Old\+Plant}}
+\index{get\+Old\+Plant@{get\+Old\+Plant}!Colony@{Colony}}
+\subsubsection[{get\+Old\+Plant}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Plant} $\ast$ Colony\+::get\+Old\+Plant (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_colony_a911588b5aab6106b94e9a039ffd61060}
+
+
+Retorna la planta mas antigua. 
+
+\begin{DoxyReturn}{Returns}
+Retorna puntero del tipo \hyperlink{class_plant}{Plant}, con la planta más antigua de la colonia 
+\end{DoxyReturn}
+\hypertarget{class_colony_a349e5b625a4f62dd55a3911319051df7}{\index{Colony@{Colony}!get\+Plants@{get\+Plants}}
+\index{get\+Plants@{get\+Plants}!Colony@{Colony}}
+\subsubsection[{get\+Plants}]{\setlength{\rightskip}{0pt plus 5cm}list$<$ {\bf Plant} $\ast$ $>$ Colony\+::get\+Plants (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_colony_a349e5b625a4f62dd55a3911319051df7}
+
+
+Retorna las plantas de la colonia. 
+
+\begin{DoxyReturn}{Returns}
+Retorna una lista de punteros del tipo \hyperlink{class_plant}{Plant}, con todas las plantas que pertenecen a la colonia 
+\end{DoxyReturn}
+\hypertarget{class_colony_a9f647ee71e990d77daeb95a72d2251ec}{\index{Colony@{Colony}!get\+Size@{get\+Size}}
+\index{get\+Size@{get\+Size}!Colony@{Colony}}
+\subsubsection[{get\+Size}]{\setlength{\rightskip}{0pt plus 5cm}int Colony\+::get\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{class_colony_a9f647ee71e990d77daeb95a72d2251ec}
+
+
+Retorna el tamaño de la colonia. 
+
+\begin{DoxyReturn}{Returns}
+Retorna un int, con el tamaño de la colonia 
+\end{DoxyReturn}
+\hypertarget{class_colony_ac985894236686089847cc80eef0df3c0}{\index{Colony@{Colony}!get\+Varianza@{get\+Varianza}}
+\index{get\+Varianza@{get\+Varianza}!Colony@{Colony}}
+\subsubsection[{get\+Varianza}]{\setlength{\rightskip}{0pt plus 5cm}double Colony\+::get\+Varianza (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_colony_ac985894236686089847cc80eef0df3c0}
+
+
+Retorna la varianza de la colonia con respecto al Fitness de las plantas. 
+
+\begin{DoxyReturn}{Returns}
+Retorna valor del tipo double, con la varianza de la colonia 
+\end{DoxyReturn}
+\hypertarget{class_colony_a858397bdf56c10bdc8035f907b0d227e}{\index{Colony@{Colony}!get\+Worst\+Plant@{get\+Worst\+Plant}}
+\index{get\+Worst\+Plant@{get\+Worst\+Plant}!Colony@{Colony}}
+\subsubsection[{get\+Worst\+Plant}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Plant} $\ast$ Colony\+::get\+Worst\+Plant (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_colony_a858397bdf56c10bdc8035f907b0d227e}
+
+
+Retorna la planta de menor fitness. 
+
+\begin{DoxyReturn}{Returns}
+Retorna puntero del tipo \hyperlink{class_plant}{Plant}, con la planta de peor fitness de la colonia 
+\end{DoxyReturn}
+\hypertarget{class_colony_a8ce65c7c0abc9edee880ff6275b51e6f}{\index{Colony@{Colony}!Purge@{Purge}}
+\index{Purge@{Purge}!Colony@{Colony}}
+\subsubsection[{Purge}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Plant} $\ast$ Colony\+::\+Purge (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_colony_a8ce65c7c0abc9edee880ff6275b51e6f}
+
+
+Purge para la colonia. 
+
+\begin{DoxyReturn}{Returns}
+Retorna puntero del tipo \hyperlink{class_plant}{Plant}, con la planta que se ha determinado con los criterios de Purge 
+\end{DoxyReturn}
+\hypertarget{class_colony_ac47cd3350e58715470ebadbf0a0e4eaf}{\index{Colony@{Colony}!replace\+\_\+root@{replace\+\_\+root}}
+\index{replace\+\_\+root@{replace\+\_\+root}!Colony@{Colony}}
+\subsubsection[{replace\+\_\+root}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Plant} $\ast$ Colony\+::replace\+\_\+root (
+\begin{DoxyParamCaption}
+\item[{{\bf Plant} $\ast$const}]{addr}
+\end{DoxyParamCaption}
+)}}\label{class_colony_ac47cd3350e58715470ebadbf0a0e4eaf}
+
+
+Establece el reemplazante de la raíz. 
+
+Se reescribe la raíz, con la informacion de la nueva planta
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & Puntero del tipo \hyperlink{class_plant}{Plant}, con la dirección a la nueva planta raíz\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna un puntero \hyperlink{class_plant}{Plant}, con la información de la raíz 
+\end{DoxyReturn}
+\hypertarget{class_colony_a095984a4b9d66dccd04512f77b70fbe9}{\index{Colony@{Colony}!roulette@{roulette}}
+\index{roulette@{roulette}!Colony@{Colony}}
+\subsubsection[{roulette}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Plant} $\ast$ Colony\+::roulette (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_colony_a095984a4b9d66dccd04512f77b70fbe9}
+
+
+Escoge al azar una Planta de la colonia. 
+
+Las opciones para escoger una planta al azar, son\+: \begin{DoxyVerb}- Opción 1: Se selecciona según la proporcionalidad con su fitness, de tal modo que aquella que tenga un fitness alto, tiene una mayor probabilidad de ser escogida.
+- Opción 2: Completamente al azar entre todas las plantas de la colonia
+\end{DoxyVerb}
+
+
+\begin{DoxyReturn}{Returns}
+Retorna un puntero del tipo \hyperlink{class_plant}{Plant}, con la planta escogida 
+\end{DoxyReturn}
+\hypertarget{class_colony_a23cb5efacc701479fb4cfdb3cfd5fdc5}{\index{Colony@{Colony}!set\+\_\+root@{set\+\_\+root}}
+\index{set\+\_\+root@{set\+\_\+root}!Colony@{Colony}}
+\subsubsection[{set\+\_\+root}]{\setlength{\rightskip}{0pt plus 5cm}void Colony\+::set\+\_\+root (
+\begin{DoxyParamCaption}
+\item[{{\bf Plant} $\ast$ const}]{croot}
+\end{DoxyParamCaption}
+)}}\label{class_colony_a23cb5efacc701479fb4cfdb3cfd5fdc5}
+
+
+Establece a la planta raíz de la colonia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em croot} & Puntero del tipo \hyperlink{class_plant}{Plant}, para establecer la planta raíz de la nueva colonia \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_colony_ac31cfb633a10ab2e348d6a1a927c68d9}{\index{Colony@{Colony}!set\+M\+P\+C@{set\+M\+P\+C}}
+\index{set\+M\+P\+C@{set\+M\+P\+C}!Colony@{Colony}}
+\subsubsection[{set\+M\+P\+C}]{\setlength{\rightskip}{0pt plus 5cm}void Colony\+::set\+M\+P\+C (
+\begin{DoxyParamCaption}
+\item[{int}]{\+\_\+\+M\+P\+C}
+\end{DoxyParamCaption}
+)}}\label{class_colony_ac31cfb633a10ab2e348d6a1a927c68d9}
+
+
+Establecer el número de plantas que puede poseer la colonia (M\+P\+C) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+\+M\+P\+C} & Número que establece el número de plantas que puede almacenar la colonia \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_colony_a29b64da9f582127b41616466c0b6232c}{\index{Colony@{Colony}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!Colony@{Colony}}
+\subsubsection[{set\+Name}]{\setlength{\rightskip}{0pt plus 5cm}void Colony\+::set\+Name (
+\begin{DoxyParamCaption}
+\item[{string}]{\+\_\+name}
+\end{DoxyParamCaption}
+)}}\label{class_colony_a29b64da9f582127b41616466c0b6232c}
+
+
+Establece el nombre de la actual colonia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+name} & String con el nombre a asignar a la colonia \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_colony_a9b1ac80bb274d2f8b90e592d11a4894b}{\index{Colony@{Colony}!show\+\_\+plot@{show\+\_\+plot}}
+\index{show\+\_\+plot@{show\+\_\+plot}!Colony@{Colony}}
+\subsubsection[{show\+\_\+plot}]{\setlength{\rightskip}{0pt plus 5cm}void Colony\+::show\+\_\+plot (
+\begin{DoxyParamCaption}
+\item[{int}]{iter}
+\end{DoxyParamCaption}
+)}}\label{class_colony_a9b1ac80bb274d2f8b90e592d11a4894b}
+
+
+Metodo que permite desplegar grafica de la colonia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em iter} & Valor de la iteración actual \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_colony_a665b63676510d72cc12d4a658f795dff}{\index{Colony@{Colony}!Split@{Split}}
+\index{Split@{Split}!Colony@{Colony}}
+\subsubsection[{Split}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Plant} $\ast$ Colony\+::\+Split (
+\begin{DoxyParamCaption}
+\item[{int}]{tam, }
+\item[{double}]{max\+\_\+dist}
+\end{DoxyParamCaption}
+)}}\label{class_colony_a665b63676510d72cc12d4a658f795dff}
+
+
+Split para la colonia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tam} & Número de plantas en la colonia \\
+\hline
+{\em max\+\_\+dist} & Distancia máxima permitida entre una planta y otra\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna puntero del tipo \hyperlink{class_plant}{Plant}, con la planta que será la raíz de una nueva colonia 
+\end{DoxyReturn}
+\hypertarget{class_colony_a7f27439201f57d52df38115c10f41bf2}{\index{Colony@{Colony}!Superposicion@{Superposicion}}
+\index{Superposicion@{Superposicion}!Colony@{Colony}}
+\subsubsection[{Superposicion}]{\setlength{\rightskip}{0pt plus 5cm}double Colony\+::\+Superposicion (
+\begin{DoxyParamCaption}
+\item[{{\bf Colony} $\ast$}]{col2}
+\end{DoxyParamCaption}
+)}}\label{class_colony_a7f27439201f57d52df38115c10f41bf2}
+
+
+Retorna el area de intersección con respecto a otra colonia. 
+
+Los Pasos realizados son los siguientes\+:
+\begin{DoxyItemize}
+\item Se obtienen los puntos (permutaciones) centro de cada colonia, se calcula el area de cada colonia, y la distancia entre los puntos centro de cada colonia.
+\item Se calcula el porcentaje de segmento de superposición (interseccion de areas) entre las colonias.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em col2} & Puntero a la otra colonia, para determinar si existe superposición de áreas entre ellas\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Retorna valor del tipo double, con el área de la superposición entre las dos colonias 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+B\+A\+S\+E/colony.\+h\item 
+B\+A\+S\+E/colony.\+cpp\end{DoxyCompactItemize}
