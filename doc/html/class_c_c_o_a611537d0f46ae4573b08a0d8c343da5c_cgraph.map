@@ -1,0 +1,14 @@
+<map id="CCO::Purge" name="CCO::Purge">
+<area shape="rect" id="node2" href="$class_colony.html#a8ce65c7c0abc9edee880ff6275b51e6f" title="Purge para la colonia. " alt="" coords="170,31,274,57"/>
+<area shape="rect" id="node6" href="$class_plant.html#a785afe98cddf364c286b38aa705f3910" title="Permite eliminar la planta. " alt="" coords="154,81,290,108"/>
+<area shape="rect" id="node7" href="$classtoolbox.html#a3058e36ea4c84178eaa21321a5733cc8" title="return the pointer to the singleton instance " alt="" coords="161,132,283,159"/>
+<area shape="rect" id="node8" href="$classtoolbox.html#a30135dd53233f8ed0cd68532f51cb002" title="toolbox::pval_int" alt="" coords="165,183,279,209"/>
+<area shape="rect" id="node9" href="$class_colony.html#a858397bdf56c10bdc8035f907b0d227e" title="Retorna la planta de menor fitness. " alt="" coords="145,233,299,260"/>
+<area shape="rect" id="node11" href="$class_plant.html#aff425cc6c39ef2696c41a545b37f6770" title="Retorna el actual fitness de la clase. " alt="" coords="537,284,658,311"/>
+<area shape="rect" id="node12" href="$class_colony.html#a686417d078d3544d7c07309822a8c45e" title="Retorna la planta de mayor fitness. " alt="" coords="149,347,295,373"/>
+<area shape="rect" id="node3" href="$class_plant.html#afbc29c83a69faf9bef5373b0be9e6771" title="Retorna un puntero a la planta segun el frente pareto Purge. " alt="" coords="347,31,485,57"/>
+<area shape="rect" id="node4" href="$class_plant.html#afdbf74edabdfe044d64a3a7c374d6119" title="Permite obtener el tfitness. " alt="" coords="533,5,661,32"/>
+<area shape="rect" id="node5" href="$class_plant.html#a79fc3e80a225263ba150952e49b4533c" title="Retorna el numero de conexiones que posee. " alt="" coords="554,56,641,83"/>
+<area shape="rect" id="node10" href="$class_plant.html#a0a576837260539510e8728af06d6d2cc" title="Retorna el puntero a la planta con menor fitness de la rama. " alt="" coords="347,233,485,260"/>
+<area shape="rect" id="node13" href="$class_plant.html#ac53b418a18dc6e37e94c3505b04a0a08" title="Retorna el puntero a la planta con mayor fitness de la rama. " alt="" coords="351,359,481,385"/>
+</map>

@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Lista&#160;de&#160;clases</span></a></li>
       <li><a href="classes.html"><span>Índice&#160;de&#160;clases</span></a></li>
-      <li><a href="hierarchy.html"><span>Jerarquía&#160;de&#160;la&#160;clase</span></a></li>
+      <li><a href="inherits.html"><span>Jerarquía&#160;de&#160;la&#160;clase</span></a></li>
       <li><a href="functions.html"><span>Miembros&#160;de&#160;las&#160;clases</span></a></li>
     </ul>
   </div>
@@ -117,12 +117,10 @@ $(document).ready(function(){initNavTree('class_solution.html','');});
 <div class="dynheader">
 Diagrama de herencias de Solution</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="class_solution.png" usemap="#Solution_map" alt=""/>
-  <map id="Solution_map" name="Solution_map">
-<area href="class_solution_perm.html" alt="SolutionPerm" shape="rect" coords="0,56,86,80"/>
-</map>
- </div></div>
+<div class="center"><img src="class_solution__inherit__graph.png" border="0" usemap="#_solution_inherit__map" alt="Inheritance graph"/></div>
+<map name="_solution_inherit__map" id="_solution_inherit__map">
+<area shape="rect" id="node2" href="class_solution_perm.html" title="SolutionPerm" alt="" coords="5,80,105,107"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">significado de colores y flechas</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Métodos públicos</h2></td></tr>
@@ -221,6 +219,15 @@ show_solution </li>
 <p>Retorna el fitness de la solucion. </p>
 <dl class="section return"><dt>Devuelve</dt><dd>Retorna el fitness de la solucion </dd></dl>
 
+<p><div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_solution_a794776f952a06bb4a4a7e0f198efcfa2_icgraph.png" border="0" usemap="#class_solution_a794776f952a06bb4a4a7e0f198efcfa2_icgraph" alt=""/></div>
+<map name="class_solution_a794776f952a06bb4a4a7e0f198efcfa2_icgraph" id="class_solution_a794776f952a06bb4a4a7e0f198efcfa2_icgraph">
+<area shape="rect" id="node2" href="class_c_c_o.html#a81583df8113bfdd76f5d5d541bdab892" title="Metodo que permite agregar plantas a la colonia. " alt="" coords="192,5,291,32"/><area shape="rect" id="node3" href="class_plant.html#ae4e71ef08f69aa77ed93eba7e8398ff4" title="Constructor de la clase Plant. " alt="" coords="196,56,287,83"/></map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a14efa947803fd35d6af01aaf83eed17b"></a>
@@ -257,7 +264,7 @@ show_solution </li>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_solution.html">Solution</a></li>
-    <li class="footer">Generado el Viernes, 12 de Diciembre de 2014 11:41:30 para Documentacion CCO por
+    <li class="footer">Generado el Martes, 16 de Diciembre de 2014 16:26:51 para Documentacion CCO por
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

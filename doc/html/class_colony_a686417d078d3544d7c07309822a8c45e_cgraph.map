@@ -1,0 +1,4 @@
+<map id="Colony::getBestPlant" name="Colony::getBestPlant">
+<area shape="rect" id="node2" href="$class_plant.html#ac53b418a18dc6e37e94c3505b04a0a08" title="Retorna el puntero a la planta con mayor fitness de la rama. " alt="" coords="199,29,329,56"/>
+<area shape="rect" id="node3" href="$class_plant.html#aff425cc6c39ef2696c41a545b37f6770" title="Retorna el actual fitness de la clase. " alt="" coords="377,29,499,56"/>
+</map>

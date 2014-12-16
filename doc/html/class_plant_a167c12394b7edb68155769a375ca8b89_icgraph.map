@@ -1,0 +1,5 @@
+<map id="Plant::setParent" name="Plant::setParent">
+<area shape="rect" id="node2" href="$class_plant.html#ab7c3c50790efd2843219e439cdf7e687" title="Split para la rama. " alt="" coords="169,5,300,32"/>
+<area shape="rect" id="node3" href="$class_colony.html#a665b63676510d72cc12d4a658f795dff" title="Split para la colonia. " alt="" coords="348,5,444,32"/>
+<area shape="rect" id="node4" href="$class_c_c_o.html#a5804afdd4b0361d7507fab4b3ab71703" title="Provoca eventualmente la división de la colonia. " alt="" coords="492,5,576,32"/>
+</map>

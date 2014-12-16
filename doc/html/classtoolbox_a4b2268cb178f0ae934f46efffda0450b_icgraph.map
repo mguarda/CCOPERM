@@ -1,0 +1,6 @@
+<map id="toolbox::int2string" name="toolbox::int2string">
+<area shape="rect" id="node2" href="$class_c_c_o.html#a48251cd1f851d236c4aec73c82b39682" title="Contructor de la clase CCO. " alt="" coords="199,5,286,32"/>
+<area shape="rect" id="node3" href="$class_c_c_o.html#a5804afdd4b0361d7507fab4b3ab71703" title="Provoca eventualmente la división de la colonia. " alt="" coords="201,56,285,83"/>
+<area shape="rect" id="node4" href="$class_c_c_o.html#a8b93a09d017497a2a636bd092883f06a" title="Metodo que estimula la competicion de las colonias. " alt="" coords="179,107,306,133"/>
+<area shape="rect" id="node5" href="$class_colony.html#a9b1ac80bb274d2f8b90e592d11a4894b" title="Metodo que permite desplegar grafica de la colonia. " alt="" coords="179,157,307,184"/>
+</map>

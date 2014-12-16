@@ -1,0 +1,6 @@
+<map id="toolbox::azar" name="toolbox::azar">
+<area shape="rect" id="node2" href="$class_c_c_o.html#a81583df8113bfdd76f5d5d541bdab892" title="Metodo que permite agregar plantas a la colonia. " alt="" coords="325,53,424,80"/>
+<area shape="rect" id="node3" href="$class_c_c_o.html#a5804afdd4b0361d7507fab4b3ab71703" title="Provoca eventualmente la división de la colonia. " alt="" coords="172,28,256,54"/>
+<area shape="rect" id="node4" href="$class_c_c_o.html#a8b93a09d017497a2a636bd092883f06a" title="Metodo que estimula la competicion de las colonias. " alt="" coords="151,78,277,105"/>
+<area shape="rect" id="node5" href="$class_colony.html#a095984a4b9d66dccd04512f77b70fbe9" title="Escoge al azar una Planta de la colonia. " alt="" coords="157,129,271,156"/>
+</map>

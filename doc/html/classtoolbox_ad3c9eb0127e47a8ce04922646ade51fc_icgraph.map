@@ -1,0 +1,6 @@
+<map id="toolbox::pval_string" name="toolbox::pval_string">
+<area shape="rect" id="node2" href="$class_c_c_o.html#a48251cd1f851d236c4aec73c82b39682" title="Contructor de la clase CCO. " alt="" coords="207,5,294,32"/>
+<area shape="rect" id="node3" href="$class_c_c_o.html#abe96cee0e1a470ea4210ecafe0a4c13e" title="Permite ejecutar la clase CCO. " alt="" coords="213,56,289,83"/>
+<area shape="rect" id="node4" href="$class_c_c_o.html#ae92e0bf5ad45ce36f7e078634e1f42f1" title="Metodo que determina del patio la(s) solucion(es) mas robusta(s) y de buena calidad (fitness alto) ..." alt="" coords="205,107,296,133"/>
+<area shape="rect" id="node5" href="$class_colony.html#a9b1ac80bb274d2f8b90e592d11a4894b" title="Metodo que permite desplegar grafica de la colonia. " alt="" coords="187,157,315,184"/>
+</map>

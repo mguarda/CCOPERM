@@ -1,0 +1,8 @@
+<map id="toolbox::pval_int" name="toolbox::pval_int">
+<area shape="rect" id="node2" href="$class_c_c_o.html#abe96cee0e1a470ea4210ecafe0a4c13e" title="Permite ejecutar la clase CCO. " alt="" coords="193,5,269,32"/>
+<area shape="rect" id="node3" href="$class_c_c_o.html#a611537d0f46ae4573b08a0d8c343da5c" title="Metodo que permite eliminar plantas a la colonia. " alt="" coords="185,56,277,83"/>
+<area shape="rect" id="node4" href="$class_c_c_o.html#a81583df8113bfdd76f5d5d541bdab892" title="Metodo que permite agregar plantas a la colonia. " alt="" coords="343,183,441,209"/>
+<area shape="rect" id="node5" href="$class_c_c_o.html#a5804afdd4b0361d7507fab4b3ab71703" title="Provoca eventualmente la división de la colonia. " alt="" coords="189,157,273,184"/>
+<area shape="rect" id="node6" href="$class_c_c_o.html#a8b93a09d017497a2a636bd092883f06a" title="Metodo que estimula la competicion de las colonias. " alt="" coords="168,208,295,235"/>
+<area shape="rect" id="node7" href="$class_colony.html#a095984a4b9d66dccd04512f77b70fbe9" title="Escoge al azar una Planta de la colonia. " alt="" coords="175,259,288,285"/>
+</map>

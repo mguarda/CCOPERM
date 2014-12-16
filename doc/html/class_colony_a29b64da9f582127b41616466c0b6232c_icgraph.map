@@ -1,0 +1,5 @@
+<map id="Colony::setName" name="Colony::setName">
+<area shape="rect" id="node2" href="$class_c_c_o.html#a48251cd1f851d236c4aec73c82b39682" title="Contructor de la clase CCO. " alt="" coords="196,5,283,32"/>
+<area shape="rect" id="node3" href="$class_c_c_o.html#a5804afdd4b0361d7507fab4b3ab71703" title="Provoca eventualmente la división de la colonia. " alt="" coords="197,56,281,83"/>
+<area shape="rect" id="node4" href="$class_c_c_o.html#a8b93a09d017497a2a636bd092883f06a" title="Metodo que estimula la competicion de las colonias. " alt="" coords="176,107,303,133"/>
+</map>

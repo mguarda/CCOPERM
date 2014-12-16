@@ -1,29 +1,43 @@
 \hypertarget{class_qap}{\section{Referencia de la Clase Qap}
 \label{class_qap}\index{Qap@{Qap}}
 }
-Diagrama de herencias de Qap\begin{figure}[H]
+
+
+Diagrama de herencias de Qap
+\nopagebreak
+\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{class_qap}
+\includegraphics[width=133pt]{class_qap__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Diagrama de colaboración para Qap\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=133pt]{class_qap__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{class_solution}{Solution} $\ast$ \hyperlink{class_qap_a4493347601b4458092eb443ee8499743}{New\+Solution} ()
-\begin{DoxyCompactList}\small\item\em Redefinicion del método para la clase \hyperlink{class_tsp}{Tsp}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Redefinicion del método para la clase \hyperlink{class_qap}{Qap}. \end{DoxyCompactList}\item 
 double \hyperlink{class_qap_a05d324d41f7d70c8057b7b35a2f2aeab}{Calcular\+Fitness} (\hyperlink{class_solution}{Solution} $\ast$sol)
-\begin{DoxyCompactList}\small\item\em Redefinicion del método para la clase \hyperlink{class_tsp}{Tsp}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Redefinicion del método para la clase \hyperlink{class_qap}{Qap}. \end{DoxyCompactList}\item 
 double \hyperlink{class_qap_a8b736df9c6b69a4f1f2c76921b1d9992}{get\+Min\+Values\+Pos} (unsigned int pos)
-\begin{DoxyCompactList}\small\item\em Redefinicion del método para la clase \hyperlink{class_tsp}{Tsp}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Redefinicion del método para la clase \hyperlink{class_qap}{Qap}. \end{DoxyCompactList}\item 
 double \hyperlink{class_qap_ac0d42b8ed406cad3c960505628f4f35c}{get\+Max\+Values\+Pos} (unsigned int pos)
-\begin{DoxyCompactList}\small\item\em Redefinicion del método para la clase \hyperlink{class_tsp}{Tsp}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Redefinicion del método para la clase \hyperlink{class_qap}{Qap}. \end{DoxyCompactList}\item 
 unsigned int \hyperlink{class_qap_a82bf0c0567c7e5bbfcef5ec7b4281409}{get\+Dimension} ()
-\begin{DoxyCompactList}\small\item\em Redefinicion del método para la clase \hyperlink{class_tsp}{Tsp}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Redefinicion del método para la clase \hyperlink{class_qap}{Qap}. \end{DoxyCompactList}\item 
 bool \hyperlink{class_qap_ac338b0a23c2565cd014a193569a33870}{Es\+Dinamico} ()
-\begin{DoxyCompactList}\small\item\em Redefinicion del método para la clase \hyperlink{class_tsp}{Tsp}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Redefinicion del método para la clase \hyperlink{class_qap}{Qap}. \end{DoxyCompactList}\item 
 void \hyperlink{class_qap_a3bb1b7cc62a0f0f0ddd9e2644cea2b7f}{step} (std\+::vector$<$ std\+::vector$<$ double $>$ $>$, int)
-\begin{DoxyCompactList}\small\item\em Redefinicion del método para la clase \hyperlink{class_tsp}{Tsp}. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Redefinicion del método para la clase \hyperlink{class_qap}{Qap}. \end{DoxyCompactList}\item 
 void \hyperlink{class_qap_a0c90fc0c866ba30a979a8a28e7d95336}{read\+Q\+A\+P\+Problem\+File} (string filename)
 \end{DoxyCompactItemize}
 \subsection*{Otros miembros heredados}
@@ -39,7 +53,7 @@ void \hyperlink{class_qap_a0c90fc0c866ba30a979a8a28e7d95336}{read\+Q\+A\+P\+Prob
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_qap_a05d324d41f7d70c8057b7b35a2f2aeab}
 
 
-Redefinicion del método para la clase \hyperlink{class_tsp}{Tsp}. 
+Redefinicion del método para la clase \hyperlink{class_qap}{Qap}. 
 
 
 \begin{DoxyParams}{Parámetros}
@@ -50,6 +64,18 @@ Redefinicion del método para la clase \hyperlink{class_tsp}{Tsp}.
 
 Implementa \hyperlink{class_problem_adc6176be667576d08cf3e89b65e905f4}{Problem}.
 
+
+
+Gráfico de llamadas para esta función\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{class_qap_a05d324d41f7d70c8057b7b35a2f2aeab_cgraph}
+\end{center}
+\end{figure}
+
+
 \hypertarget{class_qap_ac338b0a23c2565cd014a193569a33870}{\index{Qap@{Qap}!Es\+Dinamico@{Es\+Dinamico}}
 \index{Es\+Dinamico@{Es\+Dinamico}!Qap@{Qap}}
 \subsubsection[{Es\+Dinamico}]{\setlength{\rightskip}{0pt plus 5cm}bool Qap\+::\+Es\+Dinamico (
@@ -59,7 +85,7 @@ Implementa \hyperlink{class_problem_adc6176be667576d08cf3e89b65e905f4}{Problem}.
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_qap_ac338b0a23c2565cd014a193569a33870}
 
 
-Redefinicion del método para la clase \hyperlink{class_tsp}{Tsp}. 
+Redefinicion del método para la clase \hyperlink{class_qap}{Qap}. 
 
 \begin{DoxyReturn}{Devuelve}
 Retorna valor del tipo booleano, con la respuesta de si es o no, dinámico el problema 
@@ -77,7 +103,7 @@ Implementa \hyperlink{class_problem_a481dc3e5869cf95b3c539d552e8eeb50}{Problem}.
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_qap_a82bf0c0567c7e5bbfcef5ec7b4281409}
 
 
-Redefinicion del método para la clase \hyperlink{class_tsp}{Tsp}. 
+Redefinicion del método para la clase \hyperlink{class_qap}{Qap}. 
 
 \begin{DoxyReturn}{Devuelve}
 Retorna valor del tipo entero sin signo, con el valor de la dimensión del problema 
@@ -95,7 +121,7 @@ Implementa \hyperlink{class_problem_a6f72067600654aef0767bce95c4eacdd}{Problem}.
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_qap_ac0d42b8ed406cad3c960505628f4f35c}
 
 
-Redefinicion del método para la clase \hyperlink{class_tsp}{Tsp}. 
+Redefinicion del método para la clase \hyperlink{class_qap}{Qap}. 
 
 
 \begin{DoxyParams}{Parámetros}
@@ -118,7 +144,7 @@ Implementa \hyperlink{class_problem_a2ffe7de8658a25398d6a21dd1b2edfcb}{Problem}.
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_qap_a8b736df9c6b69a4f1f2c76921b1d9992}
 
 
-Redefinicion del método para la clase \hyperlink{class_tsp}{Tsp}. 
+Redefinicion del método para la clase \hyperlink{class_qap}{Qap}. 
 
 
 \begin{DoxyParams}{Parámetros}
@@ -141,7 +167,7 @@ Implementa \hyperlink{class_problem_ad6a122249b93487f91a64837a056fa75}{Problem}.
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_qap_a4493347601b4458092eb443ee8499743}
 
 
-Redefinicion del método para la clase \hyperlink{class_tsp}{Tsp}. 
+Redefinicion del método para la clase \hyperlink{class_qap}{Qap}. 
 
 \begin{DoxyReturn}{Devuelve}
 Retorna puntero del tipo \hyperlink{class_solution}{Solution}, con una nueva solución relacionada con la codificación en particular para el problema, específicamente Solution\+R\+N 
@@ -167,7 +193,7 @@ int k = 1; \hypertarget{class_qap_a3bb1b7cc62a0f0f0ddd9e2644cea2b7f}{\index{Qap@
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_qap_a3bb1b7cc62a0f0f0ddd9e2644cea2b7f}
 
 
-Redefinicion del método para la clase \hyperlink{class_tsp}{Tsp}. 
+Redefinicion del método para la clase \hyperlink{class_qap}{Qap}. 
 
 
 \begin{DoxyParams}{Parámetros}

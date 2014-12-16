@@ -1,0 +1,4 @@
+<map id="Colony::getOldPlant" name="Colony::getOldPlant">
+<area shape="rect" id="node2" href="$class_plant.html#a3540c994a995d890f1d41f1646e5bfa8" title="Retorna la planta mas antigua de la rama. " alt="" coords="192,29,329,71"/>
+<area shape="rect" id="node3" href="$class_plant.html#a7e59304c381b9e930ec70207ce888310" title="Retorna el año de la planta. " alt="" coords="377,37,485,63"/>
+</map>

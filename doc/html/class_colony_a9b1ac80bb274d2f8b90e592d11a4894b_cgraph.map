@@ -1,0 +1,5 @@
+<map id="Colony::show_plot" name="Colony::show_plot">
+<area shape="rect" id="node2" href="$classtoolbox.html#a3058e36ea4c84178eaa21321a5733cc8" title="return the pointer to the singleton instance " alt="" coords="187,5,309,32"/>
+<area shape="rect" id="node3" href="$classtoolbox.html#ad3c9eb0127e47a8ce04922646ade51fc" title="toolbox::pval_string" alt="" coords="181,56,315,83"/>
+<area shape="rect" id="node4" href="$classtoolbox.html#a4b2268cb178f0ae934f46efffda0450b" title="toolbox::int2string" alt="" coords="185,107,311,133"/>
+</map>

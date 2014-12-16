@@ -1,0 +1,12 @@
+<map id="CCO::Extend" name="CCO::Extend">
+<area shape="rect" id="node2" href="$class_colony.html#a095984a4b9d66dccd04512f77b70fbe9" title="Escoge al azar una Planta de la colonia. " alt="" coords="178,51,291,78"/>
+<area shape="rect" id="node3" href="$classtoolbox.html#a3058e36ea4c84178eaa21321a5733cc8" title="return the pointer to the singleton instance " alt="" coords="365,14,487,40"/>
+<area shape="rect" id="node4" href="$classtoolbox.html#a30135dd53233f8ed0cd68532f51cb002" title="toolbox::pval_int" alt="" coords="369,90,483,116"/>
+<area shape="rect" id="node5" href="$classtoolbox.html#a7b24111985e7dcac53f092e954e0cc07" title="toolbox::azar" alt="" coords="377,140,475,167"/>
+<area shape="rect" id="node6" href="$classtoolbox.html#aa6cb1dff126daa9c34d6e2435143b372" title="toolbox::pval_double" alt="" coords="165,203,304,230"/>
+<area shape="rect" id="node7" href="$class_plant.html#aff425cc6c39ef2696c41a545b37f6770" title="Retorna el actual fitness de la clase. " alt="" coords="174,254,295,280"/>
+<area shape="rect" id="node8" href="$class_plant.html#abc664a5111f99ef2dc172b10b8451f84" title="Retorna la actual solucion que tiene la planta. " alt="" coords="172,304,297,331"/>
+<area shape="rect" id="node9" href="$class_solution.html#a232b4bd1064e9bae8ff4c0cbe82f6be6" title="Para los valores de la solucion actual, se modifican (extienden) retornando otra nueva solucion..." alt="" coords="152,355,317,382"/>
+<area shape="rect" id="node10" href="$class_plant.html#a839a1a741148c611fabde01cfd69bb6a" title="Añade un nuevo hijo a la planta. " alt="" coords="177,406,292,432"/>
+<area shape="rect" id="node11" href="$class_solution.html#a794776f952a06bb4a4a7e0f198efcfa2" title="Retorna el fitness de la solucion. " alt="" coords="165,456,304,483"/>
+</map>

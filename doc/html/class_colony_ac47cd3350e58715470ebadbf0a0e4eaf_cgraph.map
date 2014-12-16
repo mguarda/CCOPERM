@@ -1,0 +1,9 @@
+<map id="Colony::replace_root" name="Colony::replace_root">
+<area shape="rect" id="node2" href="$class_plant.html#af60cb9b017dca652f24292707e77eb5b" title="Establece el fitness de la clase. " alt="" coords="199,5,321,32"/>
+<area shape="rect" id="node3" href="$class_plant.html#aff425cc6c39ef2696c41a545b37f6770" title="Retorna el actual fitness de la clase. " alt="" coords="199,56,321,83"/>
+<area shape="rect" id="node4" href="$class_plant.html#ab3f3b60326720e4f48a24433ea6be7cf" title="Retorna el fitness de la rama. " alt="" coords="195,107,325,133"/>
+<area shape="rect" id="node5" href="$class_plant.html#a1c8053d6bd28043089ca3106bb1403e8" title="Retorna el tamaño de la rama. " alt="" coords="203,157,317,184"/>
+<area shape="rect" id="node6" href="$class_plant.html#afdbf74edabdfe044d64a3a7c374d6119" title="Permite obtener el tfitness. " alt="" coords="196,208,324,235"/>
+<area shape="rect" id="node7" href="$class_plant.html#a7e59304c381b9e930ec70207ce888310" title="Retorna el año de la planta. " alt="" coords="206,259,314,285"/>
+<area shape="rect" id="node8" href="$class_plant.html#abc664a5111f99ef2dc172b10b8451f84" title="Retorna la actual solucion que tiene la planta. " alt="" coords="197,309,323,336"/>
+</map>

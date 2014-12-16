@@ -1,0 +1,5 @@
+<map id="Plant::getSolution" name="Plant::getSolution">
+<area shape="rect" id="node2" href="$class_c_c_o.html#a81583df8113bfdd76f5d5d541bdab892" title="Metodo que permite agregar plantas a la colonia. " alt="" coords="200,5,299,32"/>
+<area shape="rect" id="node3" href="$class_c_c_o.html#ae92e0bf5ad45ce36f7e078634e1f42f1" title="Metodo que determina del patio la(s) solucion(es) mas robusta(s) y de buena calidad (fitness alto) ..." alt="" coords="204,56,295,83"/>
+<area shape="rect" id="node4" href="$class_colony.html#ac47cd3350e58715470ebadbf0a0e4eaf" title="Establece el reemplazante de la raíz. " alt="" coords="179,107,320,133"/>
+</map>

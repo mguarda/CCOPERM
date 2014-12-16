@@ -1,0 +1,5 @@
+<map id="Plant::getC" name="Plant::getC">
+<area shape="rect" id="node2" href="$class_plant.html#afbc29c83a69faf9bef5373b0be9e6771" title="Retorna un puntero a la planta segun el frente pareto Purge. " alt="" coords="140,29,279,56"/>
+<area shape="rect" id="node3" href="$class_colony.html#a8ce65c7c0abc9edee880ff6275b51e6f" title="Purge para la colonia. " alt="" coords="327,29,431,56"/>
+<area shape="rect" id="node4" href="$class_c_c_o.html#a611537d0f46ae4573b08a0d8c343da5c" title="Metodo que permite eliminar plantas a la colonia. " alt="" coords="479,29,571,56"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="Plant::fpareto_purge" name="Plant::fpareto_purge">
+<area shape="rect" id="node2" href="$class_plant.html#afdbf74edabdfe044d64a3a7c374d6119" title="Permite obtener el tfitness. " alt="" coords="192,5,320,32"/>
+<area shape="rect" id="node3" href="$class_plant.html#a79fc3e80a225263ba150952e49b4533c" title="Retorna el numero de conexiones que posee. " alt="" coords="213,56,299,83"/>
+</map>

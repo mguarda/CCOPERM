@@ -1,0 +1,15 @@
+<map id="CCO::Competition" name="CCO::Competition">
+<area shape="rect" id="node2" href="$classtoolbox.html#a3058e36ea4c84178eaa21321a5733cc8" title="return the pointer to the singleton instance " alt="" coords="375,22,497,48"/>
+<area shape="rect" id="node3" href="$classtoolbox.html#a30135dd53233f8ed0cd68532f51cb002" title="toolbox::pval_int" alt="" coords="192,44,307,71"/>
+<area shape="rect" id="node4" href="$class_colony.html#adaa8bc27180fe9b61656acb6185250b7" title="Retorna el area de la colonia. " alt="" coords="192,95,307,122"/>
+<area shape="rect" id="node5" href="$classtoolbox.html#aa6cb1dff126daa9c34d6e2435143b372" title="toolbox::pval_double" alt="" coords="367,100,505,127"/>
+<area shape="rect" id="node6" href="$class_colony.html#a911588b5aab6106b94e9a039ffd61060" title="Retorna la planta mas antigua. " alt="" coords="180,196,319,223"/>
+<area shape="rect" id="node8" href="$class_plant.html#a7e59304c381b9e930ec70207ce888310" title="Retorna el año de la planta. " alt="" coords="553,218,661,244"/>
+<area shape="rect" id="node9" href="$class_colony.html#a9f647ee71e990d77daeb95a72d2251ec" title="Retorna el tamaño de la colonia. " alt="" coords="192,298,307,324"/>
+<area shape="rect" id="node10" href="$classtoolbox.html#a7b24111985e7dcac53f092e954e0cc07" title="toolbox::azar" alt="" coords="201,348,298,375"/>
+<area shape="rect" id="node11" href="$class_colony.html#ac31cfb633a10ab2e348d6a1a927c68d9" title="Establecer el número de plantas que puede poseer la colonia (MPC) " alt="" coords="191,399,308,426"/>
+<area shape="rect" id="node12" href="$class_colony.html#a29b64da9f582127b41616466c0b6232c" title="Establece el nombre de la actual colonia. " alt="" coords="188,450,311,476"/>
+<area shape="rect" id="node13" href="$classtoolbox.html#a4b2268cb178f0ae934f46efffda0450b" title="toolbox::int2string" alt="" coords="187,500,312,527"/>
+<area shape="rect" id="node14" href="$class_plant.html#a3a6c02eec89ad04003c7cb6d5769bd6e" title="Establece el año de creacion planta. " alt="" coords="195,551,303,578"/>
+<area shape="rect" id="node7" href="$class_plant.html#a3540c994a995d890f1d41f1646e5bfa8" title="Retorna la planta mas antigua de la rama. " alt="" coords="367,181,505,222"/>
+</map>

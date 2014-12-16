@@ -1,0 +1,4 @@
+<map id="Colony::getWorstPlant" name="Colony::getWorstPlant">
+<area shape="rect" id="node2" href="$class_c_c_o.html#a611537d0f46ae4573b08a0d8c343da5c" title="Metodo que permite eliminar plantas a la colonia. " alt="" coords="207,5,299,32"/>
+<area shape="rect" id="node3" href="$class_c_c_o.html#a5804afdd4b0361d7507fab4b3ab71703" title="Provoca eventualmente la división de la colonia. " alt="" coords="211,56,295,83"/>
+</map>

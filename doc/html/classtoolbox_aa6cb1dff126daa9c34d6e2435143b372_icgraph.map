@@ -1,0 +1,10 @@
+<map id="toolbox::pval_double" name="toolbox::pval_double">
+<area shape="rect" id="node2" href="$class_c_c_o.html#a48251cd1f851d236c4aec73c82b39682" title="Contructor de la clase CCO. " alt="" coords="232,5,319,32"/>
+<area shape="rect" id="node3" href="$class_c_c_o.html#abe96cee0e1a470ea4210ecafe0a4c13e" title="Permite ejecutar la clase CCO. " alt="" coords="237,56,313,83"/>
+<area shape="rect" id="node4" href="$class_c_c_o.html#a81583df8113bfdd76f5d5d541bdab892" title="Metodo que permite agregar plantas a la colonia. " alt="" coords="226,107,325,133"/>
+<area shape="rect" id="node5" href="$class_c_c_o.html#a5804afdd4b0361d7507fab4b3ab71703" title="Provoca eventualmente la división de la colonia. " alt="" coords="233,157,317,184"/>
+<area shape="rect" id="node6" href="$class_c_c_o.html#a8b93a09d017497a2a636bd092883f06a" title="Metodo que estimula la competicion de las colonias. " alt="" coords="407,259,533,285"/>
+<area shape="rect" id="node7" href="$class_colony.html#a768a1fa3225bce6b7c28031d0efac929" title="Actualizar el TFitness para la colonia. " alt="" coords="192,259,359,285"/>
+<area shape="rect" id="node8" href="$class_colony.html#adaa8bc27180fe9b61656acb6185250b7" title="Retorna el area de la colonia. " alt="" coords="218,309,333,336"/>
+<area shape="rect" id="node9" href="$class_colony.html#a7f27439201f57d52df38115c10f41bf2" title="Retorna el area de intersección con respecto a otra colonia. " alt="" coords="199,360,351,387"/>
+</map>

@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Lista&#160;de&#160;clases</span></a></li>
       <li><a href="classes.html"><span>Índice&#160;de&#160;clases</span></a></li>
-      <li><a href="hierarchy.html"><span>Jerarquía&#160;de&#160;la&#160;clase</span></a></li>
+      <li><a href="inherits.html"><span>Jerarquía&#160;de&#160;la&#160;clase</span></a></li>
       <li><a href="functions.html"><span>Miembros&#160;de&#160;las&#160;clases</span></a></li>
     </ul>
   </div>
@@ -113,35 +113,40 @@ $(document).ready(function(){initNavTree('class_qap.html','');});
 <div class="dynheader">
 Diagrama de herencias de Qap</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="class_qap.png" usemap="#Qap_map" alt=""/>
-  <map id="Qap_map" name="Qap_map">
-<area href="class_problem.html" title="Clase abstracta Problem. " alt="Problem" shape="rect" coords="0,0,58,24"/>
-</map>
- </div></div>
+<div class="center"><img src="class_qap__inherit__graph.png" border="0" usemap="#_qap_inherit__map" alt="Inheritance graph"/></div>
+<map name="_qap_inherit__map" id="_qap_inherit__map">
+<area shape="rect" id="node2" href="class_problem.html" title="Clase abstracta Problem. " alt="" coords="5,5,76,32"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">significado de colores y flechas</a>]</span></center></div>
+<div class="dynheader">
+Diagrama de colaboración para Qap:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_qap__coll__graph.png" border="0" usemap="#_qap_coll__map" alt="Collaboration graph"/></div>
+<map name="_qap_coll__map" id="_qap_coll__map">
+<area shape="rect" id="node2" href="class_problem.html" title="Clase abstracta Problem. " alt="" coords="5,5,76,32"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">significado de colores y flechas</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Métodos públicos</h2></td></tr>
 <tr class="memitem:a4493347601b4458092eb443ee8499743"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_solution.html">Solution</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qap.html#a4493347601b4458092eb443ee8499743">NewSolution</a> ()</td></tr>
-<tr class="memdesc:a4493347601b4458092eb443ee8499743"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redefinicion del método para la clase <a class="el" href="class_tsp.html">Tsp</a>.  <a href="#a4493347601b4458092eb443ee8499743">Más...</a><br /></td></tr>
+<tr class="memdesc:a4493347601b4458092eb443ee8499743"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redefinicion del método para la clase <a class="el" href="class_qap.html">Qap</a>.  <a href="#a4493347601b4458092eb443ee8499743">Más...</a><br /></td></tr>
 <tr class="separator:a4493347601b4458092eb443ee8499743"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a05d324d41f7d70c8057b7b35a2f2aeab"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qap.html#a05d324d41f7d70c8057b7b35a2f2aeab">CalcularFitness</a> (<a class="el" href="class_solution.html">Solution</a> *sol)</td></tr>
-<tr class="memdesc:a05d324d41f7d70c8057b7b35a2f2aeab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redefinicion del método para la clase <a class="el" href="class_tsp.html">Tsp</a>.  <a href="#a05d324d41f7d70c8057b7b35a2f2aeab">Más...</a><br /></td></tr>
+<tr class="memdesc:a05d324d41f7d70c8057b7b35a2f2aeab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redefinicion del método para la clase <a class="el" href="class_qap.html">Qap</a>.  <a href="#a05d324d41f7d70c8057b7b35a2f2aeab">Más...</a><br /></td></tr>
 <tr class="separator:a05d324d41f7d70c8057b7b35a2f2aeab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b736df9c6b69a4f1f2c76921b1d9992"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qap.html#a8b736df9c6b69a4f1f2c76921b1d9992">getMinValuesPos</a> (unsigned int pos)</td></tr>
-<tr class="memdesc:a8b736df9c6b69a4f1f2c76921b1d9992"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redefinicion del método para la clase <a class="el" href="class_tsp.html">Tsp</a>.  <a href="#a8b736df9c6b69a4f1f2c76921b1d9992">Más...</a><br /></td></tr>
+<tr class="memdesc:a8b736df9c6b69a4f1f2c76921b1d9992"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redefinicion del método para la clase <a class="el" href="class_qap.html">Qap</a>.  <a href="#a8b736df9c6b69a4f1f2c76921b1d9992">Más...</a><br /></td></tr>
 <tr class="separator:a8b736df9c6b69a4f1f2c76921b1d9992"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0d42b8ed406cad3c960505628f4f35c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qap.html#ac0d42b8ed406cad3c960505628f4f35c">getMaxValuesPos</a> (unsigned int pos)</td></tr>
-<tr class="memdesc:ac0d42b8ed406cad3c960505628f4f35c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redefinicion del método para la clase <a class="el" href="class_tsp.html">Tsp</a>.  <a href="#ac0d42b8ed406cad3c960505628f4f35c">Más...</a><br /></td></tr>
+<tr class="memdesc:ac0d42b8ed406cad3c960505628f4f35c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redefinicion del método para la clase <a class="el" href="class_qap.html">Qap</a>.  <a href="#ac0d42b8ed406cad3c960505628f4f35c">Más...</a><br /></td></tr>
 <tr class="separator:ac0d42b8ed406cad3c960505628f4f35c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82bf0c0567c7e5bbfcef5ec7b4281409"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qap.html#a82bf0c0567c7e5bbfcef5ec7b4281409">getDimension</a> ()</td></tr>
-<tr class="memdesc:a82bf0c0567c7e5bbfcef5ec7b4281409"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redefinicion del método para la clase <a class="el" href="class_tsp.html">Tsp</a>.  <a href="#a82bf0c0567c7e5bbfcef5ec7b4281409">Más...</a><br /></td></tr>
+<tr class="memdesc:a82bf0c0567c7e5bbfcef5ec7b4281409"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redefinicion del método para la clase <a class="el" href="class_qap.html">Qap</a>.  <a href="#a82bf0c0567c7e5bbfcef5ec7b4281409">Más...</a><br /></td></tr>
 <tr class="separator:a82bf0c0567c7e5bbfcef5ec7b4281409"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac338b0a23c2565cd014a193569a33870"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qap.html#ac338b0a23c2565cd014a193569a33870">EsDinamico</a> ()</td></tr>
-<tr class="memdesc:ac338b0a23c2565cd014a193569a33870"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redefinicion del método para la clase <a class="el" href="class_tsp.html">Tsp</a>.  <a href="#ac338b0a23c2565cd014a193569a33870">Más...</a><br /></td></tr>
+<tr class="memdesc:ac338b0a23c2565cd014a193569a33870"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redefinicion del método para la clase <a class="el" href="class_qap.html">Qap</a>.  <a href="#ac338b0a23c2565cd014a193569a33870">Más...</a><br /></td></tr>
 <tr class="separator:ac338b0a23c2565cd014a193569a33870"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bb1b7cc62a0f0f0ddd9e2644cea2b7f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qap.html#a3bb1b7cc62a0f0f0ddd9e2644cea2b7f">step</a> (std::vector&lt; std::vector&lt; double &gt; &gt;, int)</td></tr>
-<tr class="memdesc:a3bb1b7cc62a0f0f0ddd9e2644cea2b7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redefinicion del método para la clase <a class="el" href="class_tsp.html">Tsp</a>.  <a href="#a3bb1b7cc62a0f0f0ddd9e2644cea2b7f">Más...</a><br /></td></tr>
+<tr class="memdesc:a3bb1b7cc62a0f0f0ddd9e2644cea2b7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redefinicion del método para la clase <a class="el" href="class_qap.html">Qap</a>.  <a href="#a3bb1b7cc62a0f0f0ddd9e2644cea2b7f">Más...</a><br /></td></tr>
 <tr class="separator:a3bb1b7cc62a0f0f0ddd9e2644cea2b7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c90fc0c866ba30a979a8a28e7d95336"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_qap.html#a0c90fc0c866ba30a979a8a28e7d95336">readQAPProblemFile</a> (string filename)</td></tr>
 <tr class="separator:a0c90fc0c866ba30a979a8a28e7d95336"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -180,7 +185,7 @@ static <a class="el" href="class_problem.html">Problem</a> *&#160;</td><td class
 </table>
 </div><div class="memdoc">
 
-<p>Redefinicion del método para la clase <a class="el" href="class_tsp.html">Tsp</a>. </p>
+<p>Redefinicion del método para la clase <a class="el" href="class_qap.html">Qap</a>. </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">sol</td><td>Puntero a la solución, que se desea determinar su fitness en la subclase <a class="el" href="class_tsp.html">Tsp</a> </td></tr>
@@ -189,6 +194,15 @@ static <a class="el" href="class_problem.html">Problem</a> *&#160;</td><td class
 </dl>
 
 <p>Implementa <a class="el" href="class_problem.html#adc6176be667576d08cf3e89b65e905f4">Problem</a>.</p>
+
+<p><div class="dynheader">
+Gráfico de llamadas para esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_qap_a05d324d41f7d70c8057b7b35a2f2aeab_cgraph.png" border="0" usemap="#class_qap_a05d324d41f7d70c8057b7b35a2f2aeab_cgraph" alt=""/></div>
+<map name="class_qap_a05d324d41f7d70c8057b7b35a2f2aeab_cgraph" id="class_qap_a05d324d41f7d70c8057b7b35a2f2aeab_cgraph">
+<area shape="rect" id="node2" href="class_solution.html#a856741c28b047bae68aa7cb3721d30bb" title="Retorna el valores particulares de las soluciones. " alt="" coords="197,5,332,32"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -213,7 +227,7 @@ static <a class="el" href="class_problem.html">Problem</a> *&#160;</td><td class
 </table>
 </div><div class="memdoc">
 
-<p>Redefinicion del método para la clase <a class="el" href="class_tsp.html">Tsp</a>. </p>
+<p>Redefinicion del método para la clase <a class="el" href="class_qap.html">Qap</a>. </p>
 <dl class="section return"><dt>Devuelve</dt><dd>Retorna valor del tipo booleano, con la respuesta de si es o no, dinámico el problema </dd></dl>
 
 <p>Implementa <a class="el" href="class_problem.html#a481dc3e5869cf95b3c539d552e8eeb50">Problem</a>.</p>
@@ -241,7 +255,7 @@ static <a class="el" href="class_problem.html">Problem</a> *&#160;</td><td class
 </table>
 </div><div class="memdoc">
 
-<p>Redefinicion del método para la clase <a class="el" href="class_tsp.html">Tsp</a>. </p>
+<p>Redefinicion del método para la clase <a class="el" href="class_qap.html">Qap</a>. </p>
 <dl class="section return"><dt>Devuelve</dt><dd>Retorna valor del tipo entero sin signo, con el valor de la dimensión del problema </dd></dl>
 
 <p>Implementa <a class="el" href="class_problem.html#a6f72067600654aef0767bce95c4eacdd">Problem</a>.</p>
@@ -270,7 +284,7 @@ static <a class="el" href="class_problem.html">Problem</a> *&#160;</td><td class
 </table>
 </div><div class="memdoc">
 
-<p>Redefinicion del método para la clase <a class="el" href="class_tsp.html">Tsp</a>. </p>
+<p>Redefinicion del método para la clase <a class="el" href="class_qap.html">Qap</a>. </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">pos</td><td>Posición de la coordenada</td></tr>
@@ -305,7 +319,7 @@ static <a class="el" href="class_problem.html">Problem</a> *&#160;</td><td class
 </table>
 </div><div class="memdoc">
 
-<p>Redefinicion del método para la clase <a class="el" href="class_tsp.html">Tsp</a>. </p>
+<p>Redefinicion del método para la clase <a class="el" href="class_qap.html">Qap</a>. </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">pos</td><td>Indica la posición de la coordenada</td></tr>
@@ -339,7 +353,7 @@ static <a class="el" href="class_problem.html">Problem</a> *&#160;</td><td class
 </table>
 </div><div class="memdoc">
 
-<p>Redefinicion del método para la clase <a class="el" href="class_tsp.html">Tsp</a>. </p>
+<p>Redefinicion del método para la clase <a class="el" href="class_qap.html">Qap</a>. </p>
 <dl class="section return"><dt>Devuelve</dt><dd>Retorna puntero del tipo <a class="el" href="class_solution.html" title="Clase Abstracta Solution. ">Solution</a>, con una nueva solución relacionada con la codificación en particular para el problema, específicamente SolutionRN </dd></dl>
 
 <p>Implementa <a class="el" href="class_problem.html#a4b9787b3945dbec08e402c0cfd0f646b">Problem</a>.</p>
@@ -395,7 +409,7 @@ static <a class="el" href="class_problem.html">Problem</a> *&#160;</td><td class
 </table>
 </div><div class="memdoc">
 
-<p>Redefinicion del método para la clase <a class="el" href="class_tsp.html">Tsp</a>. </p>
+<p>Redefinicion del método para la clase <a class="el" href="class_qap.html">Qap</a>. </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">datos</td><td>Arreglo de arreglo con valores de todas las plantas presentes en el patio </td></tr>
@@ -418,7 +432,7 @@ static <a class="el" href="class_problem.html">Problem</a> *&#160;</td><td class
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_qap.html">Qap</a></li>
-    <li class="footer">Generado el Viernes, 12 de Diciembre de 2014 11:41:30 para Documentacion CCO por
+    <li class="footer">Generado el Martes, 16 de Diciembre de 2014 16:26:51 para Documentacion CCO por
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

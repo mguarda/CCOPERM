@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Lista&#160;de&#160;clases</span></a></li>
       <li><a href="classes.html"><span>Índice&#160;de&#160;clases</span></a></li>
-      <li><a href="hierarchy.html"><span>Jerarquía&#160;de&#160;la&#160;clase</span></a></li>
+      <li><a href="inherits.html"><span>Jerarquía&#160;de&#160;la&#160;clase</span></a></li>
       <li><a href="functions.html"><span>Miembros&#160;de&#160;las&#160;clases</span></a></li>
     </ul>
   </div>
@@ -113,12 +113,17 @@ $(document).ready(function(){initNavTree('class_solution_perm.html','');});
 <div class="dynheader">
 Diagrama de herencias de SolutionPerm</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="class_solution_perm.png" usemap="#SolutionPerm_map" alt=""/>
-  <map id="SolutionPerm_map" name="SolutionPerm_map">
-<area href="class_solution.html" title="Clase Abstracta Solution. " alt="Solution" shape="rect" coords="0,0,86,24"/>
-</map>
- </div></div>
+<div class="center"><img src="class_solution_perm__inherit__graph.png" border="0" usemap="#_solution_perm_inherit__map" alt="Inheritance graph"/></div>
+<map name="_solution_perm_inherit__map" id="_solution_perm_inherit__map">
+<area shape="rect" id="node2" href="class_solution.html" title="Clase Abstracta Solution. " alt="" coords="21,5,90,32"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">significado de colores y flechas</a>]</span></center></div>
+<div class="dynheader">
+Diagrama de colaboración para SolutionPerm:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_solution_perm__coll__graph.png" border="0" usemap="#_solution_perm_coll__map" alt="Collaboration graph"/></div>
+<map name="_solution_perm_coll__map" id="_solution_perm_coll__map">
+<area shape="rect" id="node2" href="class_solution.html" title="Clase Abstracta Solution. " alt="" coords="21,5,90,32"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">significado de colores y flechas</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Métodos públicos</h2></td></tr>
@@ -202,6 +207,15 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
   </dd>
 </dl>
 
+<p><div class="dynheader">
+Gráfico de llamadas para esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_solution_perm_a0ccb4febe47f43f0f853ee457e43836f_cgraph.png" border="0" usemap="#class_solution_perm_a0ccb4febe47f43f0f853ee457e43836f_cgraph" alt=""/></div>
+<map name="class_solution_perm_a0ccb4febe47f43f0f853ee457e43836f_cgraph" id="class_solution_perm_a0ccb4febe47f43f0f853ee457e43836f_cgraph">
+<area shape="rect" id="node2" href="classtoolbox.html#a3058e36ea4c84178eaa21321a5733cc8" title="return the pointer to the singleton instance " alt="" coords="285,5,406,32"/><area shape="rect" id="node3" href="classtoolbox.html#a8fe27f13cb254a568c8ec0295e5a734f" title="stop chronometer " alt="" coords="281,56,409,83"/></map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a4ac02ebe89d0c95ed85effdf86849eef"></a>
@@ -248,7 +262,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_solution_perm.html">SolutionPerm</a></li>
-    <li class="footer">Generado el Viernes, 12 de Diciembre de 2014 11:41:30 para Documentacion CCO por
+    <li class="footer">Generado el Martes, 16 de Diciembre de 2014 16:26:51 para Documentacion CCO por
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

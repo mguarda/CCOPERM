@@ -1,0 +1,4 @@
+<map id="Plant::fpareto_purge" name="Plant::fpareto_purge">
+<area shape="rect" id="node2" href="$class_colony.html#a8ce65c7c0abc9edee880ff6275b51e6f" title="Purge para la colonia. " alt="" coords="192,29,296,56"/>
+<area shape="rect" id="node3" href="$class_c_c_o.html#a611537d0f46ae4573b08a0d8c343da5c" title="Metodo que permite eliminar plantas a la colonia. " alt="" coords="344,29,436,56"/>
+</map>

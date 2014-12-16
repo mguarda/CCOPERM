@@ -1,0 +1,5 @@
+<map id="Plant::split_branch" name="Plant::split_branch">
+<area shape="rect" id="node2" href="$class_plant.html#ab3f3b60326720e4f48a24433ea6be7cf" title="Retorna el fitness de la rama. " alt="" coords="184,5,315,32"/>
+<area shape="rect" id="node3" href="$class_plant.html#a1c8053d6bd28043089ca3106bb1403e8" title="Retorna el tamaño de la rama. " alt="" coords="193,56,306,83"/>
+<area shape="rect" id="node4" href="$class_plant.html#a167c12394b7edb68155769a375ca8b89" title="Establece el padre de la planta. " alt="" coords="191,107,307,133"/>
+</map>

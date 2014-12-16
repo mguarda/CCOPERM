@@ -1,0 +1,6 @@
+<map id="Plant::getAnno" name="Plant::getAnno">
+<area shape="rect" id="node2" href="$class_c_c_o.html#a8b93a09d017497a2a636bd092883f06a" title="Metodo que estimula la competicion de las colonias. " alt="" coords="537,21,664,47"/>
+<area shape="rect" id="node3" href="$class_colony.html#ac47cd3350e58715470ebadbf0a0e4eaf" title="Establece el reemplazante de la raíz. " alt="" coords="161,25,303,51"/>
+<area shape="rect" id="node4" href="$class_plant.html#a3540c994a995d890f1d41f1646e5bfa8" title="Retorna la planta mas antigua de la rama. " alt="" coords="163,100,301,141"/>
+<area shape="rect" id="node5" href="$class_colony.html#a911588b5aab6106b94e9a039ffd61060" title="Retorna la planta mas antigua. " alt="" coords="351,66,489,93"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="Plant::best_branch" name="Plant::best_branch">
+<area shape="rect" id="node2" href="$class_colony.html#a686417d078d3544d7c07309822a8c45e" title="Retorna la planta de mayor fitness. " alt="" coords="184,29,329,56"/>
+<area shape="rect" id="node3" href="$class_c_c_o.html#a611537d0f46ae4573b08a0d8c343da5c" title="Metodo que permite eliminar plantas a la colonia. " alt="" coords="377,29,469,56"/>
+</map>

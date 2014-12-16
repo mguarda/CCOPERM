@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Lista&#160;de&#160;clases</span></a></li>
       <li><a href="classes.html"><span>Índice&#160;de&#160;clases</span></a></li>
-      <li><a href="hierarchy.html"><span>Jerarquía&#160;de&#160;la&#160;clase</span></a></li>
+      <li><a href="inherits.html"><span>Jerarquía&#160;de&#160;la&#160;clase</span></a></li>
       <li><a href="functions.html"><span>Miembros&#160;de&#160;las&#160;clases</span></a></li>
     </ul>
   </div>
@@ -117,13 +117,10 @@ $(document).ready(function(){initNavTree('class_problem.html','');});
 <div class="dynheader">
 Diagrama de herencias de Problem</div>
 <div class="dyncontent">
- <div class="center">
-  <img src="class_problem.png" usemap="#Problem_map" alt=""/>
-  <map id="Problem_map" name="Problem_map">
-<area href="class_qap.html" alt="Qap" shape="rect" coords="0,56,58,80"/>
-<area href="class_tsp.html" alt="Tsp" shape="rect" coords="68,56,126,80"/>
-</map>
- </div></div>
+<div class="center"><img src="class_problem__inherit__graph.png" border="0" usemap="#_problem_inherit__map" alt="Inheritance graph"/></div>
+<map name="_problem_inherit__map" id="_problem_inherit__map">
+<area shape="rect" id="node2" href="class_qap.html" title="Qap" alt="" coords="5,80,52,107"/><area shape="rect" id="node3" href="class_tsp.html" title="Tsp" alt="" coords="77,80,119,107"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">significado de colores y flechas</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Métodos públicos</h2></td></tr>
@@ -223,6 +220,15 @@ static <a class="el" href="class_problem.html">Problem</a> *&#160;</td><td class
 <dd>
 Retorna puntero del tipo <a class="el" href="class_problem.html" title="Clase abstracta Problem. ">Problem</a>, con problema particular para <a class="el" href="class_tsp.html">Tsp</a> </dd></dl>
 
+<p><div class="dynheader">
+Gráfico de llamadas a esta función:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_problem_a4455f10e5a7e568a4c4359c53e73c547_icgraph.png" border="0" usemap="#class_problem_a4455f10e5a7e568a4c4359c53e73c547_icgraph" alt=""/></div>
+<map name="class_problem_a4455f10e5a7e568a4c4359c53e73c547_icgraph" id="class_problem_a4455f10e5a7e568a4c4359c53e73c547_icgraph">
+<area shape="rect" id="node2" href="class_c_c_o.html#abe96cee0e1a470ea4210ecafe0a4c13e" title="Permite ejecutar la clase CCO. " alt="" coords="207,5,283,32"/><area shape="rect" id="node3" href="class_c_c_o.html#a5804afdd4b0361d7507fab4b3ab71703" title="Provoca eventualmente la división de la colonia. " alt="" coords="203,56,287,83"/><area shape="rect" id="node4" href="class_plant.html#ae4e71ef08f69aa77ed93eba7e8398ff4" title="Constructor de la clase Plant. " alt="" coords="200,107,291,133"/><area shape="rect" id="node5" href="class_plant.html#a334ffc92dcb5081cf17db59c3acb58d0" title="Re&#45;evalua el fitness de todas las plantas de la rama. " alt="" coords="180,158,311,199"/></map>
+</div>
+</p>
+
 </div>
 </div>
 <hr/>La documentación para esta clase fue generada a partir de los siguientes ficheros:<ul>
@@ -235,7 +241,7 @@ Retorna puntero del tipo <a class="el" href="class_problem.html" title="Clase ab
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_problem.html">Problem</a></li>
-    <li class="footer">Generado el Viernes, 12 de Diciembre de 2014 11:41:30 para Documentacion CCO por
+    <li class="footer">Generado el Martes, 16 de Diciembre de 2014 16:26:51 para Documentacion CCO por
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.8 </li>
   </ul>

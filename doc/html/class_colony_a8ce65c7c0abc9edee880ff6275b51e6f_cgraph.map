@@ -1,0 +1,5 @@
+<map id="Colony::Purge" name="Colony::Purge">
+<area shape="rect" id="node2" href="$class_plant.html#afbc29c83a69faf9bef5373b0be9e6771" title="Retorna un puntero a la planta segun el frente pareto Purge. " alt="" coords="157,31,296,57"/>
+<area shape="rect" id="node3" href="$class_plant.html#afdbf74edabdfe044d64a3a7c374d6119" title="Permite obtener el tfitness. " alt="" coords="344,5,472,32"/>
+<area shape="rect" id="node4" href="$class_plant.html#a79fc3e80a225263ba150952e49b4533c" title="Retorna el numero de conexiones que posee. " alt="" coords="365,56,451,83"/>
+</map>
