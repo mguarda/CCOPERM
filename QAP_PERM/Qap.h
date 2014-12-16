@@ -31,21 +31,21 @@ public:
 	virtual ~Qap();
 
 	// REDEFINICION DE METODOS VIRTUALES
-	/// Redefinicion del método para la clase Tsp
+	/// Redefinicion del método para la clase Qap
 	Solution* NewSolution();
-	/// Redefinicion del método para la clase Tsp
+	/// Redefinicion del método para la clase Qap
 	double CalcularFitness(Solution *sol);
-	/// Redefinicion del método para la clase Tsp
+	/// Redefinicion del método para la clase Qap
 	double getMinValuesPos(unsigned int pos);
-	/// Redefinicion del método para la clase Tsp
+	/// Redefinicion del método para la clase Qap
 	double getMaxValuesPos(unsigned int pos);
-	/// Redefinicion del método para la clase Tsp
+	/// Redefinicion del método para la clase Qap
 	unsigned int getDimension();
-	/// Redefinicion del método para la clase Tsp
+	/// Redefinicion del método para la clase Qap
 	bool EsDinamico();
-	/// Redefinicion del método para la clase Tsp
+	/// Redefinicion del método para la clase Qap
 	void step(std::vector<std::vector<double> >, int);
-	///// Redefinicion del método para la clase Tsp
+	///// Redefinicion del método para la clase Qap
 	//void fin_experimento( string );
 	void readQAPProblemFile(string filename);
 };
